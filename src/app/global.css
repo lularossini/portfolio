@@ -59,14 +59,6 @@ a:active {
   color: white;
 }
 
-.russoFont {
-  font-family: var(--font-russoFont) !important;
-}
-
-.interFont {
-  font-family: var(--font-interFont) !important;
-}
-
 @media (min-width: 600px) {
   main {
     padding: var(--main-padding-top-bottom-desktop)

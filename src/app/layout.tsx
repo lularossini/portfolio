@@ -1,25 +1,19 @@
 import type { Metadata } from 'next';
-import { Inter, Open_Sans, Russo_One } from 'next/font/google';
+import { Darker_Grotesque, Space_Grotesk } from 'next/font/google';
 import Header from './_noPages/views/header/Header';
 import Footer from './_noPages/views/footer/Footer';
 import './global.css';
 
-const openSansFont = Open_Sans({
+const darkerGrotesqueFont = Darker_Grotesque({
   subsets: ['latin'],
   weight: ['300', '400', '600', '700'],
-  variable: '--font-openSans',
+  variable: '--font-darkerGrotesque',
 });
 
-const russoFont = Russo_One({
+const spaceGrotesqueFont = Space_Grotesk({
   subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-russoFont',
-});
-
-const interFont = Inter({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  variable: '--font-interFont',
+  weight: ['300', '400', '600', '700'],
+  variable: '--font-spaceGrotesque',
 });
 
 export const metadata: Metadata = {
@@ -39,7 +33,7 @@ export default function RootLayout({
         <link rel='icon' type='image/png' href='/favicon.png' />
       </head>
       <body
-        className={`${openSansFont.variable} ${russoFont.variable} ${interFont.variable}`}
+        className={`${darkerGrotesqueFont.variable} ${spaceGrotesqueFont.variable}`}
       >
         {/* <header>
           <Header />

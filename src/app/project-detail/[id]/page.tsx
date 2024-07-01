@@ -1,8 +1,8 @@
 'use client';
 import { projects } from '@/JSONs/JSONprojects';
-import CarouselExample from '@/app/_noPages/components/ExperienceDetailCarousel';
-import ExperienceDetailImage from '@/app/_noPages/components/ExperienceDetailImage';
-import ExperienceDetailVideo from '@/app/_noPages/components/ExperienceDetailVideo';
+
+import ExperienceDetailImage from '@/app/_noPages/components/projectDetails/ProjectDetailImage';
+import ExperienceDetailVideo from '@/app/_noPages/components/projectDetails/ProjectDetailVideo';
 import { Box, Typography } from '@mui/material';
 import { useParams, useRouter } from 'next/navigation';
 import { useEffect } from 'react';
@@ -251,22 +251,6 @@ const ExperienceDetail = () => {
                   marginTop={detail.marginTop}
                   marginBottom={detail.marginBottom}
                   widthImageDescription={detail.widthImageDescription}
-                />
-              );
-            }
-
-            if (detail.type === 'carousel') {
-              return (
-                <CarouselExample
-                  key={index}
-                  srcImages={detail.srcImages}
-                  width={detail.width}
-                  height={detail.height}
-                  marginBottom={detail.marginBottom}
-                  marginTop={detail.marginTop}
-                  imageDescription={detail.imageDescription}
-                  widthImageDescription={detail.widthImageDescription}
-                  interval={detail.interval}
                 />
               );
             }

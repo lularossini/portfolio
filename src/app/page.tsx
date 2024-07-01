@@ -1,15 +1,7 @@
-
-
-
+import TyrCase from './_noPages/views/home/TyrCase';
 
 const Home = () => {
-
-  return (
-    <>
- 
-     home
-    </>
-  );
+  return <TyrCase />;
 };
 
 export default Home;
