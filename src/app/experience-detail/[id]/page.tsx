@@ -1,5 +1,5 @@
 'use client';
-import { experiences } from '@/JSONs/JSONprojects';
+import { projects as experiences } from '@/JSONs/JSONprojects';
 import CarouselExample from '@/app/_noPages/components/ExperienceDetailCarousel';
 import ExperienceDetailImage from '@/app/_noPages/components/ExperienceDetailImage';
 import ExperienceDetailVideo from '@/app/_noPages/components/ExperienceDetailVideo';
