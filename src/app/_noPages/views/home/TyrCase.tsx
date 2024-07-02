@@ -113,8 +113,8 @@ const TyrCase: React.FC = () => {
               display: 'flex',
               flexDirection: 'column',
               width: '100%',
-              marginTop: '30px',
-              padding: '0 25px',
+              marginTop: '33px',
+              padding: '0 18.5px',
             }}
           >
             <Typography
@@ -132,10 +132,13 @@ const TyrCase: React.FC = () => {
             </Typography>
             <Typography
               sx={{
-                width: '100%',
+                width: '292px',
+                height: '69px',
                 fontSize: '13px',
                 fontWeight: '500',
                 lineHeight: '23px',
+                letterSpacing: '0.12px',
+
                 fontFamily: 'var(--font-spaceGrotesque), sans-serif !important',
                 marginTop: '14px',
               }}
@@ -145,6 +148,7 @@ const TyrCase: React.FC = () => {
                   fontSize: '13px',
                   fontWeight: '600',
                   lineHeight: '23px',
+                  letterSpacing: '0px',
                   fontFamily:
                     'var(--font-spaceGrotesque), sans-serif !important',
                   marginTop: '13px',
@@ -156,7 +160,7 @@ const TyrCase: React.FC = () => {
               for a commodity trading company in Portland
             </Typography>
 
-            <Box sx={{ display: 'flex', marginTop: '10px' }}>
+            <Box sx={{ display: 'flex', marginTop: '13px' }}>
               <Typography
                 sx={{
                   fontSize: '14px',
@@ -164,7 +168,7 @@ const TyrCase: React.FC = () => {
                   lineHeight: '25px',
                   fontFamily:
                     'var(--font-spaceGrotesque), sans-serif !important',
-                  marginRight: '13px',
+                  marginRight: '14px',
                 }}
               >
                 Learn more

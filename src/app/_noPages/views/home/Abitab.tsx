@@ -2,7 +2,7 @@
 
 import { Box, Typography, useMediaQuery } from '@mui/material';
 
-const Abitab: React.FC = () => {
+const TyrCase: React.FC = () => {
   const isDesktop = useMediaQuery('(min-width:1200px)');
 
   return (
@@ -14,7 +14,7 @@ const Abitab: React.FC = () => {
             width: '1107px',
             height: '452px',
             borderRadius: '10px',
-            backgroundColor: '#F1E5F8',
+            backgroundColor: '#EDE9EF',
             alignItems: 'center',
             justifyContent: 'center',
           }}
@@ -42,7 +42,7 @@ const Abitab: React.FC = () => {
                   'var(--font-darkerGrotesque), sans-serif !important',
               }}
             >
-              A NEW INTERNAL SYSTEM TO ENHACE EXPERIENCE
+              GIVING URUGUAYANS A DIGITAL IDENTITY{' '}
             </Typography>
             <Typography
               sx={{
@@ -65,8 +65,8 @@ const Abitab: React.FC = () => {
               >
                 UX Design •  UX Research •
               </span>{' '}
-              Complete redesign focused on the usability of the internal tool
-              for a commodity trading company in Portland
+              Redesign of an application that Uruguayans use to access public
+              sites and perform processes such as paying taxes
             </Typography>
 
             <Box sx={{ display: 'flex', marginTop: '12px' }}>
@@ -95,9 +95,8 @@ const Abitab: React.FC = () => {
             flexDirection: 'column',
             width: '100%',
             maxWidth: '329px',
-
-            height: '440px',
-            padding: '30px 0',
+            height: '557px',
+            padding: '33px 0',
             borderRadius: '10px',
             backgroundColor: '#F1E5F8',
             alignItems: 'center',
@@ -107,7 +106,7 @@ const Abitab: React.FC = () => {
           <img
             src='/home/ABITABHomeMobile.png'
             alt=''
-            style={{ width: '100%' }}
+            style={{ width: '241px', height: '266px' }}
           />
           <Box
             sx={{
@@ -115,7 +114,7 @@ const Abitab: React.FC = () => {
               flexDirection: 'column',
               width: '100%',
               marginTop: '33px',
-              padding: '0 25px',
+              padding: '0 18.5px',
             }}
           >
             <Typography
@@ -129,14 +128,17 @@ const Abitab: React.FC = () => {
                   'var(--font-darkerGrotesque), sans-serif !important',
               }}
             >
-              A NEW INTERNAL SYSTEM TO ENHACE EXPERIENCE
+              GIVING URUGUAYANS A DIGITAL IDENTITY
             </Typography>
             <Typography
               sx={{
-                width: '100%',
+                width: '292px',
+                height: '92px',
                 fontSize: '13px',
                 fontWeight: '500',
                 lineHeight: '23px',
+                letterSpacing: '0.12px',
+
                 fontFamily: 'var(--font-spaceGrotesque), sans-serif !important',
                 marginTop: '14px',
               }}
@@ -146,6 +148,7 @@ const Abitab: React.FC = () => {
                   fontSize: '13px',
                   fontWeight: '600',
                   lineHeight: '23px',
+                  letterSpacing: '0px',
                   fontFamily:
                     'var(--font-spaceGrotesque), sans-serif !important',
                   marginTop: '13px',
@@ -153,11 +156,11 @@ const Abitab: React.FC = () => {
               >
                 UX Design •  UX Research •&nbsp;
               </span>
-              Complete redesign focused on the usability of the internal tool
-              for a commodity trading company in Portland
+              Redesign of an application that Uruguayans use to access public
+              sites and perform processes such as paying taxes
             </Typography>
 
-            <Box sx={{ display: 'flex', marginTop: '10px' }}>
+            <Box sx={{ display: 'flex', marginTop: '13px' }}>
               <Typography
                 sx={{
                   fontSize: '14px',
@@ -165,7 +168,7 @@ const Abitab: React.FC = () => {
                   lineHeight: '25px',
                   fontFamily:
                     'var(--font-spaceGrotesque), sans-serif !important',
-                  marginRight: '13px',
+                  marginRight: '14px',
                 }}
               >
                 Learn more
@@ -179,4 +182,4 @@ const Abitab: React.FC = () => {
   );
 };
 
-export default Abitab;
+export default TyrCase;

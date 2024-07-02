@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', gap: '23px' }}>
       <TyrCase />
-
+      <Abitab />
       <Properati />
       <Proppit />
     </Box>

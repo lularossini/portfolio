@@ -42,7 +42,7 @@ const Properati: React.FC = () => {
                   'var(--font-darkerGrotesque), sans-serif !important',
               }}
             >
-              A NEW INTERNAL SYSTEM TO ENHACE EXPERIENCE
+              A RESPONSIVE WEB TO HELP SELLERS WORK QUICKLY AND EFFICIENTLY
             </Typography>
             <Typography
               sx={{
@@ -63,10 +63,10 @@ const Properati: React.FC = () => {
                   marginTop: '15px',
                 }}
               >
-                UX Design •  UX Research •
+                UX Design •
               </span>{' '}
-              Complete redesign focused on the usability of the internal tool
-              for a commodity trading company in Portland
+              The process of designing a site to help property vendors sell
+              better and faster
             </Typography>
 
             <Box sx={{ display: 'flex', marginTop: '12px' }}>
@@ -95,9 +95,8 @@ const Properati: React.FC = () => {
             flexDirection: 'column',
             width: '100%',
             maxWidth: '329px',
-
-            height: '440px',
-            padding: '30px 0',
+            height: '463 px',
+            padding: '33px 0',
             borderRadius: '10px',
             backgroundColor: '#F1E5F8',
             alignItems: 'center',
@@ -107,7 +106,7 @@ const Properati: React.FC = () => {
           <img
             src='/home/PROPERATIHomeMobile.png'
             alt=''
-            style={{ width: '100%' }}
+            style={{ width: '295px', height: '171px' }}
           />
           <Box
             sx={{
@@ -115,7 +114,7 @@ const Properati: React.FC = () => {
               flexDirection: 'column',
               width: '100%',
               marginTop: '33px',
-              padding: '0 25px',
+              padding: '0 18.5px',
             }}
           >
             <Typography
@@ -129,14 +128,17 @@ const Properati: React.FC = () => {
                   'var(--font-darkerGrotesque), sans-serif !important',
               }}
             >
-              A NEW INTERNAL SYSTEM TO ENHACE EXPERIENCE
+              A RESPONSIVE WEB TO HELP SELLERS WORK QUICKLY AND EFFICIENTLY
             </Typography>
             <Typography
               sx={{
-                width: '100%',
+                width: '292px',
+                height: '69px',
                 fontSize: '13px',
                 fontWeight: '500',
                 lineHeight: '23px',
+                letterSpacing: '0.12px',
+
                 fontFamily: 'var(--font-spaceGrotesque), sans-serif !important',
                 marginTop: '14px',
               }}
@@ -146,18 +148,19 @@ const Properati: React.FC = () => {
                   fontSize: '13px',
                   fontWeight: '600',
                   lineHeight: '23px',
+                  letterSpacing: '0px',
                   fontFamily:
                     'var(--font-spaceGrotesque), sans-serif !important',
                   marginTop: '13px',
                 }}
               >
-                UX Design •  UX Research •&nbsp;
+                UX Design • &nbsp;
               </span>
-              Complete redesign focused on the usability of the internal tool
-              for a commodity trading company in Portland
+              The process of designing a site to help property vendors sell
+              better and faster
             </Typography>
 
-            <Box sx={{ display: 'flex', marginTop: '10px' }}>
+            <Box sx={{ display: 'flex', marginTop: '13px' }}>
               <Typography
                 sx={{
                   fontSize: '14px',
@@ -165,7 +168,7 @@ const Properati: React.FC = () => {
                   lineHeight: '25px',
                   fontFamily:
                     'var(--font-spaceGrotesque), sans-serif !important',
-                  marginRight: '13px',
+                  marginRight: '14px',
                 }}
               >
                 Learn more
