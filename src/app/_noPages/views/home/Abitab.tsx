@@ -2,7 +2,7 @@
 
 import { Box, Typography, useMediaQuery } from '@mui/material';
 
-const TyrCase: React.FC = () => {
+const Abitab: React.FC = () => {
   const isDesktop = useMediaQuery('(min-width:1200px)');
 
   return (
@@ -95,8 +95,9 @@ const TyrCase: React.FC = () => {
             flexDirection: 'column',
             width: '100%',
             maxWidth: '329px',
+
             height: '440px',
-            padding: '33px 0',
+            padding: '30px 0',
             borderRadius: '10px',
             backgroundColor: '#F1E5F8',
             alignItems: 'center',
@@ -104,16 +105,16 @@ const TyrCase: React.FC = () => {
           }}
         >
           <img
-            src='/home/TYRHomeMobile.svg'
+            src='/home/ABITABHomeMobile.png'
             alt=''
-            style={{ width: '295px', height: '171px' }}
+            style={{ width: '100%' }}
           />
           <Box
             sx={{
               display: 'flex',
               flexDirection: 'column',
               width: '100%',
-              marginTop: '30px',
+              marginTop: '33px',
               padding: '0 25px',
             }}
           >
@@ -178,4 +179,4 @@ const TyrCase: React.FC = () => {
   );
 };
 
-export default TyrCase;
+export default Abitab;

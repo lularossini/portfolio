@@ -4,7 +4,7 @@
   --main-padding-top-bottom-desktop: 100px;
   --main-padding-left-right-desktop: 50px;
   --main-padding-top-bottom-mobile: 50px;
-  --main-padding-left-right-mobile: 20px;
+  --main-padding-left-right-mobile: 24px;
   --font-openSans: 'Open Sans', sans-serif;
 }
 
@@ -20,13 +20,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #252525;
+  background-color: 'white';
 }
 
 header {
   width: 100%;
   height: var(--header-height) !important;
-  background-color: #252525;
+  background-color: 'white';
 }
 
 main {
@@ -43,7 +43,7 @@ main {
 footer {
   width: 100%;
   height: var(--footer-height);
-  background-color: #252525;
+  background-color: 'white';
 }
 
 header p,
