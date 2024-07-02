@@ -8,9 +8,9 @@ const Home = () => {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', gap: '23px' }}>
       <TyrCase />
-      <Abitab />
+      {/* <Abitab />
       <Properati />
-      <Proppit />
+      <Proppit /> */}
     </Box>
   );
 };
