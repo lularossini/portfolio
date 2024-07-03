@@ -47,7 +47,7 @@ export interface IProjects {
 
 export const projects: IProjects[] = [
 
-  {
+  { 
     id: 'caso1',
     name: 'caso1',
     period: '2020 - 2022',
