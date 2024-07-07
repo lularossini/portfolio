@@ -57,8 +57,8 @@ const ExperienceDetail = () => {
         top: '-30px',
         width: '100%',
         height: '100%',
-        justifyContent: 'center',
-      }}
+        justifyContent: 'center'
+,      }}
     >
       {/*Details*/}
       <Box
@@ -97,7 +97,7 @@ const ExperienceDetail = () => {
           <svg
             width='17'
             height='17'
-            color='white'
+            color='black'
             viewBox='0 0 24 24'
             fill='none'
             stroke='currentColor'
@@ -114,7 +114,7 @@ const ExperienceDetail = () => {
           variant='h1'
           sx={{
             fontSize: '30px',
-            color: 'white',
+            color: 'black',
             fontWeight: '600',
             marginTop: '25px',
           }}
@@ -127,7 +127,7 @@ const ExperienceDetail = () => {
           sx={{
             fontSize: '14px',
             lineHeight: '14px',
-            color: '#8C8C8C',
+            color: '#black',
             marginTop: '0px',
           }}
         >
@@ -138,7 +138,7 @@ const ExperienceDetail = () => {
           variant='body1'
           sx={{
             fontSize: '17px',
-            color: 'white',
+            color: 'black',
             marginTop: '8px',
             fontWeight: '600',
           }}
@@ -183,7 +183,7 @@ const ExperienceDetail = () => {
                       ? '600'
                       : '',
                     color:
-                      isaYearTitle || isaRegularTitle ? 'white' : '#bababa',
+                      isaYearTitle || isaRegularTitle ? 'black' : 'black',
                     lineHeight: '25px',
                     marginTop: fisrtString
                       ? '60px'
