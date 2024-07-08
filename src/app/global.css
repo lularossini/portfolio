@@ -1,10 +1,10 @@
 :root {
   --header-height: 50px;
   --footer-height: 100px;
-  --main-padding-top-bottom-desktop: 100px;
+  --main-padding-top-bottom-desktop: 50px;
   --main-padding-left-right-desktop: 50px;
   --main-padding-top-bottom-mobile: 50px;
-  --main-padding-left-right-mobile: 14px;
+  --main-padding-left-right-mobile: 16px;
   --font-DarkerGrotesk: 'Darker Grotesque', sans-serif;
   --font-SpaceGrotesk: 'Space Grotesk', sans-serif;
 }
@@ -35,7 +35,7 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 1121px;
+  max-width: 1207px;
   min-height: calc(100vh - var(--header-height) - var(--footer-height));
   padding: var(--main-padding-top-bottom-mobile)
     var(--main-padding-left-right-mobile);

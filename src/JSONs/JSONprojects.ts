@@ -1,10 +1,13 @@
 export interface IProjects {
   id: string;
-  name: string;
-  period: string;
-  role: string;
   details: (
     | string
+    | {
+        type: 'title';
+        text: string;
+        marginBottom: number;
+        marginTop: number;
+      }
     | {
         type: 'results';
         percentages: string[];
@@ -52,26 +55,24 @@ export interface IProjects {
 export const projects: IProjects[] = [
   {
     id: 'tyr-case',
-    name: 'TYR',
-    period: 'Case Study',
-    role: 'A new internal system to enhace the experience',
-    details: [
-      '<b>About',
-      'TYR is a company that specializes in commodity trading. This means they focus on buying and selling raw materials, like oil, metals, and agricultural products. Also connects producers and buyers of raw materials and handles the logistics of getting these materials where they need to go.',
 
-      '<b>The problem',
-      'TYR faced major issues with their system, including slow response times due to high data volume, a steep learning curve for new employees, and information duplication. Forms were too long and redundant, workflows were confusing, and sequential use by traders and administrators led to frequent errors, requiring the owners intervention.',
+    details: [
       {
-        type: 'results',
-        percentages: ['90%', '95%', '85%'],
-        texts: [
-          "of users expressed high satisfaction with the overall user experience, highlighting the app's ease of use and intuitive design.",
-          "of users found the app's design clear and easy to understand, which facilitated navigation and task completion.",
-          "of users found the registration process quick and straightforward, rating it as 'super short' or 'short'.",
-        ],
-        marginBottom: 30,
-        marginTop: 30,
+        type: 'title',
+        text: 'About',
+        marginBottom: 20,
+        marginTop: 20,
       },
+      'TYR is a company that <b>specializes</b> in commodity trading. This means they focus on buying and selling raw materials, like oil, metals, and agricultural products. Also connects producers and buyers of raw materials and handles the logistics of getting these materials where they need to go.',
+
+      {
+        type: 'title',
+        text: 'The problem',
+        marginBottom: 20,
+        marginTop: 20,
+      },
+      'TYR faced major issues with their system, including slow response times due to high data volume, a steep learning curve for new employees, and information duplication. Forms were too long and redundant, workflows were confusing, and sequential use by traders and administrators led to frequent errors, requiring the owners intervention.',
+
       '<b>My role',
       'UX Research',
       'UX Design',
@@ -96,44 +97,47 @@ export const projects: IProjects[] = [
         marginTop: 30,
         imageDescription: 'summarize of the research from project tyr',
       },
-
-      '<b>The results',
-      '100%',
-      'was the reduction in duplication errors due to the redesign, which incorporated mandatory fields and blocked certain fields from being modified by specific user types.',
-
-      '60%',
-      'was the reduction in employee training time after redesigning the system with a focus on improving usability. This allowed experienced employees to focus on their tasks, enhancing the overall efficiency of the company.',
-
-      '50%',
-      'was the reduction in load time as we reduced the number of fields in each form and eliminated duplicate fields that caused double entries and, consequently, double the time.',
       {
-        type: 'image',
-        src: '/images/plumarii/logo_plumarii.png',
-        width: '100%',
+        type: 'title',
+        text: 'The results',
+        marginBottom: 20,
+        marginTop: 20,
+      },
+      {
+        type: 'results',
+        percentages: ['100%', '60%', '60%'],
+        texts: [
+          'was the reduction in duplication errors due to the redesign, which incorporated mandatory fields and blocked certain fields from being modified by specific user types.',
+          'was the reduction in employee training time after redesigning the system with a focus on improving usability. This allowed experienced employees to focus on their tasks, enhancing the overall efficiency of the company.',
+          'was the reduction in load time as we reduced the number of fields in each form and eliminated duplicate fields that caused double entries and, consequently, double the time.',
+        ],
         marginBottom: 30,
         marginTop: 30,
-        imageDescription: 'carrousel screens of hi fi project',
       },
 
-      '<b>Reflections',
+      {
+        type: 'title',
+        text: 'HI-FI Screens',
+        marginBottom: 20,
+        marginTop: 20,
+      },
+
+      {
+        type: 'title',
+        text: 'Reflections',
+        marginBottom: 20,
+        marginTop: 20,
+      },
+
       'The project was large and very complex, primarily because we had to base our work on a system with so many usability issues while needing to maintain certain structures. Additionally, the raw materials business model includes multiple actors and processes that had to be considered when thinking about new ways to present the workflows.',
       'The greatest difficulty was that we had very little design time, yet it needed to work. Therefore, it was decided to conduct research but to do so quickly, in order to have information to focus on what users needed while still meeting the deadlines for delivering the final UI.',
       'The key learning from this process was that we need to embrace the unknown and ask many questions along the way. For this, it is crucial to have the business on our side and always keep them informed of our progress. This allowed us to iterate and improve quickly and effectively.',
-
-      'Previous project',
-      'Next project',
-
-      'Home',
-      'Resume',
-      'LikedIn',
     ],
   },
 
   {
     id: 'abitab-case',
-    name: 'Abitab',
-    period: 'Case Study',
-    role: 'GIVING URUGUAYANS A DIGITAL IDENTITY',
+
     details: [
       '<b>About',
       'Abitab is a Uruguayan company offering services like bill payments, money transfers, and mobile top-ups. One of its products, Abitab Mobile Identity, enables users to access public websites and perform tasks like paying taxes and scheduling appointments. To become the leading digital identity service in Uruguay, Abitab needed to significantly enhance its user experience and technology.',
@@ -248,9 +252,7 @@ export const projects: IProjects[] = [
 
   {
     id: 'properati-case',
-    name: 'Properati',
-    period: 'Case Study',
-    role: 'A RESPONSIVE WEB TO HELP SELLERS WORK QUICKLY AND EFFICENTLY',
+
     details: [
       {
         type: 'image',
@@ -345,9 +347,7 @@ export const projects: IProjects[] = [
 
   {
     id: 'proppit-case',
-    name: 'Proppit',
-    period: 'Case Study',
-    role: ' REDUCING CHURN BY UNDERSTANDING USERS',
+
     details: [
       {
         type: 'image',

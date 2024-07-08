@@ -35,9 +35,9 @@ export default function RootLayout({
       <body
         className={`${darkerGrotesqueFont.variable} ${spaceGrotesqueFont.variable}`}
       >
-        {/* <header>
+        <header>
           <Header />
-        </header> */}
+        </header>
 
         <main>{children}</main>
         {/* <footer>
