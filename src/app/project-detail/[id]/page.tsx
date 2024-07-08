@@ -8,7 +8,7 @@ import { useParams, useRouter } from 'next/navigation';
 import React from 'react';
 import { useEffect, useState } from 'react';
 
-const ExperienceDetail = () => {
+const ProjectDetail = () => {
   const isDesktop = useMediaQuery('(min-width:1200px)');
 
   const router = useRouter();
@@ -105,6 +105,7 @@ const ExperienceDetail = () => {
                 <Typography
                   key={index}
                   variant='body1'
+                  className='regularText'
                   sx={{
                     fontSize: isDesktop ? '24px' : '20px',
                     lineHeight: isDesktop ? '30px' : '27px',
@@ -230,6 +231,4 @@ const ExperienceDetail = () => {
   );
 };
 
-export default ExperienceDetail;
-
-//http://localhost:3000/experience-detail/456
+export default ProjectDetail;

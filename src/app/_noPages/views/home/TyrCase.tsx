@@ -46,8 +46,6 @@ const TyrCase: React.FC = () => {
                 fontWeight: '700',
                 lineHeight: '25px',
                 letterSpacing: '2px',
-                fontFamily:
-                  'var(--font-darkerGrotesque), sans-serif !important',
               }}
             >
               A NEW INTERNAL SYSTEM TO ENHACE EXPERIENCE
@@ -57,7 +55,7 @@ const TyrCase: React.FC = () => {
                 fontSize: '15px',
                 fontWeight: '500',
                 lineHeight: '23px',
-                fontFamily: 'var(--font-spaceGrotesque), sans-serif !important',
+
                 marginTop: '15px',
               }}
             >
@@ -66,8 +64,7 @@ const TyrCase: React.FC = () => {
                   fontSize: '15px',
                   fontWeight: '600',
                   lineHeight: '23px',
-                  fontFamily:
-                    'var(--font-spaceGrotesque), sans-serif !important',
+
                   marginTop: '15px',
                 }}
               >
@@ -83,8 +80,7 @@ const TyrCase: React.FC = () => {
                   fontSize: '15px',
                   fontWeight: '500',
                   lineHeight: '25px',
-                  fontFamily:
-                    'var(--font-spaceGrotesque), sans-serif !important',
+
                   marginRight: '18px',
                 }}
               >
@@ -133,8 +129,6 @@ const TyrCase: React.FC = () => {
                 fontWeight: '700',
                 lineHeight: '24px',
                 letterSpacing: '2px',
-                fontFamily:
-                  'var(--font-darkerGrotesque), sans-serif !important',
               }}
             >
               A NEW INTERNAL SYSTEM TO ENHACE EXPERIENCE
@@ -148,7 +142,6 @@ const TyrCase: React.FC = () => {
                 lineHeight: '23px',
                 letterSpacing: '0.12px',
 
-                fontFamily: 'var(--font-spaceGrotesque), sans-serif !important',
                 marginTop: '14px',
               }}
             >
@@ -158,8 +151,7 @@ const TyrCase: React.FC = () => {
                   fontWeight: '600',
                   lineHeight: '23px',
                   letterSpacing: '0px',
-                  fontFamily:
-                    'var(--font-spaceGrotesque), sans-serif !important',
+
                   marginTop: '13px',
                 }}
               >
@@ -175,8 +167,7 @@ const TyrCase: React.FC = () => {
                   fontSize: '14px',
                   fontWeight: '700',
                   lineHeight: '25px',
-                  fontFamily:
-                    'var(--font-spaceGrotesque), sans-serif !important',
+
                   marginRight: '14px',
                 }}
               >

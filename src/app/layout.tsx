@@ -4,22 +4,23 @@ import Header from './_noPages/views/header/Header';
 import Footer from './_noPages/views/footer/Footer';
 import './global.css';
 
+// If loading a variable font, you don't need to specify the font weight
 const darkerGrotesqueFont = Darker_Grotesque({
   subsets: ['latin'],
-  weight: ['300', '400', '600', '700'],
-  variable: '--font-darkerGrotesque',
+  variable: '--font-darkerGrotesqueFont',
+  display: 'swap',
 });
 
 const spaceGrotesqueFont = Space_Grotesk({
   subsets: ['latin'],
-  weight: ['300', '400', '600', '700'],
-  variable: '--font-spaceGrotesque',
+  variable: '--font-spaceGrotesqueFont',
+
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: 'Portfolio Andrés Altamura',
-  description:
-    'Portafolio de Esteban Andrés Altamura. Desarrollador frontend Next, React, Typescript',
+  title: 'Portfolio Lucía Rossini',
+  description: 'Portafolio de Lucía Rossini. Diseñadora UX / UI',
 };
 
 export default function RootLayout({
@@ -28,13 +29,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html
+      lang='en'
+      className={`${darkerGrotesqueFont.variable} ${spaceGrotesqueFont.variable}`}
+    >
       <head>
         <link rel='icon' type='image/png' href='/favicon.png' />
       </head>
-      <body
-        className={`${darkerGrotesqueFont.variable} ${spaceGrotesqueFont.variable}`}
-      >
+      <body>
         <header>
           <Header />
         </header>

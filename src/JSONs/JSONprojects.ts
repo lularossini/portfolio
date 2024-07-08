@@ -1,3 +1,6 @@
+//Aplicar b a palabras en results
+//wuitar bold generalizado de results
+
 export interface IProjects {
   id: string;
   details: (
