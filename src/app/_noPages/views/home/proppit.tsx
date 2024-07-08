@@ -1,14 +1,21 @@
 'use client';
 
 import { Box, Typography, useMediaQuery } from '@mui/material';
+import { useRouter } from 'next/navigation';
 
 const TyrCase: React.FC = () => {
   const isDesktop = useMediaQuery('(min-width:1200px)');
+  const router = useRouter();
+
+  const goToTheCaseStudyPage: () => void = () => {
+    router.push('/project-detail/proppit-case');
+  };
 
   return (
     <>
       {isDesktop && (
         <Box
+          onClick={goToTheCaseStudyPage}
           sx={{
             display: 'flex',
             width: '1107px',
@@ -17,6 +24,7 @@ const TyrCase: React.FC = () => {
             backgroundColor: '#EDE9EF',
             alignItems: 'center',
             justifyContent: 'center',
+            cursor: 'pointer',
           }}
         >
           <img
@@ -90,6 +98,7 @@ const TyrCase: React.FC = () => {
 
       {!isDesktop && (
         <Box
+          onClick={goToTheCaseStudyPage}
           sx={{
             display: 'flex',
             flexDirection: 'column',

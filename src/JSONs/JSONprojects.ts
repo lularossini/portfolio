@@ -51,7 +51,7 @@ export interface IProjects {
 
 export const projects: IProjects[] = [
   {
-    id: 'case1',
+    id: 'tyr-case',
     name: 'TYR',
     period: 'Case Study',
     role: 'A new internal system to enhace the experience',
@@ -130,7 +130,7 @@ export const projects: IProjects[] = [
   },
 
   {
-    id: 'case2',
+    id: 'abitab-case',
     name: 'Abitab',
     period: 'Case Study',
     role: 'GIVING URUGUAYANS A DIGITAL IDENTITY',
@@ -247,7 +247,7 @@ export const projects: IProjects[] = [
   },
 
   {
-    id: 'case3',
+    id: 'properati-case',
     name: 'Properati',
     period: 'Case Study',
     role: 'A RESPONSIVE WEB TO HELP SELLERS WORK QUICKLY AND EFFICENTLY',
@@ -344,7 +344,7 @@ export const projects: IProjects[] = [
   },
 
   {
-    id: 'case4',
+    id: 'proppit-case',
     name: 'Proppit',
     period: 'Case Study',
     role: ' REDUCING CHURN BY UNDERSTANDING USERS',
