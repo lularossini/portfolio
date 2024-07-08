@@ -57,8 +57,8 @@ const ExperienceDetail = () => {
         top: '-30px',
         width: '100%',
         height: '100%',
-        justifyContent: 'center'
-,      }}
+        justifyContent: 'center',
+      }}
     >
       {/*Details*/}
       <Box
@@ -117,6 +117,7 @@ const ExperienceDetail = () => {
             color: 'black',
             fontWeight: '600',
             marginTop: '25px',
+            fontFamily: 'var(--font-darkerGrotesque), sans-serif !important',
           }}
         >
           {name}
@@ -182,9 +183,8 @@ const ExperienceDetail = () => {
                       : isaRegularTitle
                       ? '600'
                       : '',
-                    color:
-                      isaYearTitle || isaRegularTitle ? 'black' : 'black',
-                    lineHeight: '25px',
+                    color: isaYearTitle || isaRegularTitle ? 'black' : 'black',
+                    lineHeight: '23px',
                     marginTop: fisrtString
                       ? '60px'
                       : isaRegularText
@@ -200,6 +200,45 @@ const ExperienceDetail = () => {
                 >
                   {detail.slice(0, 3) === '<b>' ? detail.slice(3) : detail}
                 </Typography>
+              );
+            }
+
+            if (detail.type === 'results') {
+              return (
+                <Box
+                  key={index}
+                  sx={{ display: 'flex', flexDirection: 'column' }}
+                >
+                  <Typography sx={{ fontSize: '25px' }}>The results</Typography>
+
+                  {detail.percentages.map((percentage, index) => {
+                    return (
+                      <Box
+                        key={index}
+                        sx={{
+                          display: 'flex',
+                          flexDirection: 'row',
+                          marginTop: '10px',
+                        }}
+                      >
+                        <Typography
+                          sx={{
+                            fontSize: '28px',
+                            fontWeight: '500',
+                            marginRight: '10px',
+                          }}
+                        >
+                          {percentage}
+                        </Typography>
+                        <Typography
+                          sx={{ fontSize: '20px', fontWeight: '600' }}
+                        >
+                          {detail.texts[index]}
+                        </Typography>
+                      </Box>
+                    );
+                  })}
+                </Box>
               );
             }
             if (detail.type === 'link') {

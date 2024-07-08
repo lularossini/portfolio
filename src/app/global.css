@@ -5,7 +5,8 @@
   --main-padding-left-right-desktop: 50px;
   --main-padding-top-bottom-mobile: 50px;
   --main-padding-left-right-mobile: 14px;
-  --font-openSans: 'Open Sans', sans-serif;
+  --font-DarkerGrotesk: 'Darker Grotesque', sans-serif;
+  --font-SpaceGrotesk: 'Space Grotesk', sans-serif;
 }
 
 * {
@@ -49,7 +50,7 @@ footer {
 header p,
 main p,
 footer p {
-  font-family: var(--font-openSans), sans-serif !important;
+  font-family: var(--font-DarkerGrotesk), sans-serif !important;
 }
 
 a,

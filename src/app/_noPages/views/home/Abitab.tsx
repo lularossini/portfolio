@@ -94,11 +94,11 @@ const TyrCase: React.FC = () => {
             display: 'flex',
             flexDirection: 'column',
             width: '100%',
-            maxWidth: '329px',
+            maxWidth: '349px',
             height: '557px',
             padding: '33px 0',
             borderRadius: '10px',
-            backgroundColor: '#F1E5F8',
+            backgroundColor: '#EDE9EF',
             alignItems: 'center',
             justifyContent: 'first',
           }}

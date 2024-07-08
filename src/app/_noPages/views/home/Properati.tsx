@@ -94,7 +94,7 @@ const Properati: React.FC = () => {
             display: 'flex',
             flexDirection: 'column',
             width: '100%',
-            maxWidth: '329px',
+            maxWidth: '349px',
             height: '463 px',
             padding: '33px 0',
             borderRadius: '10px',
