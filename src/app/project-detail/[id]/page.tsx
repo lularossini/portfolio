@@ -129,6 +129,8 @@ const ProjectDetail = () => {
                   sx={{
                     fontSize: isDesktop ? '34px' : '25px',
                     fontWeight: '600',
+                    marginTop:`${detail.marginTop}px`,
+                    marginBottom: `${detail.marginBottom}px`,
                   }}
                 >
                   {detail.text}

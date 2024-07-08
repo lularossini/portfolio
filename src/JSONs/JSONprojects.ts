@@ -55,6 +55,8 @@ export interface IProjects {
 /////////////////////////////////////////////////////////////////////////////////////
 // implementar que sea string o un objeto que tiene el src de la imagen, marginTop, marginBottom, comentario de la foto
 
+///EMPIEZA TYR
+/////////////////////////////////////////////////////////////////////////////////////
 export const projects: IProjects[] = [
   {
     id: 'tyr-case',
@@ -66,7 +68,7 @@ export const projects: IProjects[] = [
         marginBottom: 20,
         marginTop: 20,
       },
-      'TYR is a company that <b>specializes</b> in commodity trading. This means they focus on buying and selling raw materials, like oil, metals, and agricultural products. Also connects producers and buyers of raw materials and handles the logistics of getting these materials where they need to go.',
+      'TYR is a company that specializes in <b>commodity trading</b>. This means they focus on <b>buying and selling raw materials</b>, like oil, metals, and agricultural products. Also <b>connects producers and buyers</b> of raw materials and <b>handles the logistics</b> of getting these materials where they need to go.',
 
       {
         type: 'title',
@@ -76,17 +78,17 @@ export const projects: IProjects[] = [
       },
       'TYR faced major issues with their system, including slow response times due to high data volume, a steep learning curve for new employees, and information duplication. Forms were too long and redundant, workflows were confusing, and sequential use by traders and administrators led to frequent errors, requiring the owners intervention.',
 
-      '<b>My role',
+      '<b>My role</b>',
       'UX Research',
       'UX Design',
       'UX Writing',
 
-      '<b>Tools',
+      '<b>Tools</b>',
       'Figma',
       'Figjam',
       'Zoom',
 
-      '<b>Timeline & Team',
+      '<b>Timeline & Team</b>',
       '1 month to design',
       '1 UX 1 UI, 2 devs, 1 Project Manager',
 
@@ -100,29 +102,40 @@ export const projects: IProjects[] = [
         marginTop: 30,
         imageDescription: 'summarize of the research from project tyr',
       },
+
       {
         type: 'title',
         text: 'The results',
         marginBottom: 20,
         marginTop: 20,
       },
+
       {
         type: 'results',
-        percentages: ['100%', '60%', '60%'],
+        percentages: [' 100%', '60%', '50%'],
         texts: [
-          'was the reduction in duplication errors due to the redesign, which incorporated mandatory fields and blocked certain fields from being modified by specific user types.',
-          'was the reduction in employee training time after redesigning the system with a focus on improving usability. This allowed experienced employees to focus on their tasks, enhancing the overall efficiency of the company.',
-          'was the reduction in load time as we reduced the number of fields in each form and eliminated duplicate fields that caused double entries and, consequently, double the time.',
+          "was the <b>reduction in duplication errors</b> due to the redesign, which incorporated mandatory fields and blocked certain fields from being modified by specific user types.",
+          "was the <b>reduction in employee training time</b> after redesigning the system with a focus on improving usability. This allowed experienced employees to focus on their tasks, enhancing the overall efficiency of the company.",
+          "was the <b>reduction in load time</b> as we reduced the number of fields in each form and eliminated duplicate fields that caused double entries and, consequently, double the time.",
         ],
         marginBottom: 30,
         marginTop: 30,
       },
-
+      
       {
         type: 'title',
         text: 'HI-FI Screens',
         marginBottom: 20,
         marginTop: 20,
+      },
+
+      {
+        type: 'image',
+        src: '/images/plumarii/logo_plumarii.png',
+        width: '100%',
+        marginBottom: 30,
+        marginTop: 30,
+        imageDescription: 'carrousel hifi project tyr',
       },
 
       {
@@ -137,37 +150,57 @@ export const projects: IProjects[] = [
       'The key learning from this process was that we need to embrace the unknown and ask many questions along the way. For this, it is crucial to have the business on our side and always keep them informed of our progress. This allowed us to iterate and improve quickly and effectively.',
     ],
   },
+///TERMINA TYR CASE
+/////////////////////////////////////////////////////////////////////////////////////
+///EMPIEZA ABITAB CASE
 
   {
     id: 'abitab-case',
 
     details: [
-      '<b>About',
-      'Abitab is a Uruguayan company offering services like bill payments, money transfers, and mobile top-ups. One of its products, Abitab Mobile Identity, enables users to access public websites and perform tasks like paying taxes and scheduling appointments. To become the leading digital identity service in Uruguay, Abitab needed to significantly enhance its user experience and technology.',
+      {
+        type: 'title',
+        text: 'About',
+        marginBottom: 20,
+        marginTop: 20,
+      },
+      'Abitab is a Uruguayan company offering services like bill payments, money transfers, and mobile top-ups. One of its products, <b>Abitab Mobile Identity, enables users to access public websites</b> and perform tasks like paying taxes and scheduling appointments. To become the leading digital identity service in Uruguay, Abitab needed to significantly enhance its user experience and technology.',
 
-      '<b>The problem',
+      {
+        type: 'title',
+        text: 'The problem',
+        marginBottom: 20,
+        marginTop: 20,
+      },
+
       'To achieve digital identity registration, we evaluated the existing web and app channels for usability issues.',
 
       'Our analysis revealed several key problems:',
-      '(ESTO VA EN NEGRITA CON PUNTEO) Diverse access points: Multiple websites with different logos, aesthetics, and content caused user confusion.',
-      'Inconsistent terminology: Varied terms for "Mobile Identity" across channels led to user confusion during account creation and service use.',
-      'App upgrade needed: The native app, initially a token, was disconnected from the website, missing opportunities for enhanced functionality and user engagement.',
+      '(ESTO VA EN NEGRITA CON PUNTEO) <b>Diverse access points</b>: Multiple websites with different logos, aesthetics, and content caused user confusion.',
+      '<b>Inconsistent terminology</b>: Varied terms for "Mobile Identity" across channels led to user confusion during account creation and service use.',
+      '<b>App upgrade needed</b>: The native app, initially a token, was disconnected from the website, missing opportunities for enhanced functionality and user engagement.',
 
-      '<b>My role',
+      '<b>My role</b>',
       'UX Research',
       'UX Design',
       'UX Writing',
 
-      '<b>Tools',
+      '<b>Tools</b>',
       'Figma',
       'Figjam',
       'Zoom',
 
-      '<b>Timeline & Team',
+      '<b>Timeline & Team</b>',
       '3 months to design',
       '1 UX Designer 1, Product Designer, 10 devs, 1 Project Manager',
 
-      '<b>The Design System',
+        {
+        type: 'title',
+        text: 'The Design System',
+        marginBottom: 20,
+        marginTop: 20,
+      },
+
       'Since we had a developed product, many elements of the Design System came predefined beforehand: colours, icons, typography, among others.',
       'The job was to design the screens and create new elements that would complement the current design system and adapt it to have a more user-centered product.',
       'This approach brought new icons, larger typography, process steppers, a brand new logo, and a great effort put on UX writing to ensure clarity as many concepts were new to users.',
@@ -181,7 +214,12 @@ export const projects: IProjects[] = [
         imageDescription: 'imagen del design system',
       },
 
-      '<b>Hi-Fi screens',
+        {
+        type: 'title',
+        text: 'Hi-Fi Screens',
+        marginBottom: 20,
+        marginTop: 20,
+      },
       'Due to the limited design hours allocated for the project, a prioritization was conducted, and it was decided not to create wireframes and proceed directly to high-fidelity designs.',
       'The central idea of the application was to carry out the process in well-defined steps to reduce possible user anxieties about where they were in the process and to decrease registration times, making it much more efficient.',
       'In terms of visuals, the previously defined definitions extracted from the design system that Abitab had were applied, and it was proposed to the client to modify some colors within the color palette to make them accessible following the current web accessibility regulations.',
@@ -195,7 +233,12 @@ export const projects: IProjects[] = [
         imageDescription: 'imagenes en carrousel de las pantallas',
       },
 
-      '<b> Testing with real users',
+      {
+        type: 'title',
+        text: 'Testing with real users',
+        marginBottom: 20,
+        marginTop: 20,
+      },
       'Usability testing is crucial for gathering insights into user experience and design effectiveness. To gather this information, we conducted 10 usability tests of Abitabs product.',
       'After completing the initial designs, I proposed moderated usability testing to validate our decisions.',
       'We designed a simple prototype in Figma, which you can view here.',
@@ -220,15 +263,19 @@ export const projects: IProjects[] = [
         imageDescription: 'imagen 2 de test de usabilidad',
       },
 
-      '<b>The results',
-      '90%',
-      "of users expressed high satisfaction with the overall user experience, highlighting the app's ease of use and intuitive design.",
+      
+      {
+        type: 'results',
+        percentages: ['90%', '95%', '85%'],
+        texts: [
+          "of users expressed <b>high satisfaction</b> with the overall <b>user experience</b>, highlighting the app's ease of use and intuitive design.",
+          "of users found the <b>app's design clear and easy to understand</b>, which <b>facilitated navigation and task completion.</b>",
+          "of users found the <b>registration process quick and straightforward</b>, rating it as 'super short' or 'short'",
+        ],
+        marginBottom: 30,
+        marginTop: 30,
+      },
 
-      '95% ',
-      "of users found the app's design clear and easy to understand, which facilitated navigation and task completion.",
-
-      '85%',
-      "of users found the registration process quick and straightforward, rating it as 'super short' or 'short'",
 
       {
         type: 'image',
@@ -239,7 +286,12 @@ export const projects: IProjects[] = [
         imageDescription: 'carrousel screens of hi fi project',
       },
 
-      '<b>Reflections',
+      {
+        type: 'title',
+        text: 'Reflections',
+        marginBottom: 20,
+        marginTop: 20,
+      },
       'This redesign was quite a challenge given that our team was large, so we had to be very organized and maintain constant communication to implement changes as quickly as possible. We also learned a lot about client communication, as at the beginning of the project, we had few meetings and were experiencing many changes from their side. As a result, we decided to have three weekly meetings to ensure everyone was on the same page.',
       'This significantly improved the speed of iteration, considering it was a project with many technical challenges and the need to communicate these effectively through the design to users.',
       'Finally, the project was discontinued due to a lack of budget and was not completed.',
@@ -253,52 +305,78 @@ export const projects: IProjects[] = [
     ],
   },
 
+///TERMINA ABITAB
+/////////////////////////////////////////////////////////////////////////////////////
+///EMPIEZA PROPERATI 
+
+
   {
     id: 'properati-case',
 
-    details: [
+    details: [      
       {
-        type: 'image',
-        src: '/images/plumarii/logo_plumarii.png',
-        width: '100%',
-        marginBottom: 30,
-        marginTop: 30,
-        imageDescription: 'imagen de portada Properati',
+        type: 'title',
+        text: 'About',
+        marginBottom: 0, 
+        marginTop: 20,
+               
       },
-      '<b>About',
+
       'Properati has a transactional branch that connects users wanting to buy a house with real state experts that helps them find the property they dreamed about.',
 
-      '<b>The problem',
+      {
+        type: 'title',
+        text: 'The problem',
+        marginBottom: 0,
+        marginTop: 50,
+        
+        
+      },
       'Real estate experts work every day with multiple clients simultaneously and have to send various proposals to all of them, each of which always includes more than one property.',
       'The main pain point for the experts was that the search and presentation of properties were being done manually, which was time-consuming and caused delays in the commercial process.',
       "Additionally, clients interested in buying houses often need a fast response and a visually pleasing proposal. Since we didn't have either of these, we were losing clients.",
       'Due to the necessity of solving all these problems, we were asked to create a solution as soon as possible.',
 
-      '<b>My role',
+      '<b>My role</b>',
       'UX Design',
       'UX Writing',
 
-      '<b>Tools',
+      '<b>Tools</b>',
       'Figma',
       'Miro',
 
-      '<b>Timeline & Team',
+      '<b>Timeline & Team</b>',
       '1 month to design',
       '1 UX Designer, 1 Product maganer, 3 devs',
 
-      '<b>User interviews & user journey',
+      {
+        type: 'title',
+        text: 'User interviews & user journey',
+        marginBottom: 0,
+        marginTop: 50,
+      },
       "We started interviewing a selected group of real estate experts to map the expert's User Journey.",
       'Until that point, there was no defined methodology for work. Each expert used different tools to do the same job, contacted clients through various channels, and there was no defined script for talking to potential clients nor any follow-up after the initial contact, among other issues.',
       'All interviews were conducted virtually with experts from Colombia, Ecuador, and Peru. While we gathered answers, many new questions also arose.',
       'The key discovery was that the proposal served as a property display. Clients would select properties they liked and schedule visits with the expert. Thus, the proposal needed a feature for scheduling appointments.',
       'Experts emphasized the importance of highlighting certain parts of the proposal, such as images and property prices, as clients often discard properties if the price isn’t right. Additionally, for new projects, the completion date was crucial to include in the proposal design.',
 
-      '<b>The design',
+      {
+        type: 'title',
+        text: 'The design',
+        marginBottom: 0,
+        marginTop: 50,
+      },
 
-      'Since the commercial proposal was going to be part of Properati’s ecosystem, we decided to maintain the brand style guide.',
+      "Since the commercial proposal was going to be part of Properati's ecosystem, we decided to maintain the brand style guide.",
       'The only thing we wanted to add to the design was illustrations, so we used an illustration bank and defined the aesthetics and tone for the rest of the company to ensure a unified approach regarding these elements.',
 
-      '<b>Wireframes',
+      {
+        type: 'title',
+        text: 'Wireframes',
+        marginBottom: 0,
+        marginTop: 50,
+      },
 
       {
         type: 'image',
@@ -309,31 +387,42 @@ export const projects: IProjects[] = [
         imageDescription: 'imagen de celular mobile wireframe',
       },
 
-      '<b>Hi-Fi screen',
-      'Due to the limited design hours allocated for the project, a prioritization was conducted, and it was decided not to create wireframes and proceed directly to high-fidelity designs.',
-      'The central idea of the application was to carry out the process in well-defined steps to reduce possible user anxieties about where they were in the process and to decrease registration times, making it much more efficient.',
-      'In terms of visuals, the previously defined definitions extracted from the design system that Abitab had were applied, and it was proposed to the client to modify some colors within the color palette to make them accessible following the current web accessibility regulations.',
-
+      {
+        type: 'title',
+        text: 'Hi-fi design',
+        marginBottom: 0,
+        marginTop: 50,
+      },
+     
       {
         type: 'image',
         src: '/images/plumarii/logo_plumarii.png',
         width: '100%',
-        marginBottom: 30,
+        marginBottom: 0,
         marginTop: 30,
         imageDescription: 'imagen de celular mobile hifi',
       },
 
-      '<b>The results',
-      '150%',
-      'increase in the number of scheduled appointments, highlighting the effectiveness of the redesign in facilitating easier and more frequent scheduling of property visits by clients.',
+      {
+        type: 'results',
+        percentages: ['150%', '100%', '67%'],
+        texts: [
+          'increase in the number of scheduled appointments, highlighting the effectiveness of the redesign in facilitating easier and more frequent scheduling of property visits by clients.',
+          'increase in the client response rate, demonstrating the effectiveness of the redesign in making proposals more responsive and appealing to clients.',
+          'reduction in proposal creation time, allowing real estate experts to focus more on client interactions and closing deals.',
+        ],
+        marginBottom: 30,
+        marginTop: 30,
+      },
 
-      '100% ',
-      'increase in the client response rate, demonstrating the effectiveness of the redesign in making proposals more responsive and appealing to clients.',
-
-      '67%',
-      'reduction in proposal creation time, allowing real estate experts to focus more on client interactions and closing deals.',
-
-      '<b>Reflections',
+     
+     
+      {
+        type: 'title',
+        text: 'Reflections',
+        marginBottom: 0,
+        marginTop: 50,
+      },
       'The commercial proposal was created to solve a huge time and speed issue with customers that are in the search of a new home.',
       'We construct a design for a new product based on a research investigation focused on the experts and also on the clients.',
       'We also created a backlog with ideas that could not be included in this first iteration due to time constraints but will make the proposal much more efficient and attractive',
@@ -347,44 +436,50 @@ export const projects: IProjects[] = [
       'LikedIn',
     ],
   },
-
+///TERMINA PROPERATI
+/////////////////////////////////////////////////////////////////////////////////////
+///EMPIEZA PROPPIT
   {
     id: 'proppit-case',
 
     details: [
+      
       {
-        type: 'image',
-        src: '/images/plumarii/logo_plumarii.png',
-        width: '100%',
-        marginBottom: 30,
-        marginTop: 30,
-        imageDescription: 'imagen de portada Proppit',
+        type: 'title',
+        text: 'About',
+        marginBottom: 0,
+        marginTop: 50,
       },
-      '<b>About',
       'This research was carried out for Proppit, an online marketing platform to manage and publish estate mainly oriented to real estate professionals. Nowadays the web is online in Chile, Argentina, Perú, Colombia, Ecuador, Panamá, Philippines & Thailand.',
 
-      '<b>The problem',
+      {
+        type: 'title',
+        text: 'The problem',
+        marginBottom: 0,
+        marginTop: 50,
+      },
       'Our UXR team of two was tasked with understanding why customers weren’t renewing their subscriptions on Proppit and finding solutions to reduce churn from 9% to 5%.',
       'The target audience for this research was customers from Colombia who had churned within 90 days of activation.',
       'Working independently yet collaboratively across the company, we met with Proppit stakeholders to present and adjust our plan, which had a maximum duration of one month.',
       'The plan involved first analyzing existing customer data and then conducting phone interviews. The main challenges were recruiting customers for interviews without incentives and conducting the initial phase by phone.',
 
-      '<b>My role',
+      '<b>My role</b>',
       'UX Design',
       'UX Research',
 
-      '<b>Tools',
+      '<b>Tools</b>',
       'Figma',
       'Excel',
 
-      '<b>Timeline & Team',
+      '<b>Timeline & Team</b>',
       '3 weeks to do research',
       '1 UX Designer, 1 UX Researcher',
 
-      '<b>Steps with deadlines for each stage of the research discussed with stakeholders',
+      
+      '<b>Steps with deadlines for each stage of the research discussed with stakeholders</b>',
 
-      'Step 1',
-      'Survey Interview Preparation',
+      '<b>Step 1</b>',
+      '<b>Survey Interview Preparation</b>',
       'Analysis and cross customer data Churn',
       'Design interview script',
       'Interview script design Tel',
@@ -392,40 +487,52 @@ export const projects: IProjects[] = [
       'Recruitment 2 (1st mail)',
       'Recruitment form',
 
-      'Step 2',
-      'Recruitment & Interviews',
+      '<b>Step 2</b>',
+      '<b>Recruitment & Interviews</b>',
       'Recruitment 3 (phone)',
       'Conducting interviews',
       'Preliminary synthesis insights interviews',
       'Qualitative feedback analysis',
 
-      'Step 3',
-      'Interview results',
+      '<b>Step 3</b>',
+      '<b>Interview results</b>',
       'Conducting interviews',
       'Final report interview results',
 
-      'Step 4',
-      'Final results report',
+      '<b>Step 4</b>',
+      '<b>Final results report</b>',
       'Analysis of activation and renewal flows (optional)',
       'Final report of research results',
 
       'To develop this project we followed the lines of the Double Diamond methodology and as a team, we generated deliverables for the first two phases: for Discovery and in the Define phase.',
 
-      {
-        type: 'image',
-        src: '/images/plumarii/logo_plumarii.png',
-        width: '100%',
-        marginBottom: 30,
-        marginTop: 30,
-        imageDescription: 'imagen de double diamond para mobile',
-      },
+            {
+              type: 'image',
+              src: '/images/plumarii/logo_plumarii.png',
+              width: '100%',
+              marginBottom: 30,
+              marginTop: 30,
+              imageDescription: 'imagen de double diamond para mobile',
+            },
 
-      '<b>Stage 1: Customer Information Analysis',
+      {
+        type: 'title',
+        text: 'Stage 1: Customer Information Analysis',
+        marginBottom: 0,
+        marginTop: 50,
+      },      
+     
       "In the first stage, we analyzed existing data from Proppit's customers to minimize the need for high investment. We requested access to customer complaint/request emails and NPS survey results.",
       'We reviewed 137 emails from an 8-month period and 500 NPS messages. The emails revealed urgent issues and needs, while the NPS responses highlighted customer grievances and suggestions.',
       'We compiled all the information into an Excel sheet, categorized it, and created quantitative graphs per topic.',
 
-      '<b>Stage 2: Interviewing Unsubscribed Users',
+      {
+        type: 'title',
+        text: 'Stage 2: Interviewing Unsubscribed Users',
+        marginBottom: 0,
+        marginTop: 50,
+      },
+   
       'In the second stage, we interviewed customers who did not renew their subscriptions to understand their pain points and reasons for churn.',
 
       'We requested a list of customers who had been active for less than 90 days, were from Colombia, and had unsubscribed. Initially, we had no incentives, resulting in a low response rate and extended timeline. When incentives were later provided, we had already reached theoretical saturation and stopped interviewing.',
@@ -441,16 +548,40 @@ export const projects: IProjects[] = [
 
       'For detailed tools and scripts, you can view the documents by clicking here.',
 
-      '<b>Findings from the Research',
+      {
+        type: 'title',
+        text: 'Stage 2: Interviewing Unsubscribed Users',
+        marginBottom: 0,
+        marginTop: 50,
+      },
+      
       'After completing stages 1 and 2, we prepared the final report, including: a General Report, the detailed interview report vith visual cards (5 cards form 14 interviews), qualitative feedback analysis report, excel sheet vith interviewed customers',
 
       'We noted that users often provided multiple reasons for churn, considering the first mentioned as the most significant. We created two graphs: one for main reasons and another combining main and secondary reasons.',
 
-      '<b>Key findings',
-      '50%',
-      'of users cited the lack of leads or poor lead conversion as the main reason for churn.',
+      {
+        type: 'title',
+        text: 'Key findingss',
+        marginBottom: 0,
+        marginTop: 50,
+      },
+
+      {
+        type: 'results',
+        percentages: ['50%%', '15.3%', '11.5%','11.5%','7.6%', '7.6%'],
+        texts: [
+          'of users cited the lack of leads or poor lead conversion as the main reason for churn.',
+          'of the users went to or used stronger competitors (Finca Raíz).',
+          
+        ],
+        marginBottom: 30,
+        marginTop: 30,
+      },
+     
+      
+      '',
       '15.3%',
-      'of the users went to or used stronger competitors (Finca Raíz).',
+      
       '11.5%',
       'felt they wasted their money.',
       '11.5%',
