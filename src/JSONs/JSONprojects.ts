@@ -28,6 +28,17 @@ export interface IProjects {
         marginTop: number;
       }
     | {
+      type: 'imageFullWidth';
+      src: string;
+      mobileVersionSrc?: string;
+      width: string;
+      height?: string;
+      marginBottom: number;
+      marginTop: number;
+      imageDescription: string;
+      widthImageDescription?: string;
+    }
+    | {
         type: 'image' | 'video';
         src: string;
         mobileVersionSrc?: string;
@@ -62,10 +73,11 @@ export const projects: IProjects[] = [
     id: 'tyr-case',
 
     details: [
+          
       {
         type: 'title',
         text: 'About',
-        marginBottom: 20,
+        marginBottom: 0,
         marginTop: 20,
       },
       'TYR is a company that specializes in <b>commodity trading</b>. This means they focus on <b>buying and selling raw materials</b>, like oil, metals, and agricultural products. Also <b>connects producers and buyers</b> of raw materials and <b>handles the logistics</b> of getting these materials where they need to go.',
@@ -73,54 +85,77 @@ export const projects: IProjects[] = [
       {
         type: 'title',
         text: 'The problem',
-        marginBottom: 20,
-        marginTop: 20,
+        marginBottom: 0,
+        marginTop: 80,
       },
       'TYR faced major issues with their system, including slow response times due to high data volume, a steep learning curve for new employees, and information duplication. Forms were too long and redundant, workflows were confusing, and sequential use by traders and administrators led to frequent errors, requiring the owners intervention.',
 
-      '<b>My role</b>',
-      'UX Research',
-      'UX Design',
-      'UX Writing',
+      {
+        type: 'image',
+        src: '/tyr/desktop/roles-in-project-tyr-desktop.svg',
+        mobileVersionSrc: '/tyr/mobile/roles-table-tyr-mobile.svg',
+        width: '100%',
+        marginBottom: 30,
+        marginTop: 30,
+        imageDescription: 'roles in tyrs project',
+      },
+     
+//Chin: Te lo dejo para que después lo puedas usar para maquetar
+    // '<b>My role</b>',
+    //   'UX Research',
+    //   'UX Design',
+    //   'UX Writing',
 
-      '<b>Tools</b>',
-      'Figma',
-      'Figjam',
-      'Zoom',
+    //   '<b>Tools</b>',
+    //   'Figma',
+    //   'Figjam',
+    //   'Zoom',
 
-      '<b>Timeline & Team</b>',
-      '1 month to design',
-      '1 UX 1 UI, 2 devs, 1 Project Manager',
+    //   '<b>Timeline & Team</b>',
+    //   '1 month to design',
+    //   '1 UX 1 UI, 2 devs, 1 Project Manager',
 
       'As the UX designer for the project, I was in charge from the beginning. I had the initial conversations with the client to understand their business vision and identify the issues they had noticed and wanted to improve, as well as what aspects they wanted to keep because they were working well. I also requested access to the system we were going to redesign. With this access, I conducted a brief research to understand the current system, map out the workflows, and identify obvious usability improvements we could apply. With this, we began the wireframing stage.',
       'We had tight one-week sprints and two weekly meetings with the client to make inquiries and review the progress.',
       {
         type: 'image',
-        src: '/images/plumarii/logo_plumarii.png',
+        src: '/tyr/desktop/image-research-desktop.svg',
+        mobileVersionSrc: '/tyr/mobile/roles-table-tyr-mobile.svg',
         width: '100%',
         marginBottom: 30,
         marginTop: 30,
         imageDescription: 'summarize of the research from project tyr',
       },
 
+   
       {
-        type: 'title',
-        text: 'The results',
-        marginBottom: 20,
-        marginTop: 20,
-      },
-
-      {
-        type: 'results',
-        percentages: [' 100%', '60%', '50%'],
-        texts: [
-          "was the <b>reduction in duplication errors</b> due to the redesign, which incorporated mandatory fields and blocked certain fields from being modified by specific user types.",
-          "was the <b>reduction in employee training time</b> after redesigning the system with a focus on improving usability. This allowed experienced employees to focus on their tasks, enhancing the overall efficiency of the company.",
-          "was the <b>reduction in load time</b> as we reduced the number of fields in each form and eliminated duplicate fields that caused double entries and, consequently, double the time.",
-        ],
+        type: 'image',
+        src: '/tyr/desktop/the-results-desktop.svg',
+        width: '100%',
         marginBottom: 30,
         marginTop: 30,
+        imageDescription: 'the results',
       },
+
+//Chin: Te lo dejo para que después lo puedas usar para maquetar
+      // {
+      //   type: 'title',
+      //   text: 'The results',
+      //   marginBottom: 20,
+      //   marginTop: 20,
+      // },
+
+      // {
+      //   type: 'results',
+      //   percentages: [' 100%', '60%', '50%'],
+      //   texts: [
+      //     "was the <b>reduction in duplication errors</b> due to the redesign, which incorporated mandatory fields and blocked certain fields from being modified by specific user types.",
+      //     "was the <b>reduction in employee training time</b> after redesigning the system with a focus on improving usability. This allowed experienced employees to focus on their tasks, enhancing the overall efficiency of the company.",
+      //     "was the <b>reduction in load time</b> as we reduced the number of fields in each form and eliminated duplicate fields that caused double entries and, consequently, double the time.",
+      //   ],
+      //   marginBottom: 30,
+      //   marginTop: 30,
+      // },
       
       {
         type: 'title',
@@ -129,19 +164,20 @@ export const projects: IProjects[] = [
         marginTop: 20,
       },
 
+      //esta imagen tiene que ir al 100%
       {
         type: 'image',
-        src: '/images/plumarii/logo_plumarii.png',
-        width: '100%',
-        marginBottom: 30,
-        marginTop: 30,
-        imageDescription: 'carrousel hifi project tyr',
+        src: '/tyr/desktop/slider-hi-fi-tyr-desktop.svg',
+        width: '100vw',
+        marginBottom: 10,
+        marginTop: 10,
+        imageDescription: 'chotos',
       },
 
-      {
+         {
         type: 'title',
         text: 'Reflections',
-        marginBottom: 20,
+        marginBottom: 0,
         marginTop: 20,
       },
 
@@ -161,7 +197,7 @@ export const projects: IProjects[] = [
       {
         type: 'title',
         text: 'About',
-        marginBottom: 20,
+        marginBottom: 8,
         marginTop: 20,
       },
       'Abitab is a Uruguayan company offering services like bill payments, money transfers, and mobile top-ups. One of its products, <b>Abitab Mobile Identity, enables users to access public websites</b> and perform tasks like paying taxes and scheduling appointments. To become the leading digital identity service in Uruguay, Abitab needed to significantly enhance its user experience and technology.',
@@ -169,36 +205,47 @@ export const projects: IProjects[] = [
       {
         type: 'title',
         text: 'The problem',
-        marginBottom: 20,
-        marginTop: 20,
+        marginBottom: 20,      
+        marginTop: 40,
       },
 
-      'To achieve digital identity registration, we evaluated the existing web and app channels for usability issues.',
+      {
+        type: 'image',
+        src: '/abitab/desktop/problem-body-abitab-desktop.svg',
+        mobileVersionSrc: '/abitab/mobile/body-problem-abitab.svg',
+        width: '100%',
+        marginBottom: 0,
+        marginTop: 0,
+        imageDescription: 'problems detected in abitab previous app',
+      },
 
-      'Our analysis revealed several key problems:',
-      '(ESTO VA EN NEGRITA CON PUNTEO) <b>Diverse access points</b>: Multiple websites with different logos, aesthetics, and content caused user confusion.',
-      '<b>Inconsistent terminology</b>: Varied terms for "Mobile Identity" across channels led to user confusion during account creation and service use.',
-      '<b>App upgrade needed</b>: The native app, initially a token, was disconnected from the website, missing opportunities for enhanced functionality and user engagement.',
+//ROLES - Esto te lo dejo para cuando lo quieras maquetar, las imagenes de esto están arriba
+      // 'To achieve digital identity registration, we evaluated the existing web and app channels for usability issues.',
 
-      '<b>My role</b>',
-      'UX Research',
-      'UX Design',
-      'UX Writing',
+      // 'Our analysis revealed several key problems:',
+      // '(ESTO VA EN NEGRITA CON PUNTEO) <b>Diverse access points</b>: Multiple websites with different logos, aesthetics, and content caused user confusion.',
+      // '<b>Inconsistent terminology</b>: Varied terms for "Mobile Identity" across channels led to user confusion during account creation and service use.',
+      // '<b>App upgrade needed</b>: The native app, initially a token, was disconnected from the website, missing opportunities for enhanced functionality and user engagement.',
 
-      '<b>Tools</b>',
-      'Figma',
-      'Figjam',
-      'Zoom',
+      // '<b>My role</b>',
+      // 'UX Research',
+      // 'UX Design',
+      // 'UX Writing',
 
-      '<b>Timeline & Team</b>',
-      '3 months to design',
-      '1 UX Designer 1, Product Designer, 10 devs, 1 Project Manager',
+      // '<b>Tools</b>',
+      // 'Figma',
+      // 'Figjam',
+      // 'Zoom',
+
+      // '<b>Timeline & Team</b>',
+      // '3 months to design',
+      // '1 UX Designer 1, Product Designer, 10 devs, 1 Project Manager',
 
         {
         type: 'title',
         text: 'The Design System',
-        marginBottom: 20,
-        marginTop: 20,
+        marginBottom: 10,
+        marginTop: 40,
       },
 
       'Since we had a developed product, many elements of the Design System came predefined beforehand: colours, icons, typography, among others.',
@@ -207,18 +254,19 @@ export const projects: IProjects[] = [
 
       {
         type: 'image',
-        src: '/images/plumarii/logo_plumarii.png',
+        src: '/abitab/desktop/design-system.svg',
+        mobileVersionSrc: '/abitab/mobile/design-system-abitab-mobile.svg',
         width: '100%',
-        marginBottom: 30,
+        marginBottom: 0,
         marginTop: 30,
-        imageDescription: 'imagen del design system',
+        imageDescription: "some elements of Abitab's design system",
       },
 
         {
         type: 'title',
         text: 'Hi-Fi Screens',
-        marginBottom: 20,
-        marginTop: 20,
+        marginBottom: 10,
+        marginTop: 40,
       },
       'Due to the limited design hours allocated for the project, a prioritization was conducted, and it was decided not to create wireframes and proceed directly to high-fidelity designs.',
       'The central idea of the application was to carry out the process in well-defined steps to reduce possible user anxieties about where they were in the process and to decrease registration times, making it much more efficient.',
@@ -226,12 +274,14 @@ export const projects: IProjects[] = [
 
       {
         type: 'image',
-        src: '/images/plumarii/logo_plumarii.png',
+        src: '/abitab/desktop/telefonos-desktop.svg',
+        mobileVersionSrc: '/abitab/mobile/telefonos-mobile.svg',
         width: '100%',
         marginBottom: 30,
-        marginTop: 30,
-        imageDescription: 'imagenes en carrousel de las pantallas',
+        marginTop: 40,
+        imageDescription: 'some screens of new design of the app in hight fidelity',
       },
+
 
       {
         type: 'title',
@@ -248,60 +298,50 @@ export const projects: IProjects[] = [
 
       {
         type: 'image',
-        src: '/images/plumarii/logo_plumarii.png',
+        src: '/abitab/desktop/usability-image-desktop.svg',
+        mobileVersionSrc: '/abitab/mobile/usability-image-mobile.svg',
         width: '100%',
         marginBottom: 30,
-        marginTop: 30,
-        imageDescription: 'imagen 1 test de usabilidad',
+        marginTop: 40,
+        imageDescription: '3 people in an office, 2 of them designers are conducting a usability test with one user',
       },
-      {
-        type: 'image',
-        src: '/images/plumarii/logo_plumarii.png',
-        width: '100%',
-        marginBottom: 30,
-        marginTop: 30,
-        imageDescription: 'imagen 2 de test de usabilidad',
-      },
+   
 
-      
-      {
-        type: 'results',
-        percentages: ['90%', '95%', '85%'],
-        texts: [
-          "of users expressed <b>high satisfaction</b> with the overall <b>user experience</b>, highlighting the app's ease of use and intuitive design.",
-          "of users found the <b>app's design clear and easy to understand</b>, which <b>facilitated navigation and task completion.</b>",
-          "of users found the <b>registration process quick and straightforward</b>, rating it as 'super short' or 'short'",
-        ],
-        marginBottom: 30,
-        marginTop: 30,
-      },
-
+//RESULTS - Esto te lo dejo acá para cuando quieras maaquetarlo, arriba esta la imagen en SVG
+      // {
+      //   type: 'results',
+      //   percentages: ['90%', '95%', '85%'],
+      //   texts: [
+      //     "of users expressed <b>high satisfaction</b> with the overall <b>user experience</b>, highlighting the app's ease of use and intuitive design.",
+      //     "of users found the <b>app's design clear and easy to understand</b>, which <b>facilitated navigation and task completion.</b>",
+      //     "of users found the <b>registration process quick and straightforward</b>, rating it as 'super short' or 'short'",
+      //   ],
+      //   marginBottom: 30,
+      //   marginTop: 30,
+      // },
 
       {
         type: 'image',
-        src: '/images/plumarii/logo_plumarii.png',
+        src: '/abitab/desktop/the results-desktop-abitab.svg',
+        mobileVersionSrc: '/abitab/mobile/results-abitab-mobile.svg',
         width: '100%',
         marginBottom: 30,
-        marginTop: 30,
-        imageDescription: 'carrousel screens of hi fi project',
+        marginTop: 40,
+        imageDescription: 'some numbers to show results on this project',
       },
+   
 
       {
         type: 'title',
         text: 'Reflections',
-        marginBottom: 20,
+        marginBottom: 0,
         marginTop: 20,
       },
       'This redesign was quite a challenge given that our team was large, so we had to be very organized and maintain constant communication to implement changes as quickly as possible. We also learned a lot about client communication, as at the beginning of the project, we had few meetings and were experiencing many changes from their side. As a result, we decided to have three weekly meetings to ensure everyone was on the same page.',
       'This significantly improved the speed of iteration, considering it was a project with many technical challenges and the need to communicate these effectively through the design to users.',
       'Finally, the project was discontinued due to a lack of budget and was not completed.',
 
-      'Previous project',
-      'Next project',
-
-      'Home',
-      'Resume',
-      'LikedIn',
+  
     ],
   },
 
@@ -317,7 +357,7 @@ export const projects: IProjects[] = [
       {
         type: 'title',
         text: 'About',
-        marginBottom: 0, 
+        marginBottom: 8, 
         marginTop: 20,
                
       },
@@ -327,7 +367,7 @@ export const projects: IProjects[] = [
       {
         type: 'title',
         text: 'The problem',
-        marginBottom: 0,
+        marginBottom: 8,
         marginTop: 50,
         
         
@@ -337,17 +377,30 @@ export const projects: IProjects[] = [
       "Additionally, clients interested in buying houses often need a fast response and a visually pleasing proposal. Since we didn't have either of these, we were losing clients.",
       'Due to the necessity of solving all these problems, we were asked to create a solution as soon as possible.',
 
-      '<b>My role</b>',
-      'UX Design',
-      'UX Writing',
 
-      '<b>Tools</b>',
-      'Figma',
-      'Miro',
+     {
+        type: 'image',
+        src: '/properati/desktop/roles-in-project-desktop.svg',
+        mobileVersionSrc: '/properati/mobile/roles-in-project-mobile.svg',
+        width: '100%',
+        marginBottom: 0,
+        marginTop: 40,
+        imageDescription: 'my roles in this project',
+      },
 
-      '<b>Timeline & Team</b>',
-      '1 month to design',
-      '1 UX Designer, 1 Product maganer, 3 devs',
+
+//ROLES- Dejo esto de abajo para maquetarlo en la segunda versión, la imagen de esto esta arriba
+      // '<b>My role</b>',
+      // 'UX Design',
+      // 'UX Writing',
+
+      // '<b>Tools</b>',
+      // 'Figma',
+      // 'Miro',
+
+      // '<b>Timeline & Team</b>',
+      // '1 month to design',
+      // '1 UX Designer, 1 Product maganer, 3 devs',
 
       {
         type: 'title',
@@ -355,6 +408,7 @@ export const projects: IProjects[] = [
         marginBottom: 0,
         marginTop: 50,
       },
+
       "We started interviewing a selected group of real estate experts to map the expert's User Journey.",
       'Until that point, there was no defined methodology for work. Each expert used different tools to do the same job, contacted clients through various channels, and there was no defined script for talking to potential clients nor any follow-up after the initial contact, among other issues.',
       'All interviews were conducted virtually with experts from Colombia, Ecuador, and Peru. While we gathered answers, many new questions also arose.',
@@ -374,46 +428,59 @@ export const projects: IProjects[] = [
       {
         type: 'title',
         text: 'Wireframes',
-        marginBottom: 0,
+        marginBottom: 20,
         marginTop: 50,
       },
-
+     
       {
         type: 'image',
-        src: '/images/plumarii/logo_plumarii.png',
+        src: '/properati/desktop/mascara-wireframes.svg',
+        mobileVersionSrc: '/properati/mobile/wireframes-mobile.svg',
         width: '100%',
-        marginBottom: 30,
-        marginTop: 30,
-        imageDescription: 'imagen de celular mobile wireframe',
+        marginBottom: 0,
+        marginTop: 0,
+        imageDescription: 'some images of the wireframes made for this project',
       },
 
       {
         type: 'title',
         text: 'Hi-fi design',
         marginBottom: 0,
-        marginTop: 50,
+        marginTop: 40,
       },
-     
+      
       {
         type: 'image',
-        src: '/images/plumarii/logo_plumarii.png',
+        src: '/properati/desktop/hifi-desktop.svg',
+        mobileVersionSrc: '/properati/mobile/hi-fi-mobile.svg',
         width: '100%',
         marginBottom: 0,
-        marginTop: 30,
-        imageDescription: 'imagen de celular mobile hifi',
+        marginTop: 20,
+        imageDescription: 'images of the high definition designs made for this project',
       },
 
       {
-        type: 'results',
-        percentages: ['150%', '100%', '67%'],
-        texts: [
-          'increase in the number of scheduled appointments, highlighting the effectiveness of the redesign in facilitating easier and more frequent scheduling of property visits by clients.',
-          'increase in the client response rate, demonstrating the effectiveness of the redesign in making proposals more responsive and appealing to clients.',
-          'reduction in proposal creation time, allowing real estate experts to focus more on client interactions and closing deals.',
-        ],
-        marginBottom: 30,
-        marginTop: 30,
+        type: 'image',
+        src: '/properati/desktop/the-results-desktop-properati.svg',
+        mobileVersionSrc: '/properati/mobile/the-results.svg',
+        width: '100%',
+        marginBottom: 0,
+        marginTop: 40,
+        imageDescription: 'images of 3 percentaje results of this project',
       },
+
+//RESULTS- Para cuando lo quieras maquetar te lo dejo acá. La imagen qe está en uso est´ça arriba de esto
+      // {
+      //   type: 'results',
+      //   percentages: ['150%', '100%', '67%'],
+      //   texts: [
+      //     'increase in the number of scheduled appointments, highlighting the effectiveness of the redesign in facilitating easier and more frequent scheduling of property visits by clients.',
+      //     'increase in the client response rate, demonstrating the effectiveness of the redesign in making proposals more responsive and appealing to clients.',
+      //     'reduction in proposal creation time, allowing real estate experts to focus more on client interactions and closing deals.',
+      //   ],
+      //   marginBottom: 30,
+      //   marginTop: 30,
+      // },
 
      
      
@@ -427,13 +494,6 @@ export const projects: IProjects[] = [
       'We construct a design for a new product based on a research investigation focused on the experts and also on the clients.',
       'We also created a backlog with ideas that could not be included in this first iteration due to time constraints but will make the proposal much more efficient and attractive',
       'Additionally, we designed a small survey for sellers to give to their clients regarding the new commercial proposal, asking about things that do not work or features they would like to have. This will help us gather ideas to incorporate into future versions.',
-
-      'Previous project',
-      'Next project',
-
-      'Home',
-      'Resume',
-      'LikedIn',
     ],
   },
 ///TERMINA PROPERATI
