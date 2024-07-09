@@ -1,23 +1,25 @@
 'use client';
+
+// ** React | Next import
+import React, { useEffect } from 'react';
+
+// ** Router import
+import { useParams, useRouter } from 'next/navigation';
+
+// ** JSON data import
 import { projects } from '@/JSONs/JSONprojects';
 
-import ExperienceDetailImage from '@/app/_noPages/components/projectDetails/ProjectDetailImage';
-import ExperienceDetailVideo from '@/app/_noPages/components/projectDetails/ProjectDetailVideo';
+// ** Components import
+import ProjectDetailImage from '@/app/_noPages/components/projectDetails/ProjectDetailImage';
+
+// ** Material UI import
 import { Box, Typography, useMediaQuery } from '@mui/material';
-import { useParams, useRouter } from 'next/navigation';
-import React from 'react';
-import { useEffect, useState } from 'react';
 
 const ProjectDetail = () => {
   const isDesktop = useMediaQuery('(min-width:1200px)');
-
   const router = useRouter();
   const params = useParams();
   const id: string | string[] = params.id;
-
-  const backToHomeButtonHandler = () => {
-    router.push('/');
-  };
 
   useEffect(() => {
     scrollTo(0, 0);
@@ -59,32 +61,29 @@ const ProjectDetail = () => {
         justifyContent: 'center',
       }}
     >
+      {/* Cover case study */}
+      <Box
+        sx={{
+          position: 'absolute',
+          top: isDesktop ? '100px' : '105px',
+          left: 0,
+          width: '100vw',
+          height: isDesktop ? '452px' : '322px',
+          backgroundColor:
+            id === 'properati-case' || id === 'tyr-case'
+              ? '#F1E5F8'
+              : '#EDE9EF',
+        }}
+      ></Box>
+
       {/*Details*/}
       <Box
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          paddingTop: '340px',
-          '@media(min-width: 1200px)': {
-            paddingTop: '430px',
-          },
+          paddingTop: isDesktop ? '502px' : '362px',
         }}
       >
-        {/* Cover case study */}
-        <Box
-          sx={{
-            position: 'absolute',
-            top: '50px',
-            left: 0,
-            width: '100vw',
-            height: isDesktop ? '452px' : '322px',
-            backgroundColor:
-              id === 'properati-case' || id === 'tyr-case'
-                ? '#F1E5F8'
-                : '#EDE9EF',
-          }}
-        ></Box>
-
         {/* Details*/}
         {details &&
           details.map((detail, index) => {
@@ -135,93 +134,20 @@ const ProjectDetail = () => {
                 </Typography>
               );
             }
-            if (detail.type === 'results') {
-              return (
-                <Box
-                  key={index}
-                  sx={{ display: 'flex', flexDirection: 'column' }}
-                >
-                  <Typography sx={{ fontSize: '25px' }}>The results</Typography>
 
-                  {detail.percentages.map((percentage, index) => {
-                    return (
-                      <Box
-                        key={index}
-                        sx={{
-                          display: 'flex',
-                          flexDirection: 'row',
-                          marginTop: '10px',
-                        }}
-                      >
-                        <Typography
-                          sx={{
-                            fontSize: '28px',
-                            fontWeight: '500',
-                            marginRight: '10px',
-                          }}
-                        >
-                          {percentage}
-                        </Typography>
-                        <Typography
-                          sx={{ fontSize: '20px', fontWeight: '600' }}
-                        >
-                          {detail.texts[index]}
-                        </Typography>
-                      </Box>
-                    );
-                  })}
-                </Box>
-              );
-            }
-            if (detail.type === 'link') {
-              return (
-                <a
-                  target='_blank'
-                  key={index}
-                  href={detail.href}
-                  style={{
-                    textDecoration: 'underline',
-                    width: '100%',
-                    height: detail.height,
-                    textAlign: 'center',
-                    marginTop: detail.marginTop,
-                    marginBottom: detail.marginBottom,
-
-                    fontSize: '14px',
-                  }}
-                >
-                  {detail.text}
-                </a>
-              );
-            }
-
+            // Image 100%
             if (detail.type === 'image') {
               return (
-                <ExperienceDetailImage
+                <ProjectDetailImage
                   key={index}
-                  src={detail.src}
-                  srcMobile={detail.mobileVersionSrc}
-                  width={detail.width}
-                  height={detail.height}
-                  marginTop={detail.marginTop}
+                  desktopSrc={detail.desktopSrc}
+                  mobileSrc={detail.mobileSrc}
+                  desktopMode={detail.desktopMode}
+                  mobileMode={detail.mobileMode}
+                  customWidthMobile={detail.customWidthMobile}
+                  customWidthDesktop={detail.customWidthDesktop}
                   marginBottom={detail.marginBottom}
-                  imageDescription={detail.imageDescription}
-                  widthImageDescription={detail.widthImageDescription}
-                />
-              );
-            }
-
-            if (detail.type === 'video') {
-              return (
-                <ExperienceDetailVideo
-                  key={index}
-                  src={detail.src}
-                  width={detail.width}
-                  height={detail.height}
-                  imageDescription={detail.imageDescription}
                   marginTop={detail.marginTop}
-                  marginBottom={detail.marginBottom}
-                  widthImageDescription={detail.widthImageDescription}
                 />
               );
             }

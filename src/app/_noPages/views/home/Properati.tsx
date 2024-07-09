@@ -28,7 +28,7 @@ const Properati: React.FC = () => {
           }}
         >
           <img
-            src='/home/TYRHomeDesktop.png'
+            src='/home/PROPERATIHomeDesktop.svg'
             alt=''
             style={{ width: '527px', height: '325px' }}
           />
@@ -36,8 +36,8 @@ const Properati: React.FC = () => {
             sx={{
               display: 'flex',
               flexDirection: 'column',
-              width: '350px',
-              marginLeft: '5px',
+              width: '405px',
+              marginLeft: '70px',
             }}
           >
             <Typography
@@ -75,7 +75,9 @@ const Properati: React.FC = () => {
               better and faster
             </Typography>
 
-            <Box sx={{ display: 'flex', marginTop: '12px' }}>
+            <Box
+              sx={{ display: 'flex', marginTop: '12px', position: 'relative' }}
+            >
               <Typography
                 className='spaceGrotesk'
                 sx={{
@@ -87,7 +89,16 @@ const Properati: React.FC = () => {
               >
                 Learn more
               </Typography>
-              <img src='/learnMoreIcon.svg' alt='' />
+              <img
+                src='/icons/learnMoreIcon.svg'
+                alt=''
+                style={{
+                  position: 'absolute',
+                  top: '8px',
+                  left: '90px',
+                  width: '11px',
+                }}
+              />
             </Box>
           </Box>
         </Box>
@@ -163,7 +174,9 @@ const Properati: React.FC = () => {
               better and faster
             </Typography>
 
-            <Box sx={{ display: 'flex', marginTop: '13px' }}>
+            <Box
+              sx={{ display: 'flex', marginTop: '13px', position: 'relative' }}
+            >
               <Typography
                 className='spaceGrotesk'
                 sx={{
@@ -175,7 +188,16 @@ const Properati: React.FC = () => {
               >
                 Learn more
               </Typography>
-              <img src='/learnMoreIcon.svg' alt='' style={{ width: '11px' }} />
+              <img
+                src='/icons/learnMoreIcon.svg'
+                alt=''
+                style={{
+                  position: 'absolute',
+                  top: '8px',
+                  left: '90px',
+                  width: '11px',
+                }}
+              />{' '}
             </Box>
           </Box>
         </Box>

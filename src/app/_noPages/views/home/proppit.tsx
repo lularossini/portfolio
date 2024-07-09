@@ -27,11 +27,6 @@ const ProppitCase: React.FC = () => {
             cursor: 'pointer',
           }}
         >
-          <img
-            src='/home/TYRHomeDesktop.png'
-            alt=''
-            style={{ width: '527px', height: '325px' }}
-          />
           <Box
             sx={{
               display: 'flex',
@@ -75,7 +70,9 @@ const ProppitCase: React.FC = () => {
               understand the reasons for the massive unsubscribes
             </Typography>
 
-            <Box sx={{ display: 'flex', marginTop: '12px' }}>
+            <Box
+              sx={{ display: 'flex', marginTop: '12px', position: 'relative' }}
+            >
               <Typography
                 className='spaceGrotesk'
                 sx={{
@@ -87,9 +84,23 @@ const ProppitCase: React.FC = () => {
               >
                 Learn more
               </Typography>
-              <img src='/learnMoreIcon.svg' alt='' />
+              <img
+                src='/icons/learnMoreIcon.svg'
+                alt=''
+                style={{
+                  position: 'absolute',
+                  top: '8px',
+                  left: '90px',
+                  width: '11px',
+                }}
+              />
             </Box>
           </Box>
+          <img
+            src='/home/PROPPITHomeDesktop.svg'
+            alt=''
+            style={{ width: '527px', height: '325px' }}
+          />
         </Box>
       )}
 
@@ -114,6 +125,7 @@ const ProppitCase: React.FC = () => {
             alt=''
             style={{ width: '295px', height: '171px' }}
           />
+
           <Box
             sx={{
               display: 'flex',
@@ -163,7 +175,9 @@ const ProppitCase: React.FC = () => {
               understand the reasons for the massive unsubscribes
             </Typography>
 
-            <Box sx={{ display: 'flex', marginTop: '13px' }}>
+            <Box
+              sx={{ display: 'flex', marginTop: '13px', position: 'relative' }}
+            >
               <Typography
                 className='spaceGrotesk'
                 sx={{
@@ -175,7 +189,16 @@ const ProppitCase: React.FC = () => {
               >
                 Learn more
               </Typography>
-              <img src='/learnMoreIcon.svg' alt='' style={{ width: '11px' }} />
+              <img
+                src='/icons/learnMoreIcon.svg'
+                alt=''
+                style={{
+                  position: 'absolute',
+                  top: '8px',
+                  left: '90px',
+                  width: '11px',
+                }}
+              />{' '}
             </Box>
           </Box>
         </Box>

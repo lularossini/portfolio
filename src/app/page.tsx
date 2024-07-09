@@ -180,6 +180,12 @@ const Home = () => {
 
 export default Home;
 
-//Quitar padding bottom a las cards mobile
-//Agrandar fuente de descripcion de cards a 15
 // Reemplazar por la ruta del cv de lu en google drive
+// padding del menu mobile izquierdo aparenta ser mayor por el padding del boton
+// Chequear si esta alineado en mobile el mambo superior con las cards
+
+//Header portada
+//full width
+//100%
+//footer de cases
+//Carrousel

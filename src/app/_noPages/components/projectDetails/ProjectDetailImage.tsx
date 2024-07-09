@@ -1,69 +1,75 @@
-import { Box, Typography, useMediaQuery } from '@mui/material';
+import { Box, useMediaQuery } from '@mui/material';
 
-interface IExperienceDetailImageProps {
-  src: string;
-  srcMobile?: string;
-  width?: string;
-  height?: string;
-  marginBottom?: number;
-  marginTop?: number;
-  imageDescription?: string;
-  widthImageDescription?: string;
+interface IProjectDetailImageProps {
+  desktopSrc: string;
+  desktopMode: '100%' | 'full width' | 'customWidth';
+  mobileSrc: string;
+  mobileMode: '100%' | 'full width' | 'customWidth';
+  customWidthMobile?: string;
+  customWidthDesktop?: string;
+  marginBottom: number;
+  marginTop: number;
 }
 
-const ExperienceDetailImage: React.FC<IExperienceDetailImageProps> = ({
-  src,
-  srcMobile,
-  width = 'auto',
-  height = 'auto',
-  marginBottom = 10,
-  marginTop = 10,
-  imageDescription,
-  widthImageDescription,
+const ProjectDetailImage: React.FC<IProjectDetailImageProps> = ({
+  desktopSrc,
+  desktopMode,
+  mobileSrc,
+  mobileMode,
+  customWidthMobile,
+  customWidthDesktop,
+  marginBottom,
+  marginTop,
 }) => {
-  const isDesktop = useMediaQuery('(min-width:600px)');
+  const isDesktop = useMediaQuery('(min-width:1200px)');
+
+  const getWidth = () => {
+    if (isDesktop) {
+      switch (desktopMode) {
+        case '100%':
+          return '100%';
+        case 'full width':
+          return '100vw';
+        case 'customWidth':
+          return customWidthDesktop || 'auto';
+        default:
+          return 'auto';
+      }
+    } else {
+      switch (mobileMode) {
+        case '100%':
+          return '100%';
+        case 'full width':
+          return '100vw';
+        case 'customWidth':
+          return customWidthMobile || 'auto';
+        default:
+          return 'auto';
+      }
+    }
+  };
+
+  const imageWidth = getWidth();
+
   return (
     <Box
       sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        margin: '0 auto',
-        alignItems: 'center',
-        width: 'fit-content',
-        maxWidth: '100%',
-        height: 'fit-content',
+        width: imageWidth === '100vw' ? '100vw' : 'auto',
+        margin: imageWidth === '100vw' ? '0 calc(50% - 50vw)' : '0 auto',
         marginTop: `${marginTop}px`,
         marginBottom: `${marginBottom}px`,
-        borderRadius: '4px',
       }}
     >
       <img
-        src={!isDesktop && srcMobile ? srcMobile : src}
-        alt={imageDescription ? imageDescription : 'An image'}
+        src={isDesktop ? desktopSrc : mobileSrc}
+        alt=''
         style={{
-          height: height,
-          width: width,
-          maxWidth: '100%',
-          borderRadius: '4px',
+          height: 'auto',
+          width: imageWidth,
         }}
       />
-      {imageDescription && (
-        <Typography
-          sx={{
-            width: widthImageDescription ? widthImageDescription : 'auto',
-            color: 'white',
-            fontSize: '13px',
-            margin: '4px auto 0 auto',
-            textAlign: 'center',
-            fontStyle: 'italic',
-            padding: '0 10px',
-          }}
-        >
-          {imageDescription}
-        </Typography>
-      )}
     </Box>
   );
 };
 
-export default ExperienceDetailImage;
+export default ProjectDetailImage;

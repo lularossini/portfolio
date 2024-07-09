@@ -27,11 +27,6 @@ const AbitabCase: React.FC = () => {
             cursor: 'pointer',
           }}
         >
-          <img
-            src='/home/TYRHomeDesktop.png'
-            alt=''
-            style={{ width: '527px', height: '325px' }}
-          />
           <Box
             sx={{
               display: 'flex',
@@ -75,7 +70,9 @@ const AbitabCase: React.FC = () => {
               sites and perform processes such as paying taxes
             </Typography>
 
-            <Box sx={{ display: 'flex', marginTop: '12px' }}>
+            <Box
+              sx={{ display: 'flex', marginTop: '12px', position: 'relative' }}
+            >
               <Typography
                 className='spaceGrotesk'
                 sx={{
@@ -87,9 +84,23 @@ const AbitabCase: React.FC = () => {
               >
                 Learn more
               </Typography>
-              <img src='/learnMoreIcon.svg' alt='' />
+              <img
+                src='/icons/learnMoreIcon.svg'
+                alt=''
+                style={{
+                  position: 'absolute',
+                  top: '8px',
+                  left: '90px',
+                  width: '11px',
+                }}
+              />
             </Box>
           </Box>
+          <img
+            src='/home/ABITABHomeDesktop.svg'
+            alt=''
+            style={{ width: '365px', height: '403px' }}
+          />
         </Box>
       )}
 
@@ -163,7 +174,9 @@ const AbitabCase: React.FC = () => {
               sites and perform processes such as paying taxes
             </Typography>
 
-            <Box sx={{ display: 'flex', marginTop: '13px' }}>
+            <Box
+              sx={{ display: 'flex', marginTop: '13px', position: 'relative' }}
+            >
               <Typography
                 className='spaceGrotesk'
                 sx={{
@@ -175,7 +188,16 @@ const AbitabCase: React.FC = () => {
               >
                 Learn more
               </Typography>
-              <img src='/learnMoreIcon.svg' alt='' style={{ width: '11px' }} />
+              <img
+                src='/icons/learnMoreIcon.svg'
+                alt=''
+                style={{
+                  position: 'absolute',
+                  top: '8px',
+                  left: '90px',
+                  width: '11px',
+                }}
+              />{' '}
             </Box>
           </Box>
         </Box>
