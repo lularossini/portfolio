@@ -127,7 +127,7 @@ const ProppitCase: React.FC = () => {
               className='darkerGrotesk'
               sx={{
                 width: '100%',
-                fontSize: '18px',
+                fontSize: '20px',
                 fontWeight: '700',
                 lineHeight: '24px',
                 letterSpacing: '2px',
@@ -139,8 +139,8 @@ const ProppitCase: React.FC = () => {
               className='spaceGrotesk'
               sx={{
                 width: '292px',
-                height: '69px',
-                fontSize: '13px',
+                height: 'fit-content',
+                fontSize: '15px',
                 fontWeight: '400',
                 lineHeight: '23px',
                 letterSpacing: '0.12px',
@@ -150,11 +150,10 @@ const ProppitCase: React.FC = () => {
               <span
                 className='spaceGrotesk'
                 style={{
-                  fontSize: '13px',
+                  fontSize: '15px',
                   fontWeight: '600',
                   lineHeight: '23px',
                   letterSpacing: '0px',
-
                   marginTop: '13px',
                 }}
               >
@@ -168,10 +167,9 @@ const ProppitCase: React.FC = () => {
               <Typography
                 className='spaceGrotesk'
                 sx={{
-                  fontSize: '14px',
+                  fontSize: '15px',
                   fontWeight: '700',
                   lineHeight: '25px',
-
                   marginRight: '14px',
                 }}
               >
