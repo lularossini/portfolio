@@ -167,6 +167,7 @@ const Home = () => {
           flexDirection: 'column',
           gap: '23px',
           marginTop: isDesktop ? '60px' : '37px',
+          marginBottom: '50px',
         }}
       >
         <TyrCase />
