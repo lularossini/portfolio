@@ -1,4 +1,5 @@
-import { Box, useMediaQuery } from '@mui/material';
+import { Box, Typography, useMediaQuery } from '@mui/material';
+import { useState, useEffect } from 'react';
 
 interface IProjectDetailImageProps {
   desktopSrc: string;
@@ -22,40 +23,49 @@ const ProjectDetailImage: React.FC<IProjectDetailImageProps> = ({
   marginTop,
 }) => {
   const isDesktop = useMediaQuery('(min-width:1200px)');
+  const [width, setWidth] = useState('auto');
 
-  const getWidth = () => {
-    if (isDesktop) {
-      switch (desktopMode) {
-        case '100%':
-          return '100%';
-        case 'full width':
-          return '100vw';
-        case 'customWidth':
-          return customWidthDesktop || 'auto';
-        default:
-          return 'auto';
+  useEffect(() => {
+    const calculateWidth = () => {
+      if (isDesktop) {
+        switch (desktopMode) {
+          case '100%':
+            return '100%';
+          case 'full width':
+            return '100vw';
+          case 'customWidth':
+            return customWidthDesktop || 'auto';
+          default:
+            return 'auto';
+        }
+      } else {
+        switch (mobileMode) {
+          case '100%':
+            return '100%';
+          case 'full width':
+            return '100vw';
+          case 'customWidth':
+            return customWidthMobile || 'auto';
+          default:
+            return 'auto';
+        }
       }
-    } else {
-      switch (mobileMode) {
-        case '100%':
-          return '100%';
-        case 'full width':
-          return '100vw';
-        case 'customWidth':
-          return customWidthMobile || 'auto';
-        default:
-          return 'auto';
-      }
-    }
-  };
+    };
 
-  const imageWidth = getWidth();
+    setWidth(calculateWidth());
+  }, [
+    isDesktop,
+    desktopMode,
+    mobileMode,
+    customWidthDesktop,
+    customWidthMobile,
+  ]);
 
   return (
     <Box
       sx={{
-        width: imageWidth === '100vw' ? '100vw' : 'auto',
-        margin: imageWidth === '100vw' ? '0 calc(50% - 50vw)' : '0 auto',
+        width: width === '100vw' ? '100vw' : 'auto',
+        margin: width === '100vw' ? '0 calc(50% - 50vw)' : '0 auto',
         marginTop: `${marginTop}px`,
         marginBottom: `${marginBottom}px`,
       }}
@@ -65,7 +75,7 @@ const ProjectDetailImage: React.FC<IProjectDetailImageProps> = ({
         alt=''
         style={{
           height: 'auto',
-          width: imageWidth,
+          width: width,
         }}
       />
     </Box>

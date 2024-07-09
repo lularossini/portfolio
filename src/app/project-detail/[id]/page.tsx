@@ -39,8 +39,8 @@ const ProjectDetail = () => {
     return;
   }
 
-  const project = projects.find((experience) => {
-    return experience.id === id;
+  const project = projects.find((project) => {
+    return project.id === id;
   });
 
   if (!project) {
@@ -50,6 +50,262 @@ const ProjectDetail = () => {
   }
 
   const details = project.details;
+
+  const tyrCaseDesktop = (
+    <Box sx={{ display: 'flex', alignItems: 'center' }}>
+      <img
+        src='/home/TYRHomeDesktop.png'
+        alt=''
+        style={{ width: '527px', height: '325px' }}
+      />
+      <Box
+        sx={{
+          display: 'flex',
+          width: '350px',
+          marginLeft: '5px',
+        }}
+      >
+        <Typography
+          className='darkerGrotesk'
+          sx={{
+            fontSize: '23px',
+            fontWeight: '700',
+            lineHeight: '25px',
+            letterSpacing: '2px',
+          }}
+        >
+          A NEW INTERNAL SYSTEM TO ENHACE EXPERIENCE
+        </Typography>
+      </Box>
+    </Box>
+  );
+
+  const tyrCaseMobile = (
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        width: '100%',
+        height: '100%',
+      }}
+    >
+      <Typography
+        className='darkerGrotesk'
+        sx={{
+          fontSize: '20px',
+          fontWeight: '700',
+          lineHeight: '24px',
+          letterSpacing: '2px',
+          width: '270px',
+          marginTop: '35px',
+          marginBottom: '30 px',
+          textAlign: 'center',
+        }}
+      >
+        A NEW INTERNAL SYSTEM TO ENHACE EXPERIENCE
+      </Typography>
+
+      <img
+        src='/home/TYRHomeDesktop.png'
+        alt=''
+        style={{
+          marginTop: '40px',
+          width: '325px',
+        }}
+      />
+    </Box>
+  );
+
+  const abitabCaseDesktop = (
+    <Box sx={{ display: 'flex', alignItems: 'center' }}>
+      <Typography
+        className='darkerGrotesk'
+        sx={{
+          fontSize: '23px',
+          fontWeight: '700',
+          lineHeight: '25px',
+          letterSpacing: '2px',
+          width: '360px',
+        }}
+      >
+        GIVING URUGUAYANS A DIGITAL IDENTITY
+      </Typography>
+      <img
+        src='/home/ABITABHomeDesktop.svg'
+        alt=''
+        style={{ width: '365px', height: '403px' }}
+      />
+    </Box>
+  );
+
+  const abitabCaseMobile = (
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        width: '100%',
+        height: '100%',
+      }}
+    >
+      <Typography
+        className='darkerGrotesk'
+        sx={{
+          fontSize: '20px',
+          fontWeight: '700',
+          lineHeight: '24px',
+          letterSpacing: '2px',
+          width: '270px',
+          marginTop: '30px',
+          textAlign: 'center',
+        }}
+      >
+        GIVING URUGUAYANS A DIGITAL IDENTITY
+      </Typography>
+
+      <img
+        src='/home/ABITABHomeDesktop.svg'
+        alt=''
+        style={{
+          marginTop: '25px',
+          width: '241px',
+        }}
+      />
+    </Box>
+  );
+
+  const properatiCaseDesktop = (
+    <Box sx={{ display: 'flex', alignItems: 'center' }}>
+      <img
+        src='/home/PROPERATIHomeDesktop.png'
+        alt=''
+        style={{ width: '527px', height: '305 px' }}
+      />
+      <Typography
+        className='darkerGrotesk'
+        sx={{
+          fontSize: '23px',
+          fontWeight: '700',
+          lineHeight: '25px',
+          letterSpacing: '2px',
+          width: '360px',
+          marginLeft: '70px',
+        }}
+      >
+        A RESPONSIVE WEB TO HELP SELLERS WORK QUICKLY AND EFFICIENTLY
+      </Typography>
+    </Box>
+  );
+
+  const properatiCaseMobile = (
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        width: '100%',
+        height: '100%',
+      }}
+    >
+      <Typography
+        className='darkerGrotesk'
+        sx={{
+          fontSize: '20px',
+          fontWeight: '700',
+          lineHeight: '24px',
+          letterSpacing: '2px',
+          width: '270px',
+          marginTop: '35px',
+          textAlign: 'center',
+        }}
+      >
+        A RESPONSIVE WEB TO HELP SELLERS WORK QUICKLY AND EFFICIENTLY
+      </Typography>
+
+      <img
+        src='/home/PROPERATIHomeDesktop.png'
+        alt=''
+        style={{
+          marginTop: '26px',
+          width: '325px',
+        }}
+      />
+    </Box>
+  );
+
+  const proppitCaseDesktop = (
+    <Box sx={{ display: 'flex', alignItems: 'center' }}>
+      <Typography
+        className='darkerGrotesk'
+        sx={{
+          fontSize: '23px',
+          fontWeight: '700',
+          lineHeight: '25px',
+          letterSpacing: '2px',
+          width: '360px',
+        }}
+      >
+        REDUCING CHURN BY UNDERSTANDING USERS
+      </Typography>
+      <img
+        src='/home/PROPPITHomeDesktop.png'
+        alt=''
+        style={{ width: '527px', height: '305px' }}
+      />
+    </Box>
+  );
+
+  const proppitCaseMobile = (
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        width: '100%',
+        height: '100%',
+      }}
+    >
+      <Typography
+        className='darkerGrotesk'
+        sx={{
+          fontSize: '20px',
+          fontWeight: '700',
+          lineHeight: '24px',
+          letterSpacing: '2px',
+          width: '270px',
+          marginTop: '45px',
+          textAlign: 'center',
+        }}
+      >
+        REDUCING CHURN BY UNDERSTANDING USERS
+      </Typography>
+
+      <img
+        src='/home/PROPPITHomeDesktop.png'
+        alt=''
+        style={{
+          marginTop: '37px',
+          width: '325px',
+        }}
+      />
+    </Box>
+  );
+
+  const renderCaseContent = () => {
+    switch (id) {
+      case 'tyr-case':
+        return isDesktop ? tyrCaseDesktop : tyrCaseMobile;
+      case 'abitab-case':
+        return isDesktop ? abitabCaseDesktop : abitabCaseMobile;
+      case 'properati-case':
+        return isDesktop ? properatiCaseDesktop : properatiCaseMobile;
+      case 'proppit-case':
+        return isDesktop ? proppitCaseDesktop : proppitCaseMobile;
+      default:
+        return null;
+    }
+  };
 
   return (
     <Box
@@ -65,16 +321,25 @@ const ProjectDetail = () => {
       <Box
         sx={{
           position: 'absolute',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
           top: isDesktop ? '100px' : '105px',
           left: 0,
           width: '100vw',
-          height: isDesktop ? '452px' : '322px',
+          height: isDesktop
+            ? '452px'
+            : id !== 'abitab-case'
+            ? '322px'
+            : '384px',
           backgroundColor:
             id === 'properati-case' || id === 'tyr-case'
               ? '#F1E5F8'
               : '#EDE9EF',
         }}
-      ></Box>
+      >
+        {renderCaseContent()}
+      </Box>
 
       {/*Details*/}
       <Box

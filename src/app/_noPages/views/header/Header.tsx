@@ -38,7 +38,7 @@ const Header = () => {
 
   const downloadCvClickHandler = () => {
     window.open(
-      'https://drive.google.com/uc?export=download&id=1X7VTxJ9HQAAyqZxnQPZNpxsI3RsJtpG7',
+      'https://drive.google.com/uc?export=download&id=1Mkhyhu2k3nldxi0AT0u9sl7LHM-L6g3a',
       '_blank'
     );
   };
@@ -56,6 +56,7 @@ const Header = () => {
         width: '100vw',
         overflow: 'hidden',
         position: 'relative',
+        backgroundColor: '#fffef6 !important',
       }}
       role='presentation'
       onClick={handleDrawerToggle}
@@ -146,6 +147,7 @@ const Header = () => {
         justifyContent: 'center',
         bgcolor: 'white',
         padding: isDesktop ? '0 80px' : '',
+        backgroundColor: '#fffef6 !important',
       }}
     >
       <AppBar position='static' sx={{ bgcolor: 'white', boxShadow: 'none' }}>
@@ -196,7 +198,11 @@ const Header = () => {
             </>
           ) : (
             <>
-              <Typography variant='h6' sx={{ color: 'black' }}>
+              <Typography
+                variant='h6'
+                sx={{ color: 'black' }}
+                onClick={handleGoToHomeHandler}
+              >
                 Lula Rossini
               </Typography>
               <IconButton

@@ -97,7 +97,7 @@ const ProppitCase: React.FC = () => {
             </Box>
           </Box>
           <img
-            src='/home/PROPPITHomeDesktop.svg'
+            src='/home/PROPPITHomeDesktop.png'
             alt=''
             style={{ width: '527px', height: '325px' }}
           />

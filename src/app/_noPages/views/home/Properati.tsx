@@ -28,7 +28,7 @@ const Properati: React.FC = () => {
           }}
         >
           <img
-            src='/home/PROPERATIHomeDesktop.svg'
+            src='/home/PROPERATIHomeDesktop.png'
             alt=''
             style={{ width: '527px', height: '325px' }}
           />
