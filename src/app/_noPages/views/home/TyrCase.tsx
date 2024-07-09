@@ -127,7 +127,7 @@ const TyrCase: React.FC = () => {
               className='darkerGrotesk'
               sx={{
                 width: '100%',
-                fontSize: '19px',
+                fontSize: '20px',
                 fontWeight: '700',
                 lineHeight: '24px',
                 letterSpacing: '2px',
