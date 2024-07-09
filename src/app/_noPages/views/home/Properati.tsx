@@ -41,33 +41,31 @@ const Properati: React.FC = () => {
             }}
           >
             <Typography
+              className='darkerGrotesk'
               sx={{
                 fontSize: '23px',
                 fontWeight: '700',
                 lineHeight: '25px',
                 letterSpacing: '2px',
-                fontFamily:
-                  'var(--font-darkerGrotesque), sans-serif !important',
               }}
             >
               A RESPONSIVE WEB TO HELP SELLERS WORK QUICKLY AND EFFICIENTLY
             </Typography>
             <Typography
+              className='spaceGrotesk'
               sx={{
                 fontSize: '15px',
-                fontWeight: '500',
+                fontWeight: '400',
                 lineHeight: '23px',
-                fontFamily: 'var(--font-spaceGrotesque), sans-serif !important',
                 marginTop: '15px',
               }}
             >
               <span
+                className='spaceGrotesk'
                 style={{
                   fontSize: '15px',
                   fontWeight: '600',
                   lineHeight: '23px',
-                  fontFamily:
-                    'var(--font-spaceGrotesque), sans-serif !important',
                   marginTop: '15px',
                 }}
               >
@@ -79,12 +77,11 @@ const Properati: React.FC = () => {
 
             <Box sx={{ display: 'flex', marginTop: '12px' }}>
               <Typography
+                className='spaceGrotesk'
                 sx={{
-                  fontSize: '15px',
+                  fontSize: '14px',
                   fontWeight: '500',
                   lineHeight: '25px',
-                  fontFamily:
-                    'var(--font-spaceGrotesque), sans-serif !important',
                   marginRight: '18px',
                 }}
               >
@@ -105,7 +102,7 @@ const Properati: React.FC = () => {
             width: '100%',
             maxWidth: '349px',
             height: '463 px',
-            padding: '33px 0',
+            padding: '33px 0 25px 0',
             borderRadius: '10px',
             backgroundColor: '#F1E5F8',
             alignItems: 'center',
@@ -127,39 +124,36 @@ const Properati: React.FC = () => {
             }}
           >
             <Typography
+              className='darkerGrotesk'
               sx={{
                 width: '100%',
-                fontSize: '18px',
+                fontSize: '20px',
                 fontWeight: '700',
                 lineHeight: '24px',
                 letterSpacing: '2px',
-                fontFamily:
-                  'var(--font-darkerGrotesque), sans-serif !important',
               }}
             >
               A RESPONSIVE WEB TO HELP SELLERS WORK QUICKLY AND EFFICIENTLY
             </Typography>
             <Typography
+              className='spaceGrotesk'
               sx={{
                 width: '292px',
-                height: '69px',
-                fontSize: '13px',
-                fontWeight: '500',
+                height: 'fit-content',
+                fontSize: '15px',
+                fontWeight: '400',
                 lineHeight: '23px',
                 letterSpacing: '0.12px',
-
-                fontFamily: 'var(--font-spaceGrotesque), sans-serif !important',
                 marginTop: '14px',
               }}
             >
               <span
+                className='spaceGrotesk'
                 style={{
-                  fontSize: '13px',
+                  fontSize: '15px',
                   fontWeight: '600',
                   lineHeight: '23px',
                   letterSpacing: '0px',
-                  fontFamily:
-                    'var(--font-spaceGrotesque), sans-serif !important',
                   marginTop: '13px',
                 }}
               >
@@ -171,12 +165,11 @@ const Properati: React.FC = () => {
 
             <Box sx={{ display: 'flex', marginTop: '13px' }}>
               <Typography
+                className='spaceGrotesk'
                 sx={{
-                  fontSize: '14px',
+                  fontSize: '15px',
                   fontWeight: '700',
                   lineHeight: '25px',
-                  fontFamily:
-                    'var(--font-spaceGrotesque), sans-serif !important',
                   marginRight: '14px',
                 }}
               >
