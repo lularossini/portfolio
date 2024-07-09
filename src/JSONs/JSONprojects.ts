@@ -175,7 +175,7 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'About',
         marginBottom: 8,
-        marginTop: 20,
+        marginTop: 50,
       },
       'Abitab is a Uruguayan company offering services like bill payments, money transfers, and mobile top-ups. One of its products, <b>Abitab Mobile Identity, enables users to access public websites</b> and perform tasks like paying taxes and scheduling appointments. To become the leading digital identity service in Uruguay, Abitab needed to significantly enhance its user experience and technology.',
 
