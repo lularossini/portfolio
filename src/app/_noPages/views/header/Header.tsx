@@ -141,7 +141,7 @@ const Header = () => {
       sx={{
         display: 'flex',
         width: '100%',
-        height: isDesktop ? '182px' : '105px',
+        height: isDesktop ? '100px' : '105px',
         alignItems: 'center',
         justifyContent: 'center',
         bgcolor: 'white',
