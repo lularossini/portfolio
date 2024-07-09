@@ -56,7 +56,6 @@ const Header = () => {
         width: '100vw',
         overflow: 'hidden',
         position: 'relative',
-        padding: '0 24px', // Padding lateral de 24px para móvil
       }}
       role='presentation'
       onClick={handleDrawerToggle}
@@ -66,7 +65,7 @@ const Header = () => {
         onClick={handleDrawerToggle}
         sx={{
           position: 'absolute',
-          top: 16,
+          top: 34, // Bajada de 25px desde el top original de 16px
           right: 16,
           color: 'black',
         }}
@@ -146,6 +145,7 @@ const Header = () => {
         alignItems: 'center',
         justifyContent: 'center',
         bgcolor: 'white',
+        padding: isDesktop ? '0 80px' : '',
       }}
     >
       <AppBar position='static' sx={{ bgcolor: 'white', boxShadow: 'none' }}>
