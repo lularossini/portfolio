@@ -30,7 +30,6 @@ const Home = () => {
             sx={{
               display: 'flex',
               width: isDesktop ? 'fit-content' : '100%',
-
               flexDirection: 'row',
               gap: '12px',
               alignItems: 'center',
@@ -179,3 +178,7 @@ const Home = () => {
 };
 
 export default Home;
+
+//Quitar padding bottom a las cards mobile
+//Agrandar fuente de descripcion de cards a 15
+// Reemplazar por la ruta del cv de lu en google drive
