@@ -34,7 +34,7 @@ export default function RootLayout({
       className={`${darkerGrotesqueFont.variable} ${spaceGrotesqueFont.variable}`}
     >
       <head>
-        <link rel='icon' type='image/png' href='/favicon.png' />
+        <link rel='icon' type='image/svg' href='/favicon.svg' />
       </head>
       <body>
         <header>
