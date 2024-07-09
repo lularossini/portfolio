@@ -41,33 +41,31 @@ const ProppitCase: React.FC = () => {
             }}
           >
             <Typography
+              className='darkerGrotesk'
               sx={{
                 fontSize: '23px',
                 fontWeight: '700',
                 lineHeight: '25px',
                 letterSpacing: '2px',
-                fontFamily:
-                  'var(--font-darkerGrotesque), sans-serif !important',
               }}
             >
               REDUCING CHURN BY UNDERSTANDING USERS
             </Typography>
             <Typography
+              className='spaceGrotesk'
               sx={{
                 fontSize: '15px',
-                fontWeight: '500',
+                fontWeight: '400',
                 lineHeight: '23px',
-                fontFamily: 'var(--font-spaceGrotesque), sans-serif !important',
                 marginTop: '15px',
               }}
             >
               <span
+                className='spaceGrotesk'
                 style={{
                   fontSize: '15px',
                   fontWeight: '600',
                   lineHeight: '23px',
-                  fontFamily:
-                    'var(--font-spaceGrotesque), sans-serif !important',
                   marginTop: '15px',
                 }}
               >
@@ -79,12 +77,11 @@ const ProppitCase: React.FC = () => {
 
             <Box sx={{ display: 'flex', marginTop: '12px' }}>
               <Typography
+                className='spaceGrotesk'
                 sx={{
-                  fontSize: '15px',
+                  fontSize: '14px',
                   fontWeight: '500',
                   lineHeight: '25px',
-                  fontFamily:
-                    'var(--font-spaceGrotesque), sans-serif !important',
                   marginRight: '18px',
                 }}
               >
@@ -127,6 +124,7 @@ const ProppitCase: React.FC = () => {
             }}
           >
             <Typography
+              className='darkerGrotesk'
               sx={{
                 width: '100%',
                 fontSize: '18px',
@@ -138,17 +136,19 @@ const ProppitCase: React.FC = () => {
               REDUCING CHURN BY UNDERSTANDING USERS
             </Typography>
             <Typography
+              className='spaceGrotesk'
               sx={{
                 width: '292px',
                 height: '69px',
                 fontSize: '13px',
-                fontWeight: '500',
+                fontWeight: '400',
                 lineHeight: '23px',
                 letterSpacing: '0.12px',
                 marginTop: '14px',
               }}
             >
               <span
+                className='spaceGrotesk'
                 style={{
                   fontSize: '13px',
                   fontWeight: '600',
@@ -166,6 +166,7 @@ const ProppitCase: React.FC = () => {
 
             <Box sx={{ display: 'flex', marginTop: '13px' }}>
               <Typography
+                className='spaceGrotesk'
                 sx={{
                   fontSize: '14px',
                   fontWeight: '700',

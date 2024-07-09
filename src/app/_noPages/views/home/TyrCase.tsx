@@ -43,7 +43,7 @@ const TyrCase: React.FC = () => {
             <Typography
               className='darkerGrotesk'
               sx={{
-                fontSize: '18px',
+                fontSize: '23px',
                 fontWeight: '700',
                 lineHeight: '25px',
                 letterSpacing: '2px',
@@ -54,15 +54,16 @@ const TyrCase: React.FC = () => {
             <Typography
               className='spaceGrotesk'
               sx={{
-                fontSize: '13px',
-                fontWeight: '500',
+                fontSize: '15px',
+                fontWeight: '400',
                 lineHeight: '23px',
                 marginTop: '15px',
               }}
             >
               <span
+                className='spaceGrotesk'
                 style={{
-                  fontSize: '13px',
+                  fontSize: '15px',
                   fontWeight: '600',
                   lineHeight: '23px',
                   marginTop: '15px',
@@ -123,6 +124,7 @@ const TyrCase: React.FC = () => {
             }}
           >
             <Typography
+              className='darkerGrotesk'
               sx={{
                 width: '100%',
                 fontSize: '18px',
@@ -134,17 +136,19 @@ const TyrCase: React.FC = () => {
               A NEW INTERNAL SYSTEM TO ENHACE EXPERIENCE
             </Typography>
             <Typography
+              className='spaceGrotesk'
               sx={{
                 width: '292px',
                 height: '69px',
                 fontSize: '13px',
-                fontWeight: '500',
+                fontWeight: '400',
                 lineHeight: '23px',
                 letterSpacing: '0.12px',
                 marginTop: '14px',
               }}
             >
               <span
+                className='spaceGrotesk'
                 style={{
                   fontSize: '13px',
                   fontWeight: '600',
@@ -161,6 +165,7 @@ const TyrCase: React.FC = () => {
 
             <Box sx={{ display: 'flex', marginTop: '13px' }}>
               <Typography
+                className='spaceGrotesk'
                 sx={{
                   fontSize: '14px',
                   fontWeight: '700',

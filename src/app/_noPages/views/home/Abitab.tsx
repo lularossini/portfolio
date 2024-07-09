@@ -41,47 +41,47 @@ const AbitabCase: React.FC = () => {
             }}
           >
             <Typography
+              className='darkerGrotesk'
               sx={{
                 fontSize: '23px',
                 fontWeight: '700',
                 lineHeight: '25px',
                 letterSpacing: '2px',
-                font: 'var(--font-darkerGrotesque), sans-serif !important',
               }}
             >
               GIVING URUGUAYANS A DIGITAL IDENTITY{' '}
             </Typography>
             <Typography
+              className='spaceGrotesk'
               sx={{
                 fontSize: '15px',
-                fontWeight: '500',
+                fontWeight: '400',
                 lineHeight: '23px',
-                font: 'var(--font-spaceGrotesque), sans-serif !important',
                 marginTop: '15px',
               }}
             >
               <span
+                className='spaceGrotesk'
                 style={{
                   fontSize: '15px',
                   fontWeight: '600',
                   lineHeight: '23px',
-                  font: 'var(--font-spaceGrotesque), sans-serif !important',
                   marginTop: '15px',
                 }}
               >
                 UX Design •  UX Research •
-              </span>{' '}
+              </span>
               Redesign of an application that Uruguayans use to access public
               sites and perform processes such as paying taxes
             </Typography>
 
             <Box sx={{ display: 'flex', marginTop: '12px' }}>
               <Typography
+                className='spaceGrotesk'
                 sx={{
-                  fontSize: '15px',
+                  fontSize: '14px',
                   fontWeight: '500',
                   lineHeight: '25px',
-                  font: 'var(--font-spaceGrotesque), sans-serif !important',
                   marginRight: '18px',
                 }}
               >
@@ -124,6 +124,7 @@ const AbitabCase: React.FC = () => {
             }}
           >
             <Typography
+              className='darkerGrotesk'
               sx={{
                 width: '100%',
                 fontSize: '18px',
@@ -135,17 +136,19 @@ const AbitabCase: React.FC = () => {
               GIVING URUGUAYANS A DIGITAL IDENTITY
             </Typography>
             <Typography
+              className='spaceGrotesk'
               sx={{
                 width: '292px',
-                height: '69px',
+                height: '92px',
                 fontSize: '13px',
-                fontWeight: '500',
+                fontWeight: '400',
                 lineHeight: '23px',
                 letterSpacing: '0.12px',
                 marginTop: '14px',
               }}
             >
               <span
+                className='spaceGrotesk'
                 style={{
                   fontSize: '13px',
                   fontWeight: '600',
@@ -163,6 +166,7 @@ const AbitabCase: React.FC = () => {
 
             <Box sx={{ display: 'flex', marginTop: '13px' }}>
               <Typography
+                className='spaceGrotesk'
                 sx={{
                   fontSize: '14px',
                   fontWeight: '700',
