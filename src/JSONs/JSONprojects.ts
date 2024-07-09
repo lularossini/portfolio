@@ -1,5 +1,5 @@
 //Aplicar b a palabras en results
-//wuitar bold generalizado de results
+//quitar bold generalizado de results
 
 export interface IProjects {
   id: string;
@@ -89,7 +89,7 @@ export const projects: IProjects[] = [
         marginTop: 80,
       },
       'TYR faced major issues with their system, including slow response times due to high data volume, a steep learning curve for new employees, and information duplication. Forms were too long and redundant, workflows were confusing, and sequential use by traders and administrators led to frequent errors, requiring the owners intervention.',
-
+//Comment andy: La imagen roles-table-tyr-mobile.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
       {
         type: 'image',
         src: '/tyr/desktop/roles-in-project-tyr-desktop.svg',
@@ -100,8 +100,8 @@ export const projects: IProjects[] = [
         imageDescription: 'roles in tyrs project',
       },
      
-//Chin: Te lo dejo para que después lo puedas usar para maquetar
-    // '<b>My role</b>',
+//Para después: estos son textos para cuando haya que sacar la imagen de roles y maquetar
+// '<b>My role</b>',
     //   'UX Research',
     //   'UX Design',
     //   'UX Writing',
@@ -117,27 +117,31 @@ export const projects: IProjects[] = [
 
       'As the UX designer for the project, I was in charge from the beginning. I had the initial conversations with the client to understand their business vision and identify the issues they had noticed and wanted to improve, as well as what aspects they wanted to keep because they were working well. I also requested access to the system we were going to redesign. With this access, I conducted a brief research to understand the current system, map out the workflows, and identify obvious usability improvements we could apply. With this, we began the wireframing stage.',
       'We had tight one-week sprints and two weekly meetings with the client to make inquiries and review the progress.',
+      
+//Comment andy: La imagen image-research-desktop.svg, que está abajo de este comment, tiene que tomar el 100% en desktop   
       {
         type: 'image',
         src: '/tyr/desktop/image-research-desktop.svg',
-        mobileVersionSrc: '/tyr/mobile/roles-table-tyr-mobile.svg',
+        mobileVersionSrc: '/tyr/mobile/imagen-research.png',
         width: '100%',
         marginBottom: 30,
         marginTop: 30,
         imageDescription: 'summarize of the research from project tyr',
       },
 
-   
+//Comment andy: La imagen the-results-tyr-mobile.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
       {
         type: 'image',
         src: '/tyr/desktop/the-results-desktop.svg',
+        mobileVersionSrc: '/tyr/mobile/the-results-tyr-mobile.svg',
         width: '100%',
         marginBottom: 30,
         marginTop: 30,
-        imageDescription: 'the results',
+        imageDescription: 'summarize of the research from project tyr',
       },
+ 
 
-//Chin: Te lo dejo para que después lo puedas usar para maquetar
+//Para después: estos son textos para cuando haya que sacar la imagen de Results y maquetar
       // {
       //   type: 'title',
       //   text: 'The results',
@@ -157,22 +161,25 @@ export const projects: IProjects[] = [
       //   marginTop: 30,
       // },
       
+
       {
         type: 'title',
         text: 'HI-FI Screens',
         marginBottom: 20,
         marginTop: 20,
       },
-
-      //esta imagen tiene que ir al 100%
-      {
-        type: 'image',
-        src: '/tyr/desktop/slider-hi-fi-tyr-desktop.svg',
-        width: '100vw',
-        marginBottom: 10,
-        marginTop: 10,
-        imageDescription: 'chotos',
-      },
+      
+//Comment andy: La imagen slider-hi-fi-tyr-desktop.svg, que está abajo de este comment, tiene que tomar el 100% en dekstop.
+//Tambien la imagen hi-fi-mobile-tyr.svg, tiene que tomar el 100% en mobile
+          {
+            type: 'image',
+            src: '/tyr/desktop/slider-hi-fi-tyr-desktop.svg',
+            mobileVersionSrc: '/tyr/mobile/hi-fi-mobile-tyr.svg',
+            width: '100%',
+            marginBottom: 30,
+            marginTop: 30,
+            imageDescription: 'summarize of the research from project tyr',
+          },     
 
          {
         type: 'title',
@@ -187,6 +194,8 @@ export const projects: IProjects[] = [
     ],
   },
 ///TERMINA TYR CASE
+/////////////////////////////////////////////////////////////////////////////////////
+
 /////////////////////////////////////////////////////////////////////////////////////
 ///EMPIEZA ABITAB CASE
 
@@ -209,6 +218,7 @@ export const projects: IProjects[] = [
         marginTop: 40,
       },
 
+//Comment andy: La imagen the body-problem-abitab.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
       {
         type: 'image',
         src: '/abitab/desktop/problem-body-abitab-desktop.svg',
@@ -219,13 +229,29 @@ export const projects: IProjects[] = [
         imageDescription: 'problems detected in abitab previous app',
       },
 
-//ROLES - Esto te lo dejo para cuando lo quieras maquetar, las imagenes de esto están arriba
+////Para después: estos son textos de THE PROBLEM para cuando haya que sacar la imagen y maquetar, la imagen esta arriba
       // 'To achieve digital identity registration, we evaluated the existing web and app channels for usability issues.',
 
       // 'Our analysis revealed several key problems:',
-      // '(ESTO VA EN NEGRITA CON PUNTEO) <b>Diverse access points</b>: Multiple websites with different logos, aesthetics, and content caused user confusion.',
+
+      // '<b>Diverse access points</b>: Multiple websites with different logos, aesthetics, and content caused user confusion.',
       // '<b>Inconsistent terminology</b>: Varied terms for "Mobile Identity" across channels led to user confusion during account creation and service use.',
       // '<b>App upgrade needed</b>: The native app, initially a token, was disconnected from the website, missing opportunities for enhanced functionality and user engagement.',
+
+
+//Comment andy: La imagen roles-in-project-mobile-abitab.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
+
+      {
+        type: 'image',
+        src: '/abitab/desktop/roles-in-project-abitab-desktop.svg',
+        mobileVersionSrc: '/abitab/mobile/roles-in-project-mobile-abitab.svg',
+        width: '100%',
+        marginBottom: 0,
+        marginTop: 40,
+        imageDescription: 'problems detected in abitab previous app',
+      },
+
+   ////Para después: estos son textos de MY ROLE para cuando haya que sacar la imagen y maquetar, la imagen está arriba
 
       // '<b>My role</b>',
       // 'UX Research',
@@ -296,6 +322,7 @@ export const projects: IProjects[] = [
       'Participants included a diverse user base, from retirees to professionals. These tests provided valuable insights, guiding strategic product modifications to align with user needs.',
       'Based on the tests, I created a report with key insights, improvement points, and recommendations, which I presented to the client.',
 
+//Comment andy: La imagen usability-image-desktop.svg, que está abajo de este comment, tiene que tomar el 100% en desktop
       {
         type: 'image',
         src: '/abitab/desktop/usability-image-desktop.svg',
@@ -307,7 +334,21 @@ export const projects: IProjects[] = [
       },
    
 
-//RESULTS - Esto te lo dejo acá para cuando quieras maaquetarlo, arriba esta la imagen en SVG
+
+
+//Comment andy: La imagen the results-desktop-abitab.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
+
+      {
+        type: 'image',
+        src: '/abitab/desktop/the results-desktop-abitab.svg',
+        mobileVersionSrc: '/abitab/mobile/results-abitab-mobile.svg',
+        width: '100%',
+        marginBottom: 30,
+        marginTop: 40,
+        imageDescription: 'some numbers to show results on this project',
+      },
+
+////Para después: estos son textos de RESULTS para cuando haya que sacar la imagen y maquetar, la imagen está arriba
       // {
       //   type: 'results',
       //   percentages: ['90%', '95%', '85%'],
@@ -319,16 +360,6 @@ export const projects: IProjects[] = [
       //   marginBottom: 30,
       //   marginTop: 30,
       // },
-
-      {
-        type: 'image',
-        src: '/abitab/desktop/the results-desktop-abitab.svg',
-        mobileVersionSrc: '/abitab/mobile/results-abitab-mobile.svg',
-        width: '100%',
-        marginBottom: 30,
-        marginTop: 40,
-        imageDescription: 'some numbers to show results on this project',
-      },
    
 
       {
@@ -346,6 +377,8 @@ export const projects: IProjects[] = [
   },
 
 ///TERMINA ABITAB
+/////////////////////////////////////////////////////////////////////////////////////
+
 /////////////////////////////////////////////////////////////////////////////////////
 ///EMPIEZA PROPERATI 
 
@@ -378,6 +411,7 @@ export const projects: IProjects[] = [
       'Due to the necessity of solving all these problems, we were asked to create a solution as soon as possible.',
 
 
+//Comment andy: La imagen the roles-in-project-mobile.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
      {
         type: 'image',
         src: '/properati/desktop/roles-in-project-desktop.svg',
@@ -389,7 +423,7 @@ export const projects: IProjects[] = [
       },
 
 
-//ROLES- Dejo esto de abajo para maquetarlo en la segunda versión, la imagen de esto esta arriba
+///Para después: estos son textos de ROLES para cuando haya que sacar la imagen y maquetar, la imagen está arriba
       // '<b>My role</b>',
       // 'UX Design',
       // 'UX Writing',
@@ -442,6 +476,9 @@ export const projects: IProjects[] = [
         imageDescription: 'some images of the wireframes made for this project',
       },
 
+
+      //Comment andy: La imagen the hifi-desktop.svg, que está abajo de este comment, tiene que tomar el 100% en DESKTOP
+      // en mobile me parece que se ve como el culo, tenemos que verlo juntos seguramente tenga que ajustarla desde el diseño
       {
         type: 'title',
         text: 'Hi-fi design',
@@ -459,6 +496,8 @@ export const projects: IProjects[] = [
         imageDescription: 'images of the high definition designs made for this project',
       },
 
+//Comment andy: La imagen the the-results.svg, que está abajo de este comment, tiene que tomar el 100% en MOBILE
+
       {
         type: 'image',
         src: '/properati/desktop/the-results-desktop-properati.svg',
@@ -469,7 +508,7 @@ export const projects: IProjects[] = [
         imageDescription: 'images of 3 percentaje results of this project',
       },
 
-//RESULTS- Para cuando lo quieras maquetar te lo dejo acá. La imagen qe está en uso est´ça arriba de esto
+///Para después: estos son textos de RESULTS para cuando haya que sacar la imagen y maquetar, la imagen está arriba
       // {
       //   type: 'results',
       //   percentages: ['150%', '100%', '67%'],
@@ -481,8 +520,7 @@ export const projects: IProjects[] = [
       //   marginBottom: 30,
       //   marginTop: 30,
       // },
-
-     
+    
      
       {
         type: 'title',
@@ -497,6 +535,8 @@ export const projects: IProjects[] = [
     ],
   },
 ///TERMINA PROPERATI
+/////////////////////////////////////////////////////////////////////////////////////
+
 /////////////////////////////////////////////////////////////////////////////////////
 ///EMPIEZA PROPPIT
   {
@@ -518,62 +558,97 @@ export const projects: IProjects[] = [
         marginBottom: 0,
         marginTop: 50,
       },
-      'Our UXR team of two was tasked with understanding why customers weren’t renewing their subscriptions on Proppit and finding solutions to reduce churn from 9% to 5%.',
+      "Our UXR team of two was tasked with understanding why customers weren't renewing their subscriptions on Proppit and finding solutions to reduce churn from 9% to 5%.",
       'The target audience for this research was customers from Colombia who had churned within 90 days of activation.',
       'Working independently yet collaboratively across the company, we met with Proppit stakeholders to present and adjust our plan, which had a maximum duration of one month.',
       'The plan involved first analyzing existing customer data and then conducting phone interviews. The main challenges were recruiting customers for interviews without incentives and conducting the initial phase by phone.',
 
-      '<b>My role</b>',
-      'UX Design',
-      'UX Research',
+//Comment andy: La imagen the roles-in-project-mobile-proppit.svg, que está abajo de este comment, tiene que tomar el 100% en MOBILE
+      {
+        type: 'image',
+        src: ' /proppit/desktop/roles-in-project-desktop-proppit.svg',
+        mobileVersionSrc: '/proppit/mobile/roles-in-project-mobile-proppit.svg',
+        width: '100%',
+        marginBottom: 30,
+        marginTop: 40,
+        imageDescription: 'images of 3 percentaje results of this project',
+      },
 
-      '<b>Tools</b>',
-      'Figma',
-      'Excel',
+//Para después: estos son textos de ROLES para cuando haya que sacar la imagen y maquetar, la imagen está arriba
 
-      '<b>Timeline & Team</b>',
-      '3 weeks to do research',
-      '1 UX Designer, 1 UX Researcher',
+      // '<b>My role</b>',
+      // 'UX Design',
+      // 'UX Research',
 
-      
+      // '<b>Tools</b>',
+      // 'Figma',
+      // 'Excel',
+
+      // '<b>Timeline & Team</b>',
+      // '3 weeks to do research',
+      // '1 UX Designer, 1 UX Researcher',
+
+   
       '<b>Steps with deadlines for each stage of the research discussed with stakeholders</b>',
 
-      '<b>Step 1</b>',
-      '<b>Survey Interview Preparation</b>',
-      'Analysis and cross customer data Churn',
-      'Design interview script',
-      'Interview script design Tel',
-      'Recruitment 1',
-      'Recruitment 2 (1st mail)',
-      'Recruitment form',
+      "We started interviewing a selected group of real estate experts to map the expert's User Journey.",
+      'Until that point, there was no defined methodology for work. Each expert used different tools to do the same job, contacted clients through various channels, and there was no defined script for talking to potential clients nor any follow-up after the initial contact, among other issues.',
+      'All interviews were conducted virtually with experts from Colombia, Ecuador, and Peru. While we gathered answers, many new questions also arose.',
+      'The key discovery was that the proposal served as a property display. Clients would select properties they liked and schedule visits with the expert. Thus, the proposal needed a feature for scheduling appointments.',
+      'Experts emphasized the importance of highlighting certain parts of the proposal, such as images and property prices, as clients often discard properties if the price isn’t right. Additionally, for new projects, the completion date was crucial to include in the proposal design.',
 
-      '<b>Step 2</b>',
-      '<b>Recruitment & Interviews</b>',
-      'Recruitment 3 (phone)',
-      'Conducting interviews',
-      'Preliminary synthesis insights interviews',
-      'Qualitative feedback analysis',
 
-      '<b>Step 3</b>',
-      '<b>Interview results</b>',
-      'Conducting interviews',
-      'Final report interview results',
+    
+//Para después: estos son textos de STEPS para cuando haya que sacar la imagen y maquetar, la imagen está arriba
+      // '<b>Step 1</b>',
+      // '<b>Survey Interview Preparation</b>',
+      // 'Analysis and cross customer data Churn',
+      // 'Design interview script',
+      // 'Interview script design Tel',
+      // 'Recruitment 1',
+      // 'Recruitment 2 (1st mail)',
+      // 'Recruitment form',
 
-      '<b>Step 4</b>',
-      '<b>Final results report</b>',
-      'Analysis of activation and renewal flows (optional)',
-      'Final report of research results',
+      // '<b>Step 2</b>',
+      // '<b>Recruitment & Interviews</b>',
+      // 'Recruitment 3 (phone)',
+      // 'Conducting interviews',
+      // 'Preliminary synthesis insights interviews',
+      // 'Qualitative feedback analysis',
+
+      // '<b>Step 3</b>',
+      // '<b>Interview results</b>',
+      // 'Conducting interviews',
+      // 'Final report interview results',
+
+      // '<b>Step 4</b>',
+      // '<b>Final results report</b>',
+      // 'Analysis of activation and renewal flows (optional)',
+      // 'Final report of research results',
+
+//Comment andy: La imagen the steps-research-desktop.svg, que está abajo de este comment, tiene que tomar el 100% en DESKTOP
+      {
+        type: 'image',
+        src: '/proppit/desktop/steps-research-desktop.svg',
+        mobileVersionSrc: '/proppit/mobile/steps-research-mobile.svg',
+        width: '100%',
+        marginBottom: 30,
+        marginTop: 40,
+        imageDescription: 'steps',
+      },
 
       'To develop this project we followed the lines of the Double Diamond methodology and as a team, we generated deliverables for the first two phases: for Discovery and in the Define phase.',
+   
+      {
+        type: 'image',
+        src: '/proppit/desktop/double-diamond-desktop.png',
+        mobileVersionSrc: '/proppit/mobile/doublediamond-mobile.jpg',
+        width: '100%',
+        marginBottom: 30,
+        marginTop: 40,
+        imageDescription: 'double diamond methodology image',
+      },
 
-            {
-              type: 'image',
-              src: '/images/plumarii/logo_plumarii.png',
-              width: '100%',
-              marginBottom: 30,
-              marginTop: 30,
-              imageDescription: 'imagen de double diamond para mobile',
-            },
 
       {
         type: 'title',
@@ -583,7 +658,7 @@ export const projects: IProjects[] = [
       },      
      
       "In the first stage, we analyzed existing data from Proppit's customers to minimize the need for high investment. We requested access to customer complaint/request emails and NPS survey results.",
-      'We reviewed 137 emails from an 8-month period and 500 NPS messages. The emails revealed urgent issues and needs, while the NPS responses highlighted customer grievances and suggestions.',
+      'We <b>reviewed 137 emails</b> from an 8-month period and 500 NPS messages. The emails <b>revealed urgent issues and needs</b>, while the NPS responses highlighted customer grievances and suggestions.',
       'We compiled all the information into an Excel sheet, categorized it, and created quantitative graphs per topic.',
 
       {
@@ -593,86 +668,105 @@ export const projects: IProjects[] = [
         marginTop: 50,
       },
    
-      'In the second stage, we interviewed customers who did not renew their subscriptions to understand their pain points and reasons for churn.',
+      'In the second stage, we <b>interviewed customers who did not renew their subscriptions to understand their pain points and reasons for churn</b>.',
 
       'We requested a list of customers who had been active for less than 90 days, were from Colombia, and had unsubscribed. Initially, we had no incentives, resulting in a low response rate and extended timeline. When incentives were later provided, we had already reached theoretical saturation and stopped interviewing.',
 
       'Interviews were conducted by phone, as per stakeholder request, but we recommended video calls for richer interaction. We called users first to set up video calls, defaulting to phone interviews if video calls were not feasible',
       'increase in the client response rate, demonstrating the effectiveness of the redesign in making proposals more responsive and appealing to clients.',
 
-      'To ensure effective follow-up, we prepared several tools:',
-      '1.User recruitment spreadsheet',
-      '2.Recruitment email',
-      '3.Calendly setup for scheduling',
-      '4.Reminder messages via Whatsapp',
+      '<b>To ensure effective follow-up, we prepared several tools</b>:',
+      '1. User recruitment spreadsheet',
+      '2. Recruitment email',
+      '3. Calendly setup for scheduling',
+      '4. Reminder messages via Whatsapp',
 
       'For detailed tools and scripts, you can view the documents by clicking here.',
 
-      {
-        type: 'title',
-        text: 'Stage 2: Interviewing Unsubscribed Users',
-        marginBottom: 0,
-        marginTop: 50,
-      },
+//Esto es para maquetar, ahora pertenece a la imagen FINDINFS FROM DE RESEARCH QUE ESTA ABAJO DE ESTO
+      // {
+      //   type: 'title',
+      //   text: 'Stage 2: Interviewing Unsubscribed Users',
+      //   marginBottom: 0,
+      //   marginTop: 50,
+      // },
       
-      'After completing stages 1 and 2, we prepared the final report, including: a General Report, the detailed interview report vith visual cards (5 cards form 14 interviews), qualitative feedback analysis report, excel sheet vith interviewed customers',
+      // //'After completing stages 1 and 2, we prepared the final report, including: a General Report, the detailed interview report vith visual cards (5 cards form 14 interviews), qualitative feedback analysis report, excel sheet vith interviewed customers',
 
-      'We noted that users often provided multiple reasons for churn, considering the first mentioned as the most significant. We created two graphs: one for main reasons and another combining main and secondary reasons.',
+      // //'We noted that users often provided multiple reasons for churn, considering the first mentioned as the most significant. We created two graphs: one for main reasons and another combining main and secondary reasons.',
 
+//Comment andy: La imagen the findings-from-research-mobile.svg, que está abajo de este comment, tiene que tomar el 100% en MOBILE
       {
-        type: 'title',
-        text: 'Key findingss',
-        marginBottom: 0,
-        marginTop: 50,
-      },
-
-      {
-        type: 'results',
-        percentages: ['50%%', '15.3%', '11.5%','11.5%','7.6%', '7.6%'],
-        texts: [
-          'of users cited the lack of leads or poor lead conversion as the main reason for churn.',
-          'of the users went to or used stronger competitors (Finca Raíz).',
-          
-        ],
+        type: 'image',
+        src: '/proppit/desktop/findings-from-research-desktop.svg',
+        mobileVersionSrc: '/proppit/mobile/findings-from-research-mobile.svg',
+        width: '100%',
         marginBottom: 30,
-        marginTop: 30,
+        marginTop: 40,
+        imageDescription: 'findings',
       },
-     
       
-      '',
-      '15.3%',
       
-      '11.5%',
-      'felt they wasted their money.',
-      '11.5%',
-      'mentioned mistreatment in customer service.',
-      '7.6%',
-      'was the cost and/or lack of smaller plans suitable for small real estate agencies.',
-      '7.6%',
-      'of the users had initial account activation problems.',
+//Comment andy: La imagen the key-findings-mobile.svg, que está abajo de este comment, tiene que tomar el 100% en MOBILE
+      {
+        type: 'image',
+        src: '/proppit/desktop/key-findings-desktop.svg',
+        mobileVersionSrc: '/proppit/mobile/key-findings-mobile.svg',
+        width: '100%',
+        marginBottom: 30,
+        marginTop: 0,
+        imageDescription: 'key findings from research',
+      },
 
-      'These reasons were consistent with issues mentioned in customer emails and NPS survey responses analyzed in stage 1.',
 
-      '<b>Summary and Conclusion',
 
-      'The research identified clear user pain points, leading to concrete improvement solutions that could solve the churn problem:',
-      '1.Offer smaller plans for small clients',
-      '2.Improve the payment/renewal process by adding features for users to self-manage invoices and report payments',
-      '3.Enhance initial account activation with an automatic system for new customers',
-      '4.Provide training through webinars or a YouTube channel to help customers better utilize the platform',
+//Comment andy: La imagen the summary-conclusion-mobile.svg, que está abajo de este comment, tiene que tomar el 100% en MOBILE
 
-      'Our research team provided these insights to the product team for implementation.',
+      {
+        type: 'image',
+        src: '/proppit/desktop/summary-conclusion-desktop.svg',
+        mobileVersionSrc: '/proppit/mobile/summary-conclusion-mobile.svg',
+        width: '100%',
+        marginBottom: 30,
+        marginTop: 40,
+        imageDescription: 'double diamond methodology image',
+      },
+      
 
-      'The presented data serves as a baseline to measure the impact of future improvements.',
+//KEY-FINDINGS  / SUMMARY AND CONCLUSION- para lo quieras maquetar aca esta la info (falta acomodarla, me queda a mi)
+      // {
+      //   type: 'results',
+      //   percentages: ['50%', '15.3%', '11.5%','11.5%','7.6%', '7.6%'],
+      //   texts: [
+      //     'of users cited the lack of leads or poor lead conversion as the main reason for churn.',
+      //     'of the users went to or used stronger competitors (Finca Raíz).',
+      //     'felt they wasted their money.',        
+      //     'mentioned mistreatment in customer service.',
+      //     'was the cost and/or lack of smaller plans suitable for small real estate agencies.',
+      //     'of the users had initial account activation problems.',
+          
+      //   ],
+      //   marginBottom: 30,
+      //   marginTop: 30,
+      // },  
 
-      'A few months after completing this research, the research team and other employees in Argentina were laid off, leaving no information on the implemented improvements.',
+      // 'These reasons were consistent with issues mentioned in customer emails and NPS survey responses analyzed in stage 1.',
 
-      'Previous project',
-      'Next project',
+      // '<b>Summary and Conclusion',
 
-      'Home',
-      'Resume',
-      'LikedIn',
+      // 'The research identified clear user pain points, leading to concrete improvement solutions that could solve the churn problem:',
+      // '1.Offer smaller plans for small clients',
+      // '2.Improve the payment/renewal process by adding features for users to self-manage invoices and report payments',
+      // '3.Enhance initial account activation with an automatic system for new customers',
+      // '4.Provide training through webinars or a YouTube channel to help customers better utilize the platform',
+
+      // 'Our research team provided these insights to the product team for implementation.',
+
+      // 'The presented data serves as a baseline to measure the impact of future improvements.',
+
+      // 'A few months after completing this research, the research team and other employees in Argentina were laid off, leaving no information on the implemented improvements.',
+
+ 
     ],
   },
 ];
