@@ -20,7 +20,7 @@ const Home = () => {
           width: isDesktop ? '100vw' : isLittleMobile ? '100%' : '349px',
           height: isDesktop ? '38px' : '124px',
           marginLeft: isDesktop ? '' : '0px',
-          marginTop: isDesktop ? '50px' : '',
+          marginTop: isDesktop ? '20px' : '',
           alignItems: 'center',
           justifyContent: 'center',
           gap: isDesktop ? '12px' : '5px',
@@ -167,6 +167,7 @@ const Home = () => {
           flexDirection: 'column',
           gap: '23px',
           marginTop: isDesktop ? '60px' : '37px',
+          marginBottom: '50px',
         }}
       >
         <TyrCase />
