@@ -12,16 +12,17 @@ export interface IProjects {
         marginTop: number;
       }
      
-    | {
+    |{
       type: 'image';
       desktopSrc: string;
       desktopMode: '100%' | 'full width' | 'customWidth';
       mobileSrc: string;
       mobileMode: '100%' | 'full width' | 'customWidth';
-      width?: string;       
+      customWidthMobile?: string;
+      customWidthDesktop?: string;
       marginBottom: number;
-      marginTop: number;        
-      }
+      marginTop: number;
+    }
     
   )[];
 }
