@@ -102,7 +102,7 @@ const Properati: React.FC = () => {
             width: '100%',
             maxWidth: '349px',
             height: '463 px',
-            padding: '33px 0',
+            padding: '33px 0 25px 0',
             borderRadius: '10px',
             backgroundColor: '#F1E5F8',
             alignItems: 'center',
