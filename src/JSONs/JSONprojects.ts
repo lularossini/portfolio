@@ -11,55 +11,19 @@ export interface IProjects {
         marginBottom: number;
         marginTop: number;
       }
-    | {
-        type: 'results';
-        percentages: string[];
-        texts: string[];
-        marginBottom: number;
-        marginTop: number;
-      }
-    | {
-        type: 'link';
-        href: string;
-        text: string;
-        width?: string;
-        height?: string;
-        marginBottom: number;
-        marginTop: number;
-      }
-    | {
-      type: 'imageFullWidth';
-      src: string;
-      mobileVersionSrc?: string;
-      width: string;
-      height?: string;
+     
+    |{
+      type: 'image';
+      desktopSrc: string;
+      desktopMode: '100%' | 'full width' | 'customWidth';
+      mobileSrc: string;
+      mobileMode: '100%' | 'full width' | 'customWidth';
+      customWidthMobile?: string;
+      customWidthDesktop?: string;
       marginBottom: number;
       marginTop: number;
-      imageDescription: string;
-      widthImageDescription?: string;
     }
-    | {
-        type: 'image' | 'video';
-        src: string;
-        mobileVersionSrc?: string;
-        width?: string;
-        height?: string;
-        marginBottom: number;
-        marginTop: number;
-        imageDescription: string;
-        widthImageDescription?: string;
-      }
-    | {
-        type: 'carousel';
-        srcImages: string[];
-        width?: string;
-        height?: string;
-        marginBottom?: number;
-        marginTop?: number;
-        imageDescription?: string[];
-        widthImageDescription?: string;
-        interval?: number;
-      }
+    
   )[];
 }
 
@@ -78,7 +42,7 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'About',
         marginBottom: 0,
-        marginTop: 20,
+        marginTop: 30,
       },
       'TYR is a company that specializes in <b>commodity trading</b>. This means they focus on <b>buying and selling raw materials</b>, like oil, metals, and agricultural products. Also <b>connects producers and buyers</b> of raw materials and <b>handles the logistics</b> of getting these materials where they need to go.',
 
@@ -86,19 +50,21 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'The problem',
         marginBottom: 0,
-        marginTop: 80,
+        marginTop: 30,
       },
       'TYR faced major issues with their system, including slow response times due to high data volume, a steep learning curve for new employees, and information duplication. Forms were too long and redundant, workflows were confusing, and sequential use by traders and administrators led to frequent errors, requiring the owners intervention.',
 //Comment andy: La imagen roles-table-tyr-mobile.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
+          
       {
         type: 'image',
-        src: '/tyr/desktop/roles-in-project-tyr-desktop.svg',
-        mobileVersionSrc: '/tyr/mobile/roles-table-tyr-mobile.svg',
-        width: '100%',
-        marginBottom: 30,
-        marginTop: 30,
-        imageDescription: 'roles in tyrs project',
+        desktopSrc: '/tyr/desktop/roles-in-project-tyr-desktop.svg',
+        desktopMode: '100%',
+        mobileSrc: '/tyr/mobile/roles-table-tyr-mobile.svg',
+        mobileMode: '100%',      
+        marginBottom: 20,
+        marginTop: 20,      
       },
+
      
 //Para después: estos son textos para cuando haya que sacar la imagen de roles y maquetar
 // '<b>My role</b>',
@@ -121,25 +87,26 @@ export const projects: IProjects[] = [
 //Comment andy: La imagen image-research-desktop.svg, que está abajo de este comment, tiene que tomar el 100% en desktop   
       {
         type: 'image',
-        src: '/tyr/desktop/image-research-desktop.svg',
-        mobileVersionSrc: '/tyr/mobile/imagen-research.png',
-        width: '100%',
-        marginBottom: 30,
-        marginTop: 30,
-        imageDescription: 'summarize of the research from project tyr',
+        desktopSrc: '/tyr/desktop/image-research-desktop.svg',
+        desktopMode: '100%',
+        mobileSrc: '/tyr/mobile/image-research.png',
+        mobileMode: '100%',      
+        marginBottom: 20,
+        marginTop: 20,      
       },
 
 //Comment andy: La imagen the-results-tyr-mobile.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
+
       {
         type: 'image',
-        src: '/tyr/desktop/the-results-desktop.svg',
-        mobileVersionSrc: '/tyr/mobile/the-results-tyr-mobile.svg',
-        width: '100%',
-        marginBottom: 30,
-        marginTop: 30,
-        imageDescription: 'summarize of the research from project tyr',
+        desktopSrc: '/tyr/desktop/the-results-desktop.svg',
+        desktopMode: '100%',
+        mobileSrc: '/tyr/mobile/the-results-tyr-mobile.svg',
+        mobileMode: '100%',      
+        marginBottom: 20,
+        marginTop: 20,      
       },
- 
+  
 
 //Para después: estos son textos para cuando haya que sacar la imagen de Results y maquetar
       // {
@@ -173,13 +140,13 @@ export const projects: IProjects[] = [
 //Tambien la imagen hi-fi-mobile-tyr.svg, tiene que tomar el 100% en mobile
           {
             type: 'image',
-            src: '/tyr/desktop/slider-hi-fi-tyr-desktop.svg',
-            mobileVersionSrc: '/tyr/mobile/hi-fi-mobile-tyr.svg',
-            width: '100%',
-            marginBottom: 30,
-            marginTop: 30,
-            imageDescription: 'summarize of the research from project tyr',
-          },     
+            desktopSrc: '/tyr/desktop/slider-hi-fi-tyr-desktop.svg',
+            desktopMode: 'full width',
+            mobileSrc: '/tyr/mobile/hi-fi-mobile-tyr.svg',
+            mobileMode: 'full width',      
+            marginBottom: 20,
+            marginTop: 20,      
+          },         
 
          {
         type: 'title',
@@ -219,15 +186,17 @@ export const projects: IProjects[] = [
       },
 
 //Comment andy: La imagen the body-problem-abitab.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
+
       {
         type: 'image',
-        src: '/abitab/desktop/problem-body-abitab-desktop.svg',
-        mobileVersionSrc: '/abitab/mobile/body-problem-abitab.svg',
-        width: '100%',
-        marginBottom: 0,
-        marginTop: 0,
-        imageDescription: 'problems detected in abitab previous app',
-      },
+        desktopSrc: '/abitab/desktop/problem-body-abitab-desktop.svg',
+        desktopMode: '100%',
+        mobileSrc: '/abitab/mobile/body-problem-abitab.svg',
+        mobileMode: '100%',      
+        marginBottom: 20,
+        marginTop: 20,      
+      },   
+  
 
 ////Para después: estos son textos de THE PROBLEM para cuando haya que sacar la imagen y maquetar, la imagen esta arriba
       // 'To achieve digital identity registration, we evaluated the existing web and app channels for usability issues.',
@@ -240,16 +209,17 @@ export const projects: IProjects[] = [
 
 
 //Comment andy: La imagen roles-in-project-mobile-abitab.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
-
+      
       {
         type: 'image',
-        src: '/abitab/desktop/roles-in-project-abitab-desktop.svg',
-        mobileVersionSrc: '/abitab/mobile/roles-in-project-mobile-abitab.svg',
-        width: '100%',
-        marginBottom: 0,
-        marginTop: 40,
-        imageDescription: 'problems detected in abitab previous app',
-      },
+        desktopSrc: '/abitab/desktop/roles-in-project-abitab-desktop.svg',
+        desktopMode: '100%',
+        mobileSrc: '/abitab/mobile/roles-in-project-mobile-abitab.svg',
+        mobileMode: '100%',      
+        marginBottom: 20,
+        marginTop: 20,      
+      },   
+
 
    ////Para después: estos son textos de MY ROLE para cuando haya que sacar la imagen y maquetar, la imagen está arriba
 
@@ -280,14 +250,14 @@ export const projects: IProjects[] = [
 
       {
         type: 'image',
-        src: '/abitab/desktop/design-system.svg',
-        mobileVersionSrc: '/abitab/mobile/design-system-abitab-mobile.svg',
-        width: '100%',
-        marginBottom: 0,
-        marginTop: 30,
-        imageDescription: "some elements of Abitab's design system",
-      },
-
+        desktopSrc: '/abitab/desktop/design-system.svg',
+        desktopMode: '100%',
+        mobileSrc: '/abitab/mobile/design-system-abitab-mobile.svg',
+        mobileMode: '100%',      
+        marginBottom: 20,
+        marginTop: 30,      
+      },   
+     
         {
         type: 'title',
         text: 'Hi-Fi Screens',
@@ -300,13 +270,13 @@ export const projects: IProjects[] = [
 
       {
         type: 'image',
-        src: '/abitab/desktop/telefonos-desktop.svg',
-        mobileVersionSrc: '/abitab/mobile/telefonos-mobile.svg',
-        width: '100%',
+        desktopSrc: '/abitab/desktop/telefonos-desktop.svg',
+        desktopMode: '100%',
+        mobileSrc: '/abitab/mobile/telefonos-mobile.svg',
+        mobileMode: '100%',      
         marginBottom: 30,
-        marginTop: 40,
-        imageDescription: 'some screens of new design of the app in hight fidelity',
-      },
+        marginTop: 40,      
+      }, 
 
 
       {
@@ -323,30 +293,27 @@ export const projects: IProjects[] = [
       'Based on the tests, I created a report with key insights, improvement points, and recommendations, which I presented to the client.',
 
 //Comment andy: La imagen usability-image-desktop.svg, que está abajo de este comment, tiene que tomar el 100% en desktop
-      {
-        type: 'image',
-        src: '/abitab/desktop/usability-image-desktop.svg',
-        mobileVersionSrc: '/abitab/mobile/usability-image-mobile.svg',
-        width: '100%',
-        marginBottom: 30,
-        marginTop: 40,
-        imageDescription: '3 people in an office, 2 of them designers are conducting a usability test with one user',
-      },
-   
-
-
+    {
+      type: 'image',
+      desktopSrc: '/abitab/desktop/usability-image-desktop.svg',
+      desktopMode: 'full width',
+      mobileSrc: '/abitab/mobile/usability-image-mobile.svg',
+      mobileMode: '100%',      
+      marginBottom: 30,
+      marginTop: 40,      
+    }, 
 
 //Comment andy: La imagen the results-desktop-abitab.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
-
       {
         type: 'image',
-        src: '/abitab/desktop/the results-desktop-abitab.svg',
-        mobileVersionSrc: '/abitab/mobile/results-abitab-mobile.svg',
-        width: '100%',
+        desktopSrc: '/abitab/desktop/the results-desktop-abitab.svg',
+        desktopMode: '100%',
+        mobileSrc: '/abitab/mobile/results-abitab-mobile.svg',
+        mobileMode: '100%',      
         marginBottom: 30,
-        marginTop: 40,
-        imageDescription: 'some numbers to show results on this project',
-      },
+        marginTop: 40,      
+      }, 
+    
 
 ////Para después: estos son textos de RESULTS para cuando haya que sacar la imagen y maquetar, la imagen está arriba
       // {
@@ -370,9 +337,7 @@ export const projects: IProjects[] = [
       },
       'This redesign was quite a challenge given that our team was large, so we had to be very organized and maintain constant communication to implement changes as quickly as possible. We also learned a lot about client communication, as at the beginning of the project, we had few meetings and were experiencing many changes from their side. As a result, we decided to have three weekly meetings to ensure everyone was on the same page.',
       'This significantly improved the speed of iteration, considering it was a project with many technical challenges and the need to communicate these effectively through the design to users.',
-      'Finally, the project was discontinued due to a lack of budget and was not completed.',
-
-  
+      'Finally, the project was discontinued due to a lack of budget and was not completed.',  
     ],
   },
 
@@ -412,16 +377,16 @@ export const projects: IProjects[] = [
 
 
 //Comment andy: La imagen the roles-in-project-mobile.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
-     {
-        type: 'image',
-        src: '/properati/desktop/roles-in-project-desktop.svg',
-        mobileVersionSrc: '/properati/mobile/roles-in-project-mobile.svg',
-        width: '100%',
-        marginBottom: 0,
-        marginTop: 40,
-        imageDescription: 'my roles in this project',
-      },
-
+     
+    {
+      type: 'image',
+      desktopSrc: '/properati/desktop/roles-in-project-desktop.svg',
+      desktopMode: '100%',
+      mobileSrc: '/properati/mobile/roles-in-project-mobile.svg',
+      mobileMode: '100%',      
+      marginBottom: 0,
+      marginTop: 40,      
+    }, 
 
 ///Para después: estos son textos de ROLES para cuando haya que sacar la imagen y maquetar, la imagen está arriba
       // '<b>My role</b>',
@@ -465,48 +430,49 @@ export const projects: IProjects[] = [
         marginBottom: 20,
         marginTop: 50,
       },
-     
+
       {
         type: 'image',
-        src: '/properati/desktop/mascara-wireframes.svg',
-        mobileVersionSrc: '/properati/mobile/wireframes-mobile.svg',
-        width: '100%',
+        desktopSrc: '/properati/desktop/mascara-wireframes.svg',
+        desktopMode: '100%',
+        mobileSrc: '/properati/mobile/wireframes-mobile.svg',
+        mobileMode: '100%',      
         marginBottom: 0,
-        marginTop: 0,
-        imageDescription: 'some images of the wireframes made for this project',
-      },
+        marginTop: 0,      
+      }, 
 
 
-      //Comment andy: La imagen the hifi-desktop.svg, que está abajo de este comment, tiene que tomar el 100% en DESKTOP
-      // en mobile me parece que se ve como el culo, tenemos que verlo juntos seguramente tenga que ajustarla desde el diseño
       {
         type: 'title',
         text: 'Hi-fi design',
         marginBottom: 0,
         marginTop: 40,
       },
-      
+
+      //Comment andy: La imagen the hifi-desktop.svg, que está abajo de este comment, tiene que tomar el 100% en DESKTOP
+      // en mobile me parece que se ve como el culo, tenemos que verlo juntos seguramente tenga que ajustarla desde el diseño  
       {
         type: 'image',
-        src: '/properati/desktop/hifi-desktop.svg',
-        mobileVersionSrc: '/properati/mobile/hi-fi-mobile.svg',
-        width: '100%',
+        desktopSrc: '/properati/desktop/hifi-desktop.svg',
+        desktopMode: 'full width',
+        mobileSrc: '/properati/mobile/hi-fi-mobile.svg',
+        mobileMode: 'full width',      
         marginBottom: 0,
-        marginTop: 20,
-        imageDescription: 'images of the high definition designs made for this project',
-      },
+        marginTop: 0,      
+      }, 
+
 
 //Comment andy: La imagen the the-results.svg, que está abajo de este comment, tiene que tomar el 100% en MOBILE
-
       {
         type: 'image',
-        src: '/properati/desktop/the-results-desktop-properati.svg',
-        mobileVersionSrc: '/properati/mobile/the-results.svg',
-        width: '100%',
+        desktopSrc: '/properati/desktop/the-results-desktop-properati.svg',
+        desktopMode: '100%',
+        mobileSrc: '/properati/mobile/the-results.svg',
+        mobileMode: 'full width',      
         marginBottom: 0,
-        marginTop: 40,
-        imageDescription: 'images of 3 percentaje results of this project',
-      },
+        marginTop: 40,      
+      }, 
+
 
 ///Para después: estos son textos de RESULTS para cuando haya que sacar la imagen y maquetar, la imagen está arriba
       // {
@@ -566,13 +532,14 @@ export const projects: IProjects[] = [
 //Comment andy: La imagen the roles-in-project-mobile-proppit.svg, que está abajo de este comment, tiene que tomar el 100% en MOBILE
       {
         type: 'image',
-        src: ' /proppit/desktop/roles-in-project-desktop-proppit.svg',
-        mobileVersionSrc: '/proppit/mobile/roles-in-project-mobile-proppit.svg',
-        width: '100%',
+        desktopSrc: '/proppit/desktop/roles-in-project-desktop-proppit.svg',
+        desktopMode: '100%',
+        mobileSrc: '/proppit/mobile/roles-in-project-mobile-proppit.svg',
+        mobileMode: '100%',      
         marginBottom: 30,
-        marginTop: 40,
-        imageDescription: 'images of 3 percentaje results of this project',
-      },
+        marginTop: 40,      
+      },       
+
 
 //Para después: estos son textos de ROLES para cuando haya que sacar la imagen y maquetar, la imagen está arriba
 
@@ -629,26 +596,26 @@ export const projects: IProjects[] = [
 //Comment andy: La imagen the steps-research-desktop.svg, que está abajo de este comment, tiene que tomar el 100% en DESKTOP
       {
         type: 'image',
-        src: '/proppit/desktop/steps-research-desktop.svg',
-        mobileVersionSrc: '/proppit/mobile/steps-research-mobile.svg',
-        width: '100%',
+        desktopSrc: '/proppit/desktop/steps-research-desktop.svg',
+        desktopMode: '100%',
+        mobileSrc: '/proppit/mobile/steps-research-mobile.svg',
+        mobileMode: '100%',      
         marginBottom: 30,
-        marginTop: 40,
-        imageDescription: 'steps',
-      },
+        marginTop: 40,      
+      },        
+
 
       'To develop this project we followed the lines of the Double Diamond methodology and as a team, we generated deliverables for the first two phases: for Discovery and in the Define phase.',
-   
+      
       {
         type: 'image',
-        src: '/proppit/desktop/double-diamond-desktop.png',
-        mobileVersionSrc: '/proppit/mobile/doublediamond-mobile.jpg',
-        width: '100%',
+        desktopSrc: '/proppit/desktop/double-diamond-desktop.png',
+        desktopMode: '100%',
+        mobileSrc: '/proppit/mobile/doublediamond-mobile.jpg',
+        mobileMode: '100%',      
         marginBottom: 30,
-        marginTop: 40,
-        imageDescription: 'double diamond methodology image',
-      },
-
+        marginTop: 40,      
+      },        
 
       {
         type: 'title',
@@ -696,42 +663,45 @@ export const projects: IProjects[] = [
       // //'We noted that users often provided multiple reasons for churn, considering the first mentioned as the most significant. We created two graphs: one for main reasons and another combining main and secondary reasons.',
 
 //Comment andy: La imagen the findings-from-research-mobile.svg, que está abajo de este comment, tiene que tomar el 100% en MOBILE
+      
       {
         type: 'image',
-        src: '/proppit/desktop/findings-from-research-desktop.svg',
-        mobileVersionSrc: '/proppit/mobile/findings-from-research-mobile.svg',
-        width: '100%',
+        desktopSrc: '/proppit/desktop/findings-from-research-desktop.svg',
+        desktopMode: '100%',
+        mobileSrc: '/proppit/mobile/findings-from-research-mobile.svg',
+        mobileMode: '100%',      
         marginBottom: 30,
-        marginTop: 40,
-        imageDescription: 'findings',
-      },
-      
+        marginTop: 40,      
+      },        
+
+     
       
 //Comment andy: La imagen the key-findings-mobile.svg, que está abajo de este comment, tiene que tomar el 100% en MOBILE
-      {
-        type: 'image',
-        src: '/proppit/desktop/key-findings-desktop.svg',
-        mobileVersionSrc: '/proppit/mobile/key-findings-mobile.svg',
-        width: '100%',
-        marginBottom: 30,
-        marginTop: 0,
-        imageDescription: 'key findings from research',
-      },
-
+      
+        {
+          type: 'image',
+          desktopSrc: '/proppit/desktop/key-findings-desktop.svg',
+          desktopMode: '100%',
+          mobileSrc: '/proppit/mobile/key-findings-mobile.svg',
+          mobileMode: '100%',      
+          marginBottom: 30,
+          marginTop: 0,      
+        },      
 
 
 //Comment andy: La imagen the summary-conclusion-mobile.svg, que está abajo de este comment, tiene que tomar el 100% en MOBILE
 
       {
         type: 'image',
-        src: '/proppit/desktop/summary-conclusion-desktop.svg',
-        mobileVersionSrc: '/proppit/mobile/summary-conclusion-mobile.svg',
-        width: '100%',
+        desktopSrc: '/proppit/desktop/summary-conclusion-desktop.svg',
+        desktopMode: '100%',
+        mobileSrc: '/proppit/mobile/summary-conclusion-mobile.svg',
+        mobileMode: '100%',      
         marginBottom: 30,
-        marginTop: 40,
-        imageDescription: 'double diamond methodology image',
-      },
-      
+        marginTop: 40,      
+      },      
+
+     
 
 //KEY-FINDINGS  / SUMMARY AND CONCLUSION- para lo quieras maquetar aca esta la info (falta acomodarla, me queda a mi)
       // {
