@@ -18,8 +18,8 @@ export interface IProjects {
       desktopMode: '100%' | 'full width' | 'customWidth';
       mobileSrc: string;
       mobileMode: '100%' | 'full width' | 'customWidth';
-      customWidthMobile?: string;
       customWidthDesktop?: string;
+      customWidthMobile?: string;
       marginBottom: number;
       marginTop: number;
     }
@@ -88,7 +88,7 @@ export const projects: IProjects[] = [
       {
         type: 'image',
         desktopSrc: '/tyr/desktop/image-research-desktop.svg',
-        desktopMode: '100%',
+        desktopMode: 'full width',
         mobileSrc: '/tyr/mobile/image-research.png',
         mobileMode: '100%',      
         marginBottom: 20,
