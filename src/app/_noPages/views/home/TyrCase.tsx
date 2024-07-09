@@ -141,7 +141,6 @@ const TyrCase: React.FC = () => {
                 fontWeight: '500',
                 lineHeight: '23px',
                 letterSpacing: '0.12px',
-
                 marginTop: '14px',
               }}
             >
@@ -151,7 +150,6 @@ const TyrCase: React.FC = () => {
                   fontWeight: '600',
                   lineHeight: '23px',
                   letterSpacing: '0px',
-
                   marginTop: '13px',
                 }}
               >

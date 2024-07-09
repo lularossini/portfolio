@@ -133,8 +133,6 @@ const ProppitCase: React.FC = () => {
                 fontWeight: '700',
                 lineHeight: '24px',
                 letterSpacing: '2px',
-                fontFamily:
-                  'var(--font-darkerGrotesque), sans-serif !important',
               }}
             >
               REDUCING CHURN BY UNDERSTANDING USERS
@@ -147,8 +145,6 @@ const ProppitCase: React.FC = () => {
                 fontWeight: '500',
                 lineHeight: '23px',
                 letterSpacing: '0.12px',
-
-                fontFamily: 'var(--font-spaceGrotesque), sans-serif !important',
                 marginTop: '14px',
               }}
             >
@@ -158,8 +154,7 @@ const ProppitCase: React.FC = () => {
                   fontWeight: '600',
                   lineHeight: '23px',
                   letterSpacing: '0px',
-                  fontFamily:
-                    'var(--font-spaceGrotesque), sans-serif !important',
+
                   marginTop: '13px',
                 }}
               >
@@ -175,8 +170,7 @@ const ProppitCase: React.FC = () => {
                   fontSize: '14px',
                   fontWeight: '700',
                   lineHeight: '25px',
-                  fontFamily:
-                    'var(--font-spaceGrotesque), sans-serif !important',
+
                   marginRight: '14px',
                 }}
               >

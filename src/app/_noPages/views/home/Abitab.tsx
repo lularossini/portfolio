@@ -130,7 +130,6 @@ const AbitabCase: React.FC = () => {
                 fontWeight: '700',
                 lineHeight: '24px',
                 letterSpacing: '2px',
-                font: 'var(--font-darkerGrotesque), sans-serif !important',
               }}
             >
               GIVING URUGUAYANS A DIGITAL IDENTITY
@@ -138,13 +137,11 @@ const AbitabCase: React.FC = () => {
             <Typography
               sx={{
                 width: '292px',
-                height: '92px',
+                height: '69px',
                 fontSize: '13px',
                 fontWeight: '500',
                 lineHeight: '23px',
                 letterSpacing: '0.12px',
-
-                font: 'var(--font-spaceGrotesque), sans-serif !important',
                 marginTop: '14px',
               }}
             >
@@ -154,7 +151,7 @@ const AbitabCase: React.FC = () => {
                   fontWeight: '600',
                   lineHeight: '23px',
                   letterSpacing: '0px',
-                  font: 'var(--font-spaceGrotesque), sans-serif !important',
+
                   marginTop: '13px',
                 }}
               >
@@ -170,7 +167,7 @@ const AbitabCase: React.FC = () => {
                   fontSize: '14px',
                   fontWeight: '700',
                   lineHeight: '25px',
-                  font: 'var(--font-spaceGrotesque), sans-serif !important',
+
                   marginRight: '14px',
                 }}
               >
