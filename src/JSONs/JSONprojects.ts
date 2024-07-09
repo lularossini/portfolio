@@ -50,7 +50,7 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'The problem',
         marginBottom: 0,
-        marginTop: 30,
+        marginTop: 40,
       },
       'TYR faced major issues with their system, including slow response times due to high data volume, a steep learning curve for new employees, and information duplication. Forms were too long and redundant, workflows were confusing, and sequential use by traders and administrators led to frequent errors, requiring the owners intervention.',
 //Comment andy: La imagen roles-table-tyr-mobile.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
@@ -59,10 +59,11 @@ export const projects: IProjects[] = [
         type: 'image',
         desktopSrc: '/tyr/desktop/roles-in-project-tyr-desktop.svg',
         desktopMode: '100%',
-        mobileSrc: '/tyr/mobile/roles-table-tyr-mobile.svg',
-        mobileMode: '100%',      
-        marginBottom: 20,
-        marginTop: 20,      
+        mobileSrc: '/tyr/mobile/roles-table-tyr-mobile.png',
+        mobileMode: 'customWidth',  
+        customWidthMobile: '350px',    
+        marginBottom: 30,
+        marginTop: 50,      
       },
 
      
@@ -88,11 +89,11 @@ export const projects: IProjects[] = [
       {
         type: 'image',
         desktopSrc: '/tyr/desktop/image-research-desktop.svg',
-        desktopMode: 'full width',
+        desktopMode: '100%',
         mobileSrc: '/tyr/mobile/image-research.png',
         mobileMode: '100%',      
-        marginBottom: 20,
-        marginTop: 20,      
+        marginBottom: 50,
+        marginTop: 50,      
       },
 
 //Comment andy: La imagen the-results-tyr-mobile.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
@@ -101,9 +102,10 @@ export const projects: IProjects[] = [
         type: 'image',
         desktopSrc: '/tyr/desktop/the-results-desktop.svg',
         desktopMode: '100%',
-        mobileSrc: '/tyr/mobile/the-results-tyr-mobile.svg',
-        mobileMode: '100%',      
-        marginBottom: 20,
+        mobileSrc: '/tyr/mobile/the-results-tyr-mobile.png',
+        mobileMode: 'customWidth',  
+        customWidthMobile: '350px',     
+        marginBottom: 50,
         marginTop: 20,      
       },
   
@@ -132,7 +134,7 @@ export const projects: IProjects[] = [
       {
         type: 'title',
         text: 'HI-FI Screens',
-        marginBottom: 20,
+        marginBottom: 0,
         marginTop: 20,
       },
       
@@ -144,8 +146,8 @@ export const projects: IProjects[] = [
             desktopMode: 'full width',
             mobileSrc: '/tyr/mobile/hi-fi-mobile-tyr.svg',
             mobileMode: 'full width',      
-            marginBottom: 20,
-            marginTop: 20,      
+            marginBottom: 50,
+            marginTop: 30,      
           },         
 
          {
@@ -181,7 +183,7 @@ export const projects: IProjects[] = [
       {
         type: 'title',
         text: 'The problem',
-        marginBottom: 20,      
+        marginBottom: 0,      
         marginTop: 40,
       },
 
@@ -191,8 +193,9 @@ export const projects: IProjects[] = [
         type: 'image',
         desktopSrc: '/abitab/desktop/problem-body-abitab-desktop.svg',
         desktopMode: '100%',
-        mobileSrc: '/abitab/mobile/body-problem-abitab.svg',
-        mobileMode: '100%',      
+        mobileSrc: '/abitab/mobile/body-problem-abitab.png',
+        mobileMode: 'customWidth',  
+        customWidthMobile: '350px',  
         marginBottom: 20,
         marginTop: 20,      
       },   
@@ -214,8 +217,9 @@ export const projects: IProjects[] = [
         type: 'image',
         desktopSrc: '/abitab/desktop/roles-in-project-abitab-desktop.svg',
         desktopMode: '100%',
-        mobileSrc: '/abitab/mobile/roles-in-project-mobile-abitab.svg',
-        mobileMode: '100%',      
+        mobileSrc: '/abitab/mobile/roles-in-project-mobile-abitab.png',
+        mobileMode: 'customWidth',  
+        customWidthMobile: '350px',        
         marginBottom: 20,
         marginTop: 20,      
       },   
@@ -253,7 +257,8 @@ export const projects: IProjects[] = [
         desktopSrc: '/abitab/desktop/design-system.svg',
         desktopMode: '100%',
         mobileSrc: '/abitab/mobile/design-system-abitab-mobile.svg',
-        mobileMode: '100%',      
+        mobileMode: 'customWidth',  
+        customWidthMobile: '350px',        
         marginBottom: 20,
         marginTop: 30,      
       },   
@@ -271,9 +276,9 @@ export const projects: IProjects[] = [
       {
         type: 'image',
         desktopSrc: '/abitab/desktop/telefonos-desktop.svg',
-        desktopMode: '100%',
+        desktopMode: 'full width',
         mobileSrc: '/abitab/mobile/telefonos-mobile.svg',
-        mobileMode: '100%',      
+        mobileMode: 'full width',      
         marginBottom: 30,
         marginTop: 40,      
       }, 
@@ -298,8 +303,9 @@ export const projects: IProjects[] = [
       desktopSrc: '/abitab/desktop/usability-image-desktop.svg',
       desktopMode: 'full width',
       mobileSrc: '/abitab/mobile/usability-image-mobile.svg',
-      mobileMode: '100%',      
-      marginBottom: 30,
+      mobileMode: 'customWidth',  
+      customWidthMobile: '350px',        
+      marginBottom: 10,
       marginTop: 40,      
     }, 
 
@@ -308,8 +314,9 @@ export const projects: IProjects[] = [
         type: 'image',
         desktopSrc: '/abitab/desktop/the results-desktop-abitab.svg',
         desktopMode: '100%',
-        mobileSrc: '/abitab/mobile/results-abitab-mobile.svg',
-        mobileMode: '100%',      
+        mobileSrc: '/abitab/mobile/results-abitab-mobile.png',
+        mobileMode: 'customWidth',  
+        customWidthMobile: '350px',     
         marginBottom: 30,
         marginTop: 40,      
       }, 
@@ -366,10 +373,10 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'The problem',
         marginBottom: 8,
-        marginTop: 50,
-        
-        
+        marginTop: 50,           
       },
+
+
       'Real estate experts work every day with multiple clients simultaneously and have to send various proposals to all of them, each of which always includes more than one property.',
       'The main pain point for the experts was that the search and presentation of properties were being done manually, which was time-consuming and caused delays in the commercial process.',
       "Additionally, clients interested in buying houses often need a fast response and a visually pleasing proposal. Since we didn't have either of these, we were losing clients.",
@@ -382,8 +389,9 @@ export const projects: IProjects[] = [
       type: 'image',
       desktopSrc: '/properati/desktop/roles-in-project-desktop.svg',
       desktopMode: '100%',
-      mobileSrc: '/properati/mobile/roles-in-project-mobile.svg',
-      mobileMode: '100%',      
+      mobileSrc: '/properati/mobile/roles-in-project-mobile.png',
+      mobileMode: 'customWidth',  
+      customWidthMobile: '350px',        
       marginBottom: 0,
       marginTop: 40,      
     }, 
@@ -426,26 +434,8 @@ export const projects: IProjects[] = [
 
       {
         type: 'title',
-        text: 'Wireframes',
-        marginBottom: 20,
-        marginTop: 50,
-      },
-
-      {
-        type: 'image',
-        desktopSrc: '/properati/desktop/mascara-wireframes.svg',
-        desktopMode: '100%',
-        mobileSrc: '/properati/mobile/wireframes-mobile.svg',
-        mobileMode: '100%',      
-        marginBottom: 0,
-        marginTop: 0,      
-      }, 
-
-
-      {
-        type: 'title',
         text: 'Hi-fi design',
-        marginBottom: 0,
+        marginBottom: 30,
         marginTop: 40,
       },
 
@@ -457,7 +447,7 @@ export const projects: IProjects[] = [
         desktopMode: 'full width',
         mobileSrc: '/properati/mobile/hi-fi-mobile.svg',
         mobileMode: 'full width',      
-        marginBottom: 0,
+        marginBottom: 30,
         marginTop: 0,      
       }, 
 
@@ -468,7 +458,8 @@ export const projects: IProjects[] = [
         desktopSrc: '/properati/desktop/the-results-desktop-properati.svg',
         desktopMode: '100%',
         mobileSrc: '/properati/mobile/the-results.svg',
-        mobileMode: 'full width',      
+        mobileMode: 'customWidth',  
+        customWidthMobile: '350px',        
         marginBottom: 0,
         marginTop: 40,      
       }, 
@@ -534,9 +525,10 @@ export const projects: IProjects[] = [
         type: 'image',
         desktopSrc: '/proppit/desktop/roles-in-project-desktop-proppit.svg',
         desktopMode: '100%',
-        mobileSrc: '/proppit/mobile/roles-in-project-mobile-proppit.svg',
-        mobileMode: '100%',      
-        marginBottom: 30,
+        mobileSrc: '/proppit/mobile/roles-in-project-mobile-proppit.png',
+        mobileMode: 'customWidth',  
+        customWidthMobile: '350px',      
+        marginBottom: 50,
         marginTop: 40,      
       },       
 
@@ -605,11 +597,11 @@ export const projects: IProjects[] = [
       },        
 
 
-      'To develop this project we followed the lines of the Double Diamond methodology and as a team, we generated deliverables for the first two phases: for Discovery and in the Define phase.',
+      'To develop this project we followed the lines of the <b>Double Diamond methodology</b> and as a team, we generated deliverables for the first two phases: for Discovery and in the Define phase.',
       
       {
         type: 'image',
-        desktopSrc: '/proppit/desktop/double-diamond-desktop.png',
+        desktopSrc: '/proppit/desktop/double-diamond-desktop.svg',
         desktopMode: '100%',
         mobileSrc: '/proppit/mobile/doublediamond-mobile.jpg',
         mobileMode: '100%',      
@@ -639,9 +631,8 @@ export const projects: IProjects[] = [
 
       'We requested a list of customers who had been active for less than 90 days, were from Colombia, and had unsubscribed. Initially, we had no incentives, resulting in a low response rate and extended timeline. When incentives were later provided, we had already reached theoretical saturation and stopped interviewing.',
 
-      'Interviews were conducted by phone, as per stakeholder request, but we recommended video calls for richer interaction. We called users first to set up video calls, defaulting to phone interviews if video calls were not feasible',
-      'increase in the client response rate, demonstrating the effectiveness of the redesign in making proposals more responsive and appealing to clients.',
-
+      'Interviews were conducted by phone, as per stakeholder request, but we recommended video calls for richer interaction. We called users first to set up video calls, defaulting to phone interviews if video calls were not feasible increase in the client response rate, demonstrating the effectiveness of the redesign in making proposals more responsive and appealing to clients.',
+      
       '<b>To ensure effective follow-up, we prepared several tools</b>:',
       '1. User recruitment spreadsheet',
       '2. Recruitment email',
@@ -668,9 +659,10 @@ export const projects: IProjects[] = [
         type: 'image',
         desktopSrc: '/proppit/desktop/findings-from-research-desktop.svg',
         desktopMode: '100%',
-        mobileSrc: '/proppit/mobile/findings-from-research-mobile.svg',
-        mobileMode: '100%',      
-        marginBottom: 30,
+        mobileSrc: '/proppit/mobile/findings-from-the-research.png',
+        mobileMode: 'customWidth',  
+        customWidthMobile: '350px',     
+        marginBottom: 50,
         marginTop: 40,      
       },        
 
@@ -682,8 +674,9 @@ export const projects: IProjects[] = [
           type: 'image',
           desktopSrc: '/proppit/desktop/key-findings-desktop.svg',
           desktopMode: '100%',
-          mobileSrc: '/proppit/mobile/key-findings-mobile.svg',
-          mobileMode: '100%',      
+          mobileSrc: '/proppit/mobile/key-findings-mobile.png',
+          mobileMode: 'customWidth',  
+          customWidthMobile: '350px',     
           marginBottom: 30,
           marginTop: 0,      
         },      
@@ -695,10 +688,11 @@ export const projects: IProjects[] = [
         type: 'image',
         desktopSrc: '/proppit/desktop/summary-conclusion-desktop.svg',
         desktopMode: '100%',
-        mobileSrc: '/proppit/mobile/summary-conclusion-mobile.svg',
-        mobileMode: '100%',      
+        mobileSrc: '/proppit/mobile/summary-conclusion-mobile.png',
+        mobileMode: 'customWidth',  
+        customWidthMobile: '350px',        
         marginBottom: 30,
-        marginTop: 40,      
+        marginTop: 10,      
       },      
 
      
