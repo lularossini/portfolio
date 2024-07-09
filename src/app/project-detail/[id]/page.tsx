@@ -37,17 +37,17 @@ const ProjectDetail = () => {
     return;
   }
 
-  const experience = projects.find((experience) => {
+  const project = projects.find((experience) => {
     return experience.id === id;
   });
 
-  if (!experience) {
+  if (!project) {
     router.push('/error');
 
     return;
   }
 
-  const details = experience.details;
+  const details = project.details;
 
   return (
     <Box
@@ -65,7 +65,6 @@ const ProjectDetail = () => {
           display: 'flex',
           flexDirection: 'column',
           paddingTop: '340px',
-
           '@media(min-width: 1200px)': {
             paddingTop: '430px',
           },
@@ -105,7 +104,6 @@ const ProjectDetail = () => {
                 <Typography
                   key={index}
                   variant='body1'
-                  className='regularText'
                   sx={{
                     fontSize: isDesktop ? '24px' : '20px',
                     lineHeight: isDesktop ? '30px' : '27px',
@@ -129,7 +127,7 @@ const ProjectDetail = () => {
                   sx={{
                     fontSize: isDesktop ? '34px' : '25px',
                     fontWeight: '600',
-                    marginTop:`${detail.marginTop}px`,
+                    marginTop: `${detail.marginTop}px`,
                     marginBottom: `${detail.marginBottom}px`,
                   }}
                 >

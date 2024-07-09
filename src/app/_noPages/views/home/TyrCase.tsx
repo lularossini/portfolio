@@ -41,8 +41,9 @@ const TyrCase: React.FC = () => {
             }}
           >
             <Typography
+              className='darkerGrotesk'
               sx={{
-                fontSize: '23px',
+                fontSize: '18px',
                 fontWeight: '700',
                 lineHeight: '25px',
                 letterSpacing: '2px',
@@ -51,20 +52,19 @@ const TyrCase: React.FC = () => {
               A NEW INTERNAL SYSTEM TO ENHACE EXPERIENCE
             </Typography>
             <Typography
+              className='spaceGrotesk'
               sx={{
-                fontSize: '15px',
+                fontSize: '13px',
                 fontWeight: '500',
                 lineHeight: '23px',
-
                 marginTop: '15px',
               }}
             >
               <span
                 style={{
-                  fontSize: '15px',
+                  fontSize: '13px',
                   fontWeight: '600',
                   lineHeight: '23px',
-
                   marginTop: '15px',
                 }}
               >
@@ -76,11 +76,11 @@ const TyrCase: React.FC = () => {
 
             <Box sx={{ display: 'flex', marginTop: '12px' }}>
               <Typography
+                className='spaceGrotesk'
                 sx={{
-                  fontSize: '15px',
+                  fontSize: '14px',
                   fontWeight: '500',
                   lineHeight: '25px',
-
                   marginRight: '18px',
                 }}
               >

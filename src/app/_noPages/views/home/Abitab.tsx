@@ -3,7 +3,7 @@
 import { Box, Typography, useMediaQuery } from '@mui/material';
 import { useRouter } from 'next/navigation';
 
-const TyrCase: React.FC = () => {
+const AbitabCase: React.FC = () => {
   const isDesktop = useMediaQuery('(min-width:1200px)');
   const router = useRouter();
 
@@ -185,4 +185,4 @@ const TyrCase: React.FC = () => {
   );
 };
 
-export default TyrCase;
+export default AbitabCase;
