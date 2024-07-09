@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --main-padding-bottom-desktop: 50px;
+  --main-padding-top-desktop: 100px;
+  --main-padding-bottom-desktop: 0px;
   --main-padding-left-right-desktop: 50px;
-  --main-padding-bottom-mobile: 50px;
+  --main-padding-top-mobile: 105px;
+  --main-padding-bottom-mobile: 0px;
   --main-padding-left-right-mobile: 16px;
 }
 
@@ -33,7 +35,7 @@ main {
   width: 100%;
   max-width: 1207px;
   min-height: calc(100vh - var(--header-height) - var(--footer-height));
-  padding: 0 var(--main-padding-left-right-mobile)
+  padding: var(--main-padding-top-mobile) var(--main-padding-left-right-mobile)
     var(--main-padding-bottom-mobile);
 }
 
@@ -62,7 +64,7 @@ a:active {
 
 @media (min-width: 600px) {
   main {
-    padding: 0 var(--main-padding-left-right-desktop)
-      var(--main-padding-bottom-desktop);
+    padding: var(--main-padding-top-desktop)
+      var(--main-padding-left-right-desktop) var(--main-padding-bottom-desktop);
   }
 }

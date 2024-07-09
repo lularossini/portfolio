@@ -51,6 +51,22 @@ const ProjectDetail = () => {
 
   const details = project.details;
 
+  const allProjectsId = projects.map((project) => project.id);
+
+  const previousProjectClickHandler = () => {
+    const indefOfCurrentProject = allProjectsId.indexOf(id);
+
+    if (indefOfCurrentProject > 0)
+      router.push(`/project-detail/${projects[indefOfCurrentProject - 1].id}`);
+  };
+
+  const nextProjectClickHandler = () => {
+    const indefOfCurrentProject = allProjectsId.indexOf(id);
+
+    if (indefOfCurrentProject < projects.length - 1)
+      router.push(`/project-detail/${projects[indefOfCurrentProject + 1].id}`);
+  };
+
   const tyrCaseDesktop = (
     <Box sx={{ display: 'flex', alignItems: 'center' }}>
       <img
@@ -311,6 +327,7 @@ const ProjectDetail = () => {
     <Box
       sx={{
         display: 'flex',
+        flexDirection: 'column',
         width: '100%',
         maxWidth: '936px',
         height: '100%',
@@ -417,6 +434,80 @@ const ProjectDetail = () => {
               );
             }
           })}
+      </Box>
+
+      {/*Project nav bar*/}
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          padding: '16px',
+          width: '100vw',
+          height: '65px',
+          margin: '60px calc(50% - 50vw) 0 calc(50% - 50vw)',
+          backgroundColor: '#EFEBF0',
+        }}
+      >
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            width: '100%',
+            maxWidth: '936px',
+            height: '100%',
+          }}
+        >
+          <Box
+            sx={{ display: 'flex', gap: '4px', alignItems: 'center' }}
+            onClick={previousProjectClickHandler}
+          >
+            <img
+              src='/previousArrow.svg'
+              alt=''
+              style={{
+                position: 'relative',
+                width: '18px',
+                height: '18px',
+                top: '1px',
+              }}
+            />
+            <Typography
+              sx={{
+                fontSize: isDesktop ? '19px' : '16px',
+                lineHeight: '25px',
+                fontWeight: '600',
+              }}
+            >
+              Previous project
+            </Typography>
+          </Box>
+
+          <Box
+            sx={{ display: 'flex', gap: '4px', alignItems: 'center' }}
+            onClick={nextProjectClickHandler}
+          >
+            <Typography
+              sx={{
+                fontSize: isDesktop ? '19px' : '16px',
+                lineHeight: '25px',
+                fontWeight: '600',
+              }}
+            >
+              Next project
+            </Typography>
+            <img
+              src='/nextArrow.svg'
+              alt=''
+              style={{
+                position: 'relative',
+                width: '18px',
+                height: '18px',
+                top: '1px',
+              }}
+            />
+          </Box>
+        </Box>
       </Box>
     </Box>
   );

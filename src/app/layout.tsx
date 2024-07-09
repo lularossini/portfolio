@@ -37,7 +37,7 @@ export default function RootLayout({
         <link rel='icon' type='image/svg' href='../favicon.svg' />
       </head>
       <body>
-        <header>
+        <header style={{ position: 'fixed', zIndex: 100 }}>
           <Header />
         </header>
 
