@@ -14,6 +14,9 @@ import ProjectDetailImage from '@/app/_noPages/components/projectDetails/Project
 
 // ** Material UI import
 import { Box, Typography, useMediaQuery } from '@mui/material';
+import TheResults from '@/app/_noPages/components/projectDetails/TheResults';
+import Bullets from '@/app/_noPages/components/projectDetails/Bullets';
+import Table from '@/app/_noPages/components/projectDetails/Table';
 
 const ProjectDetail = () => {
   const isDesktop = useMediaQuery('(min-width:1200px)');
@@ -50,7 +53,6 @@ const ProjectDetail = () => {
   }
 
   const details = project.details;
-
   const allProjectsId = projects.map((project) => project.id);
 
   const previousProjectClickHandler = () => {
@@ -417,7 +419,7 @@ const ProjectDetail = () => {
               );
             }
 
-            // Image 100%
+            // Image
             if (detail.type === 'image') {
               return (
                 <ProjectDetailImage
@@ -428,6 +430,42 @@ const ProjectDetail = () => {
                   mobileMode={detail.mobileMode}
                   customWidthMobile={detail.customWidthMobile}
                   customWidthDesktop={detail.customWidthDesktop}
+                  marginBottom={detail.marginBottom}
+                  marginTop={detail.marginTop}
+                />
+              );
+            }
+
+            // The Results
+            if (detail.type === 'theResults') {
+              return (
+                <TheResults
+                  key={index}
+                  percentages={detail.percentages}
+                  colors={detail.colors}
+                  texts={detail.texts}
+                  marginBottom={detail.marginBottom}
+                  marginTop={detail.marginTop}
+                />
+              );
+            }
+            if (detail.type === 'bullets') {
+              return (
+                <Bullets
+                  key={index}
+                  texts={detail.texts}
+                  marginBottom={detail.marginBottom}
+                  marginTop={detail.marginTop}
+                />
+              );
+            }
+            if (detail.type === 'table') {
+              return (
+                <Table
+                  key={index}
+                  titles={detail.titles}
+                  widths={detail.widths}
+                  data={detail.data}
                   marginBottom={detail.marginBottom}
                   marginTop={detail.marginTop}
                 />
