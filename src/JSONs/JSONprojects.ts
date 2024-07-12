@@ -55,13 +55,12 @@ export interface IProjects {
 export const projects: IProjects[] = [
   {
     id: 'tyr-case',
-
     details: [
       {
         type: 'title',
         text: 'About',
         marginBottom: 0,
-        marginTop: 30,
+        marginTop: 0,
       },
       'TYR is a company that specializes in <b>commodity trading</b>. This means they focus on <b>buying and selling raw materials</b>, like oil, metals, and agricultural products. Also <b>connects producers and buyers</b> of raw materials and <b>handles the logistics</b> of getting these materials where they need to go.',
 
@@ -72,38 +71,28 @@ export const projects: IProjects[] = [
         marginTop: 40,
       },
       'TYR faced major issues with their system, including slow response times due to high data volume, a steep learning curve for new employees, and information duplication. Forms were too long and redundant, workflows were confusing, and sequential use by traders and administrators led to frequent errors, requiring the owners intervention.',
-      //Comment andy: La imagen roles-table-tyr-mobile.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
-
+     
       {
-        type: 'image',
-        desktopSrc: '/tyr/desktop/roles-in-project-tyr-desktop.svg',
-        desktopMode: '100%',
-        mobileSrc: '/tyr/mobile/roles-table-tyr-mobile.png',
-        mobileMode: 'customWidth',
-        customWidthMobile: '350px',
-        marginBottom: 30,
-        marginTop: 50,
+        type: 'table',
+        widths: ['20%', '20%', '60%'],
+        titles: ['My role', 'Tools', 'Timeline & Team'],
+        data: [
+          ['UX Research', 'UX Design', 'UX Writing'],
+          ['Figma', 'Figjam', 'Zoom'],
+          [
+            '1 month to design',
+            '1 UX Designer,1 UI designer, 2 devs, 1 Project Manager ',
+            '10 Devs, 1 ProjectManager',
+          ],
+        ],
+        marginBottom: 20,
+        marginTop: 60,
       },
-
-      //Para después: estos son textos para cuando haya que sacar la imagen de roles y maquetar
-      // '<b>My role</b>',
-      //   'UX Research',
-      //   'UX Design',
-      //   'UX Writing',
-
-      //   '<b>Tools</b>',
-      //   'Figma',
-      //   'Figjam',
-      //   'Zoom',
-
-      //   '<b>Timeline & Team</b>',
-      //   '1 month to design',
-      //   '1 UX 1 UI, 2 devs, 1 Project Manager',
 
       'As the UX designer for the project, I was in charge from the beginning. I had the initial conversations with the client to understand their business vision and identify the issues they had noticed and wanted to improve, as well as what aspects they wanted to keep because they were working well. I also requested access to the system we were going to redesign. With this access, I conducted a brief research to understand the current system, map out the workflows, and identify obvious usability improvements we could apply. With this, we began the wireframing stage.',
       'We had tight one-week sprints and two weekly meetings with the client to make inquiries and review the progress.',
 
-      //Comment andy: La imagen image-research-desktop.svg, que está abajo de este comment, tiene que tomar el 100% en desktop
+      //Imagen research - mejorarla
       {
         type: 'image',
         desktopSrc: '/tyr/desktop/image-research-desktop.svg',
@@ -117,35 +106,17 @@ export const projects: IProjects[] = [
       //Comment andy: La imagen the-results-tyr-mobile.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
 
       {
-        type: 'image',
-        desktopSrc: '/tyr/desktop/the-results-desktop.svg',
-        desktopMode: '100%',
-        mobileSrc: '/tyr/mobile/the-results-tyr-mobile (2).png',
-        mobileMode: '100%',
-        marginBottom: 50,
-        marginTop: 20,
+        type: 'theResults',
+        percentages: ['100%', '60%', '50%'],
+        colors: ['#86AE9A', '#A5E0C4', '#D6F5E6'],
+        texts: [
+          'was the <b>reduction in duplication errors</b> due to the redesign, which incorporated mandatory fields and blocked certain fields from being modified by specific user types. was the <b>reduction in duplication errors</b> due to the redesign, which incorporated mandatory fields and blocked certain fields from being modified by specific user types.',
+          'was the <b>reduction in employee training time</b> after redesigning the system with a focus on improving usability. This allowed experienced employees to focus on their tasks, enhancing the overall efficiency of the company.',
+          'was the <b>reduction in load time</b> as we reduced the number of fields in each form and eliminated duplicate fields that caused double entries and, consequently, double the time.',
+        ],
+        marginTop: 30,
+        marginBottom: 60,
       },
-
-      //Para después: estos son textos para cuando haya que sacar la imagen de Results y maquetar
-      // {
-      //   type: 'title',
-      //   text: 'The results',
-      //   marginBottom: 20,
-      //   marginTop: 20,
-      // },
-
-      // {
-      //   type: 'results',
-      //   percentages: [' 100%', '60%', '50%'],
-      //   texts: [
-      //     "was the <b>reduction in duplication errors</b> due to the redesign, which incorporated mandatory fields and blocked certain fields from being modified by specific user types.",
-      //     "was the <b>reduction in employee training time</b> after redesigning the system with a focus on improving usability. This allowed experienced employees to focus on their tasks, enhancing the overall efficiency of the company.",
-      //     "was the <b>reduction in load time</b> as we reduced the number of fields in each form and eliminated duplicate fields that caused double entries and, consequently, double the time.",
-      //   ],
-      //   marginBottom: 30,
-      //   marginTop: 30,
-      // },
-
       {
         type: 'title',
         text: 'HI-FI Screens',
@@ -199,65 +170,45 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'The problem',
         marginBottom: 0,
-        marginTop: 40,
+        marginTop: 60,
       },
 
       //Comment andy: La imagen the body-problem-abitab.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
+      'To achieve digital identity registration, we evaluated the existing web and app channels for usability issues.',
+      'Our analysis revealed several key problems:',
 
       {
-        type: 'image',
-        desktopSrc: '/abitab/desktop/problem-body-abitab-desktop.svg',
-        desktopMode: '100%',
-        mobileSrc: '/abitab/mobile/body-problem-abitab.png',
-        mobileMode: 'customWidth',
-        customWidthMobile: '350px',
-        marginBottom: 20,
-        marginTop: 20,
+        type: 'bullets',
+        texts: [
+          '<b>Diverse access points</b>: Multiple websites with different logos, aesthetics, and content caused user confusion.',
+          '<b>Inconsistent terminology</b>: Varied terms for "Mobile Identity" across channels led to user confusion during account creation and service use.',
+          '<b>App upgrade needed</b>: The native app, initially a token, was disconnected from the website, missing opportunities for enhanced functionality and user engagement.',
+        ],
+        marginTop: 30,
+        marginBottom: 60,
       },
-
-      ////Para después: estos son textos de THE PROBLEM para cuando haya que sacar la imagen y maquetar, la imagen esta arriba
-      // 'To achieve digital identity registration, we evaluated the existing web and app channels for usability issues.',
-
-      // 'Our analysis revealed several key problems:',
-
-      // '<b>Diverse access points</b>: Multiple websites with different logos, aesthetics, and content caused user confusion.',
-      // '<b>Inconsistent terminology</b>: Varied terms for "Mobile Identity" across channels led to user confusion during account creation and service use.',
-      // '<b>App upgrade needed</b>: The native app, initially a token, was disconnected from the website, missing opportunities for enhanced functionality and user engagement.',
-
-      //Comment andy: La imagen roles-in-project-mobile-abitab.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
 
       {
-        type: 'image',
-        desktopSrc: '/abitab/desktop/roles-in-project-abitab-desktop.svg',
-        desktopMode: '100%',
-        mobileSrc: '/abitab/mobile/roles-in-project-mobile-abitab.png',
-        mobileMode: 'customWidth',
-        customWidthMobile: '350px',
-        marginBottom: 20,
-        marginTop: 20,
+        type: 'table',
+        widths: ['20%', '20%', '60%'],
+        titles: ['My role', 'Tools', 'Timeline & Team'],
+        data: [
+          ['UX Research', 'UX Design', 'UX Writing'],
+          ['Figma', 'Figjam', 'Zoom'],
+          [
+            '3 month to design',
+            '1 UX Designer, 1 Product Designer',
+            '10 Devs, 1 ProjectManager',
+          ],
+        ],
+        marginBottom: 0,
+        marginTop: 60,
       },
-
-      ////Para después: estos son textos de MY ROLE para cuando haya que sacar la imagen y maquetar, la imagen está arriba
-
-      // '<b>My role</b>',
-      // 'UX Research',
-      // 'UX Design',
-      // 'UX Writing',
-
-      // '<b>Tools</b>',
-      // 'Figma',
-      // 'Figjam',
-      // 'Zoom',
-
-      // '<b>Timeline & Team</b>',
-      // '3 months to design',
-      // '1 UX Designer 1, Product Designer, 10 devs, 1 Project Manager',
-
       {
         type: 'title',
         text: 'The Design System',
         marginBottom: 10,
-        marginTop: 40,
+        marginTop: 60,
       },
 
       'Since we had a developed product, many elements of the Design System came predefined beforehand: colours, icons, typography, among others.',
@@ -271,7 +222,7 @@ export const projects: IProjects[] = [
         mobileSrc: '/abitab/mobile/design-system-abitab-mobile.svg',
         mobileMode: 'customWidth',
         customWidthMobile: '350px',
-        marginBottom: 20,
+        marginBottom: 0,
         marginTop: 30,
       },
 
@@ -279,7 +230,7 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'Hi-Fi Screens',
         marginBottom: 10,
-        marginTop: 40,
+        marginTop: 60,
       },
       'Due to the limited design hours allocated for the project, a prioritization was conducted, and it was decided not to create wireframes and proceed directly to high-fidelity designs.',
       'The central idea of the application was to carry out the process in well-defined steps to reduce possible user anxieties about where they were in the process and to decrease registration times, making it much more efficient.',
@@ -292,14 +243,14 @@ export const projects: IProjects[] = [
         mobileSrc: '/abitab/mobile/telefonos-mobile.svg',
         mobileMode: 'full width',
         marginBottom: 30,
-        marginTop: 40,
+        marginTop: 60,
       },
 
       {
         type: 'title',
         text: 'Testing with real users',
         marginBottom: 20,
-        marginTop: 20,
+        marginTop: 60,
       },
       'Usability testing is crucial for gathering insights into user experience and design effectiveness. To gather this information, we conducted 10 usability tests of Abitabs product.',
       'After completing the initial designs, I proposed moderated usability testing to validate our decisions.',
@@ -320,36 +271,29 @@ export const projects: IProjects[] = [
         marginTop: 40,
       },
 
-      //Comment andy: La imagen the results-desktop-abitab.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
       {
-        type: 'image',
-        desktopSrc: '/abitab/desktop/the results-desktop-abitab.svg',
-        desktopMode: '100%',
-        mobileSrc: '/abitab/mobile/results-abitab-mobile.png',
-        mobileMode: 'customWidth',
-        customWidthMobile: '350px',
-        marginBottom: 30,
-        marginTop: 40,
+        type: 'title',
+        text: 'The results',
+        marginBottom: 0,
+        marginTop: 60,
       },
-
-      ////Para después: estos son textos de RESULTS para cuando haya que sacar la imagen y maquetar, la imagen está arriba
-      // {
-      //   type: 'results',
-      //   percentages: ['90%', '95%', '85%'],
-      //   texts: [
-      //     "of users expressed <b>high satisfaction</b> with the overall <b>user experience</b>, highlighting the app's ease of use and intuitive design.",
-      //     "of users found the <b>app's design clear and easy to understand</b>, which <b>facilitated navigation and task completion.</b>",
-      //     "of users found the <b>registration process quick and straightforward</b>, rating it as 'super short' or 'short'",
-      //   ],
-      //   marginBottom: 30,
-      //   marginTop: 30,
-      // },
-
+      {
+        type: 'theResults',
+        percentages: ['90%', '95%', '85%'],
+        colors: ['#E27DEF', '#DD9CE3', '#FDD3F9'],
+        texts: [
+         "of users expressed <b>high satisfaction</b> with the overall <b>user experience</b>, highlighting the app's ease of use and intuitive design.",
+         "of users found the <b>app's design clear and easy to understand</b>, which <b>facilitated navigation and task completion.</b>",
+         "of users found the <b>registration process quick and straightforward</b>, rating it as 'super short' or 'short'",
+        ],
+        marginTop: 30,
+        marginBottom: 0,
+      },
       {
         type: 'title',
         text: 'Reflections',
         marginBottom: 0,
-        marginTop: 20,
+        marginTop: 60,
       },
       'This redesign was quite a challenge given that our team was large, so we had to be very organized and maintain constant communication to implement changes as quickly as possible. We also learned a lot about client communication, as at the beginning of the project, we had few meetings and were experiencing many changes from their side. As a result, we decided to have three weekly meetings to ensure everyone was on the same page.',
       'This significantly improved the speed of iteration, considering it was a project with many technical challenges and the need to communicate these effectively through the design to users.',
@@ -370,8 +314,8 @@ export const projects: IProjects[] = [
       {
         type: 'title',
         text: 'About',
-        marginBottom: 8,
-        marginTop: 20,
+        marginBottom: 0,
+        marginTop: 0,
       },
 
       'Properati has a transactional branch that connects users wanting to buy a house with real state experts that helps them find the property they dreamed about.',
@@ -379,8 +323,8 @@ export const projects: IProjects[] = [
       {
         type: 'title',
         text: 'The problem',
-        marginBottom: 8,
-        marginTop: 50,
+        marginBottom: 0,
+        marginTop: 60,
       },
 
       'Real estate experts work every day with multiple clients simultaneously and have to send various proposals to all of them, each of which always includes more than one property.',
@@ -388,37 +332,26 @@ export const projects: IProjects[] = [
       "Additionally, clients interested in buying houses often need a fast response and a visually pleasing proposal. Since we didn't have either of these, we were losing clients.",
       'Due to the necessity of solving all these problems, we were asked to create a solution as soon as possible.',
 
-      //Comment andy: La imagen the roles-in-project-mobile.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
-
       {
-        type: 'image',
-        desktopSrc: '/properati/desktop/roles-in-project-desktop.svg',
-        desktopMode: '100%',
-        mobileSrc: '/properati/mobile/roles-in-project-mobile.png',
-        mobileMode: 'customWidth',
-        customWidthMobile: '350px',
+        type: 'table',
+        widths: ['20%', '20%', '60%'],
+        titles: ['My role', 'Tools', 'Timeline & Team'],
+        data: [
+          ['UX Design', 'UX Writing'],
+          ['Figma', 'Miro',],
+          [
+            '1 month to design',
+            '1 UX Designer, 1 Project Manager, 3 devs',
+          ],
+        ],
         marginBottom: 0,
-        marginTop: 40,
-      },
-
-      ///Para después: estos son textos de ROLES para cuando haya que sacar la imagen y maquetar, la imagen está arriba
-      // '<b>My role</b>',
-      // 'UX Design',
-      // 'UX Writing',
-
-      // '<b>Tools</b>',
-      // 'Figma',
-      // 'Miro',
-
-      // '<b>Timeline & Team</b>',
-      // '1 month to design',
-      // '1 UX Designer, 1 Product maganer, 3 devs',
-
+        marginTop: 60,
+      }, 
       {
         type: 'title',
         text: 'User interviews & user journey',
         marginBottom: 0,
-        marginTop: 50,
+        marginTop: 60,
       },
 
       "We started interviewing a selected group of real estate experts to map the expert's User Journey.",
@@ -431,18 +364,11 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'The design',
         marginBottom: 0,
-        marginTop: 50,
+        marginTop: 60,
       },
 
       "Since the commercial proposal was going to be part of Properati's ecosystem, we decided to maintain the brand style guide.",
       'The only thing we wanted to add to the design was illustrations, so we used an illustration bank and defined the aesthetics and tone for the rest of the company to ensure a unified approach regarding these elements.',
-
-      {
-        type: 'title',
-        text: 'Hi-fi design',
-        marginBottom: 30,
-        marginTop: 10,
-      },
 
       //Comment andy: La imagen the hifi-desktop.svg, que está abajo de este comment, tiene que tomar el 100% en DESKTOP
       // en mobile me parece que se ve como el culo, tenemos que verlo juntos seguramente tenga que ajustarla desde el diseño
@@ -453,38 +379,31 @@ export const projects: IProjects[] = [
         mobileSrc: '/properati/mobile/hi-fi-mobile.svg',
         mobileMode: 'full width',
         marginBottom: 30,
-        marginTop: 0,
+        marginTop: 60,
       },
-
-      //Comment andy: La imagen the the-results.svg, que está abajo de este comment, tiene que tomar el 100% en MOBILE
       {
-        type: 'image',
-        desktopSrc: '/properati/desktop/the-results-desktop-properati.svg',
-        desktopMode: '100%',
-        mobileSrc: '/properati/mobile/the-results-tyr-mobile.png',
-        mobileMode: '100%',
+        type: 'title',
+        text: 'The results',
         marginBottom: 0,
-        marginTop: 40,
+        marginTop: 60,
       },
-
-      ///Para después: estos son textos de RESULTS para cuando haya que sacar la imagen y maquetar, la imagen está arriba
-      // {
-      //   type: 'results',
-      //   percentages: ['150%', '100%', '67%'],
-      //   texts: [
-      //     'increase in the number of scheduled appointments, highlighting the effectiveness of the redesign in facilitating easier and more frequent scheduling of property visits by clients.',
-      //     'increase in the client response rate, demonstrating the effectiveness of the redesign in making proposals more responsive and appealing to clients.',
-      //     'reduction in proposal creation time, allowing real estate experts to focus more on client interactions and closing deals.',
-      //   ],
-      //   marginBottom: 30,
-      //   marginTop: 30,
-      // },
-
+      {
+        type: 'theResults',
+        percentages: ['150%', '100%', '67%'],
+        colors: ['#EF6774', '#ED979F', '#F5C7CB'],
+        texts: [
+          'increase in the number of scheduled appointments, highlighting the effectiveness of the redesign in facilitating easier and more frequent scheduling of property visits by clients.',
+          'increase in the client response rate, demonstrating the effectiveness of the redesign in making proposals more responsive and appealing to clients.',
+          'reduction in proposal creation time, allowing real estate experts to focus more on client interactions and closing deals.',
+        ],
+        marginTop: 30,
+        marginBottom: 30,
+      },
       {
         type: 'title',
         text: 'Reflections',
         marginBottom: 0,
-        marginTop: 50,
+        marginTop: 60,
       },
       'The commercial proposal was created to solve a huge time and speed issue with customers that are in the search of a new home.',
       'We construct a design for a new product based on a research investigation focused on the experts and also on the clients.',
@@ -505,7 +424,7 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'About',
         marginBottom: 0,
-        marginTop: 50,
+        marginTop: 0,
       },
       'This research was carried out for Proppit, an online marketing platform to manage and publish estate mainly oriented to real estate professionals. Nowadays the web is online in Chile, Argentina, Perú, Colombia, Ecuador, Panamá, Philippines & Thailand.',
 
@@ -513,39 +432,31 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'The problem',
         marginBottom: 0,
-        marginTop: 50,
+        marginTop: 60,
       },
       "Our UXR team of two was tasked with understanding why customers weren't renewing their subscriptions on Proppit and finding solutions to reduce churn from 9% to 5%.",
       'The target audience for this research was customers from Colombia who had churned within 90 days of activation.',
       'Working independently yet collaboratively across the company, we met with Proppit stakeholders to present and adjust our plan, which had a maximum duration of one month.',
       'The plan involved first analyzing existing customer data and then conducting phone interviews. The main challenges were recruiting customers for interviews without incentives and conducting the initial phase by phone.',
 
-      //Comment andy: La imagen the roles-in-project-mobile-proppit.svg, que está abajo de este comment, tiene que tomar el 100% en MOBILE
       {
-        type: 'image',
-        desktopSrc: '/proppit/desktop/roles-in-project-desktop-proppit.svg',
-        desktopMode: '100%',
-        mobileSrc: '/proppit/mobile/roles-in-project-mobile-proppit.png',
-        mobileMode: 'customWidth',
-        customWidthMobile: '350px',
-        marginBottom: 50,
-        marginTop: 40,
+        type: 'table',
+        widths: ['20%', '20%', '60%'],
+        titles: ['My role', 'Tools', 'Timeline & Team'],
+        data: [
+          ['UX Design', 'UX Research',],
+          ['Figma', 'Excel',],
+          [
+            '3 weeks to do research',
+            '1 UX Designer, 1 Product Designer',
+            '1 UX Designer, 1 UX Researcher',
+          ],
+        ],
+        marginBottom: 60,
+        marginTop: 60,
       },
 
-      //Para después: estos son textos de ROLES para cuando haya que sacar la imagen y maquetar, la imagen está arriba
-
-      // '<b>My role</b>',
-      // 'UX Design',
-      // 'UX Research',
-
-      // '<b>Tools</b>',
-      // 'Figma',
-      // 'Excel',
-
-      // '<b>Timeline & Team</b>',
-      // '3 weeks to do research',
-      // '1 UX Designer, 1 UX Researcher',
-
+      
       '<b>Steps with deadlines for each stage of the research discussed with stakeholders</b>',
 
       "We started interviewing a selected group of real estate experts to map the expert's User Journey.",
@@ -636,89 +547,79 @@ export const projects: IProjects[] = [
 
       'For detailed tools and scripts, you can view the documents by clicking here.',
 
-      //Esto es para maquetar, ahora pertenece a la imagen FINDINFS FROM DE RESEARCH QUE ESTA ABAJO DE ESTO
-      // {
-      //   type: 'title',
-      //   text: 'Stage 2: Interviewing Unsubscribed Users',
-      //   marginBottom: 0,
-      //   marginTop: 50,
-      // },
+        {
+        type: 'title',
+        text: 'Findings form the research',
+        marginBottom: 0,
+        marginTop: 50,
+      },      
 
-      // //'After completing stages 1 and 2, we prepared the final report, including: a General Report, the detailed interview report vith visual cards (5 cards form 14 interviews), qualitative feedback analysis report, excel sheet vith interviewed customers',
-
-      // //'We noted that users often provided multiple reasons for churn, considering the first mentioned as the most significant. We created two graphs: one for main reasons and another combining main and secondary reasons.',
-
-      //Comment andy: La imagen the findings-from-research-mobile.svg, que está abajo de este comment, tiene que tomar el 100% en MOBILE
+      'After completing stages 1 and 2, we prepared the final report, including: a General Report, the detailed interview report vith visual cards (5 cards form 14 interviews), qualitative feedback analysis report, excel sheet vith interviewed customers',
 
       {
-        type: 'image',
-        desktopSrc: '/proppit/desktop/findings-from-research-desktop.svg',
-        desktopMode: '100%',
-        mobileSrc: '/proppit/mobile/findings-from-the-research.png',
-        mobileMode: 'customWidth',
-        customWidthMobile: '350px',
-        marginBottom: 50,
-        marginTop: 40,
-      },
-
-      //Comment andy: La imagen the key-findings-mobile.svg, que está abajo de este comment, tiene que tomar el 100% en MOBILE
-
-      {
-        type: 'image',
-        desktopSrc: '/proppit/desktop/key-findings-desktop.svg',
-        desktopMode: '100%',
-        mobileSrc: '/proppit/mobile/key-findings-mobile.png',
-        mobileMode: 'customWidth',
-        customWidthMobile: '350px',
+        type: 'bullets',
+        texts: [
+          'General report',
+          'Detailed interview report with visual cards (5 cards from 14 interviews)',
+          'Qualitative feedback analysis report',
+          'Excel sheet with interviewed customers',
+        ],
+        marginTop: 30,
         marginBottom: 30,
-        marginTop: 0,
       },
 
-      //Comment andy: La imagen the summary-conclusion-mobile.svg, que está abajo de este comment, tiene que tomar el 100% en MOBILE
+      'We noted that users often provided multiple reasons for churn, considering the first mentioned as the most significant. We created two graphs: one for main reasons and another combining main and secondary reasons.',
+
+  
+      {
+        type: 'title',
+        text: 'Key findings',
+        marginBottom: 0,
+        marginTop: 60,
+      },      
+      {
+        type: 'theResults',
+        percentages: ['50%', '15.3%', '11.5%', '11.5%',  '7.6%', '7.6%' ],
+        colors: ['#9868FF', '#C1A3FF', '#DDCCFF', '#DDCCFF', '#F1EBFF', '#F1EBFF'],
+        texts: [
+          'increase in the number of scheduled appointments, highlighting the effectiveness of the redesign in facilitating easier and more frequent scheduling of property visits by clients',
+          'of the users went to or used stronger competitors (Finca Raíz)',
+          'felt they wasted their money',
+          'mentioned mistreatment in customer service',
+          'was the cost and/or lack of smaller plans suitable for small real estate agencies',
+          'of the users had initial account activation problems',
+        ],
+        marginTop: 30,
+        marginBottom: 30,
+      },
+
+      'These reasons were consistent with issues mentioned in customer emails and NPS survey responses analyzed in stage 1.',
+      {
+        type: 'title',
+        text: 'Summary & conclusion',
+        marginBottom: 0,
+        marginTop: 60,
+      },     
+      'The research identified clear user pain points, leading to concrete improvement solutions that could solve the churn problem:',
 
       {
-        type: 'image',
-        desktopSrc: '/proppit/desktop/summary-conclusion-desktop.svg',
-        desktopMode: '100%',
-        mobileSrc: '/proppit/mobile/summary-conclusion-mobile.png',
-        mobileMode: 'customWidth',
-        customWidthMobile: '350px',
+        type: 'bullets',
+        texts: [
+          'Offer smaller plans for small clients',
+          'Improve the payment/renewal process by adding features for users to self-manage invoices and report payments',
+          'Enhance initial account activation with an automatic system for new customers',
+          'Provide training through webinars or a YouTube channel to help customers better utilize the platform',
+        ],
+        marginTop: 30,
         marginBottom: 30,
-        marginTop: 10,
       },
 
-      //KEY-FINDINGS  / SUMMARY AND CONCLUSION- para lo quieras maquetar aca esta la info (falta acomodarla, me queda a mi)
-      // {
-      //   type: 'results',
-      //   percentages: ['50%', '15.3%', '11.5%','11.5%','7.6%', '7.6%'],
-      //   texts: [
-      //     'of users cited the lack of leads or poor lead conversion as the main reason for churn.',
-      //     'of the users went to or used stronger competitors (Finca Raíz).',
-      //     'felt they wasted their money.',
-      //     'mentioned mistreatment in customer service.',
-      //     'was the cost and/or lack of smaller plans suitable for small real estate agencies.',
-      //     'of the users had initial account activation problems.',
+       'Our research team provided these insights to the product team for implementation.',
 
-      //   ],
-      //   marginBottom: 30,
-      //   marginTop: 30,
-      // },
+       'The presented data serves as a baseline to measure the impact of future improvements.',
 
-      // 'These reasons were consistent with issues mentioned in customer emails and NPS survey responses analyzed in stage 1.',
-
-      // '<b>Summary and Conclusion',
-
-      // 'The research identified clear user pain points, leading to concrete improvement solutions that could solve the churn problem:',
-      // '1.Offer smaller plans for small clients',
-      // '2.Improve the payment/renewal process by adding features for users to self-manage invoices and report payments',
-      // '3.Enhance initial account activation with an automatic system for new customers',
-      // '4.Provide training through webinars or a YouTube channel to help customers better utilize the platform',
-
-      // 'Our research team provided these insights to the product team for implementation.',
-
-      // 'The presented data serves as a baseline to measure the impact of future improvements.',
-
-      // 'A few months after completing this research, the research team and other employees in Argentina were laid off, leaving no information on the implemented improvements.',
+       'A few months after completing this research, the research team and other employees in Argentina were laid off, leaving no information on the implemented improvements.',
+     
     ],
   },
 ];
