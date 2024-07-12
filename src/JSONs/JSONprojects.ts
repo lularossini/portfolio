@@ -52,6 +52,8 @@ export interface IProjects {
 
 ///EMPIEZA TYR
 /////////////////////////////////////////////////////////////////////////////////////
+
+//Revisar las distancias entre las cabeceras y About que sean consistentes en todos los casos
 export const projects: IProjects[] = [
   {
     id: 'tyr-case',
@@ -96,15 +98,19 @@ export const projects: IProjects[] = [
       {
         type: 'image',
         desktopSrc: '/tyr/desktop/image-research-desktop.svg',
-        desktopMode: '100%',
+        desktopMode: 'full width',
         mobileSrc: '/tyr/mobile/image-research.png',
         mobileMode: '100%',
         marginBottom: 50,
         marginTop: 50,
       },
 
-      //Comment andy: La imagen the-results-tyr-mobile.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
-
+      {
+        type: 'title',
+        text: 'The results',
+        marginBottom: 0,
+        marginTop: 40,
+      },
       {
         type: 'theResults',
         percentages: ['100%', '60%', '50%'],
@@ -123,6 +129,8 @@ export const projects: IProjects[] = [
         marginBottom: 0,
         marginTop: 20,
       },
+
+      'When we developed the high-definition designs, we made sure to preserve those elements that were familiar from the previous system to ease the transition between the old and the new. In this particular aspect, the stakeholder was very helpful, guiding us in the direction we needed to go while ensuring that we maintained a more modern and visually cleaner aesthetic.',
 
       //Comment andy: La imagen slider-hi-fi-tyr-desktop.svg, que está abajo de este comment, tiene que tomar el 100% en dekstop.
       //Tambien la imagen hi-fi-mobile-tyr.svg, tiene que tomar el 100% en mobile
@@ -180,9 +188,9 @@ export const projects: IProjects[] = [
       {
         type: 'bullets',
         texts: [
-          '<b>Diverse access points</b>: Multiple websites with different logos, aesthetics, and content caused user confusion.',
-          '<b>Inconsistent terminology</b>: Varied terms for "Mobile Identity" across channels led to user confusion during account creation and service use.',
-          '<b>App upgrade needed</b>: The native app, initially a token, was disconnected from the website, missing opportunities for enhanced functionality and user engagement.',
+          '<b>Diverse access points</b>: multiple websites with different logos, aesthetics, and content caused user confusion.',
+          '<b>Inconsistent terminology</b>: varied terms for "Mobile Identity" across channels led to user confusion during account creation and service use.',
+          '<b>App upgrade needed</b>: the native app, initially a token, was disconnected from the website, missing opportunities for enhanced functionality and user engagement.',
         ],
         marginTop: 30,
         marginBottom: 60,
@@ -254,7 +262,7 @@ export const projects: IProjects[] = [
       },
       'Usability testing is crucial for gathering insights into user experience and design effectiveness. To gather this information, we conducted 10 usability tests of Abitabs product.',
       'After completing the initial designs, I proposed moderated usability testing to validate our decisions.',
-      'We designed a simple prototype in Figma, which you can view here.',
+      'We designed a simple prototype in Figma, which you can view here',
       'I managed all aspects of the tests, including creating the user list, designing the script, setting up tests in Useberry, obtaining incentives, and conducting both in-person and remote tests. Five tests were in-person, and five were virtual, each lasting about 30 minutes.',
       'Participants included a diverse user base, from retirees to professionals. These tests provided valuable insights, guiding strategic product modifications to align with user needs.',
       'Based on the tests, I created a report with key insights, improvement points, and recommendations, which I presented to the client.',
@@ -317,7 +325,7 @@ export const projects: IProjects[] = [
         marginBottom: 0,
         marginTop: 0,
       },
-
+      'This project was developed for Properati, a company dedicated to online real estate.',
       'Properati has a transactional branch that connects users wanting to buy a house with real state experts that helps them find the property they dreamed about.',
 
       {
@@ -327,7 +335,7 @@ export const projects: IProjects[] = [
         marginTop: 60,
       },
 
-      'Real estate experts work every day with multiple clients simultaneously and have to send various proposals to all of them, each of which always includes more than one property.',
+      'Real estate experts work every day with multiple clients simultaneously and have to send various real state proposals to all of them, each of which always includes more than one property.',
       'The main pain point for the experts was that the search and presentation of properties were being done manually, which was time-consuming and caused delays in the commercial process.',
       "Additionally, clients interested in buying houses often need a fast response and a visually pleasing proposal. Since we didn't have either of these, we were losing clients.",
       'Due to the necessity of solving all these problems, we were asked to create a solution as soon as possible.',
@@ -352,6 +360,16 @@ export const projects: IProjects[] = [
         text: 'User interviews & user journey',
         marginBottom: 0,
         marginTop: 60,
+      },
+      {
+        type: 'image',
+        desktopSrc: '/properati/desktop/journey-properati.jpg',
+        desktopMode: 'full width',
+        mobileSrc: '/properati/mobile/journey-properato.jpg',
+        mobileMode: 'customWidth',
+        customWidthMobile: '350px',
+        marginBottom: 10,
+        marginTop: 20,
       },
 
       "We started interviewing a selected group of real estate experts to map the expert's User Journey.",
