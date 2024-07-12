@@ -415,7 +415,7 @@ export const projects: IProjects[] = [
           'reduction in proposal creation time, allowing real estate experts to focus more on client interactions and closing deals.',
         ],
         marginTop: 0,
-        marginBottom: 30,
+        marginBottom: 0,
       },
       {
         type: 'title',
