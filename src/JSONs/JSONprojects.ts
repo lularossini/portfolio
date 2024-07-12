@@ -414,7 +414,7 @@ export const projects: IProjects[] = [
           'increase in the client response rate, demonstrating the effectiveness of the redesign in making proposals more responsive and appealing to clients.',
           'reduction in proposal creation time, allowing real estate experts to focus more on client interactions and closing deals.',
         ],
-        marginTop: 30,
+        marginTop: 0,
         marginBottom: 30,
       },
       {
