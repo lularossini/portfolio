@@ -79,14 +79,13 @@ const Header = () => {
           height: '100%',
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'center',
-          gap: '30px', //LU
+          gap: '30px',
         }}
       >
         <ListItem
           button
           onClick={handleGoToHomeHandler}
-          sx={{ justifyContent: 'center' }}
+          sx={{ justifyContent: 'center', marginTop: '250px' }}
         >
           <Typography
             className='spaceGrotesk'
