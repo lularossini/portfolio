@@ -365,7 +365,7 @@ const ProjectDetail = () => {
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          paddingTop: isDesktop ? '502px' : '362px',
+          paddingTop: isDesktop ? '452px' : '362px',
         }}
       >
         {/* Details*/}

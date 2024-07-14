@@ -80,6 +80,7 @@ const Header = () => {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
+          gap: '30px', //LU
         }}
       >
         <ListItem
@@ -90,7 +91,7 @@ const Header = () => {
           <Typography
             className='spaceGrotesk'
             sx={{
-              fontSize: '18px',
+              fontSize: '20px',
               fontWeight: '400',
               color: 'black',
               textAlign: 'center',
@@ -107,7 +108,7 @@ const Header = () => {
           <Typography
             className='spaceGrotesk'
             sx={{
-              fontSize: '18px',
+              fontSize: '20px',
               fontWeight: '400',
               color: 'black',
               textAlign: 'center',
@@ -124,7 +125,7 @@ const Header = () => {
           <Typography
             className='spaceGrotesk'
             sx={{
-              fontSize: '18px',
+              fontSize: '20px',
               fontWeight: '400',
               color: 'black',
               textAlign: 'center',
