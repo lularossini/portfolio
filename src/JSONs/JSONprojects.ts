@@ -82,7 +82,7 @@ export const projects: IProjects[] = [
 
       {
         type: 'table',
-        widths: ['35%', '25%', '40%'],
+        widths: ['40%', '20%', '40%'],
         titles: ['My role', 'Tools', 'Timeline & Team'],
         data: [
           ['UX Research', 'UX Design', 'UX Writing'],
