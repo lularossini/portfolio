@@ -366,7 +366,11 @@ const ProjectDetail = () => {
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          paddingTop: isDesktop ? '452px' : '362px', // CONDICIONAL AL ALTO DE LOS DIFERENTES CASES DE MOBILE
+          paddingTop: isDesktop
+            ? '452px'
+            : id !== 'abitab-case'
+            ? '322px'
+            : '384px',
         }}
       >
         {/* Details*/}
