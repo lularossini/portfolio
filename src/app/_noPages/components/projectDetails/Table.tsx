@@ -53,8 +53,8 @@ const Table: React.FC<ITablePropsTypes> = ({
             key={index}
             sx={{
               fontWeight: '600',
-              fontSize: isDesktop ? '34px' : '22px',
-              lineHeight: isDesktop ? '38px' : '26px',
+              fontSize: isDesktop ? '34px' : '27px',
+              lineHeight: isDesktop ? '38px' : '34px',
               color: 'black',
               width: widths[index],
             }}
@@ -81,8 +81,8 @@ const Table: React.FC<ITablePropsTypes> = ({
                 key={colIndex}
                 variant='body1'
                 sx={{
-                  fontSize: isDesktop ? '24px' : '18px',
-                  lineHeight: isDesktop ? '30px' : '25px',
+                  fontSize: isDesktop ? '24px' : '22px',
+                  lineHeight: isDesktop ? '30px' : '29px',
                   fontWeight: '400',
                   color: 'black',
                   width: widths[colIndex],

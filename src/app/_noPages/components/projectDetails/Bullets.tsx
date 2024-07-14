@@ -40,8 +40,8 @@ const Bullets: React.FC<IBulletsPropsTypes> = ({
           key={index}
           variant='body1'
           sx={{
-            fontSize: isDesktop ? '24px' : '20px',
-            lineHeight: isDesktop ? '30px' : '27px',
+            fontSize: isDesktop ? '24px' : '22px',
+            lineHeight: isDesktop ? '30px' : '29px',
             fontWeight: '400',
             color: 'black',
             marginTop: '10px',
