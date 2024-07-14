@@ -38,9 +38,9 @@ const ProppitCase: React.FC = () => {
             <Typography
               className='darkerGrotesk'
               sx={{
-                fontSize: '23px',
+                fontSize: '27px',
                 fontWeight: '700',
-                lineHeight: '25px',
+                lineHeight: '30px',
                 letterSpacing: '2px',
               }}
             >
@@ -49,18 +49,18 @@ const ProppitCase: React.FC = () => {
             <Typography
               className='spaceGrotesk'
               sx={{
-                fontSize: '15px',
+                fontSize: '18px',
                 fontWeight: '400',
-                lineHeight: '23px',
-                marginTop: '15px',
+                lineHeight: '25px',
+                marginTop: '20px',
               }}
             >
               <span
                 className='spaceGrotesk'
                 style={{
-                  fontSize: '15px',
+                  fontSize: '18px',
                   fontWeight: '600',
-                  lineHeight: '23px',
+                  lineHeight: '25px',
                   marginTop: '15px',
                 }}
               >
@@ -69,16 +69,15 @@ const ProppitCase: React.FC = () => {
               Website analysis, customer feedback, and user interviews to
               understand the reasons for the massive unsubscribes
             </Typography>
-
             <Box
-              sx={{ display: 'flex', marginTop: '12px', position: 'relative' }}
+              sx={{ display: 'flex', marginTop: '15px', position: 'relative' }}
             >
               <Typography
                 className='spaceGrotesk'
                 sx={{
-                  fontSize: '14px',
+                  fontSize: '17px',
                   fontWeight: '500',
-                  lineHeight: '25px',
+                  lineHeight: '24px',
                   marginRight: '18px',
                 }}
               >
@@ -90,7 +89,7 @@ const ProppitCase: React.FC = () => {
                 style={{
                   position: 'absolute',
                   top: '8px',
-                  left: '90px',
+                  left: '100px',
                   width: '11px',
                 }}
               />

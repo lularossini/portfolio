@@ -174,6 +174,49 @@ const Home = () => {
         <Abitab />
         <Properati />
         <Proppit />
+
+        {/* Footer home */}
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            marginTop: '50px',
+          }}
+        >
+          <Typography
+            sx={{
+              fontSize: isDesktop ? '25px' : '18px',
+              lineHeight: isDesktop ? '36px' : '25px',
+              fontWeight: '700',
+            }}
+          >
+            Let&apos;s connect!
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: isDesktop ? '18px' : '18px',
+              lineHeight: isDesktop ? '26px' : '24px',
+              fontWeight: '600',
+              userSelect: 'all',
+            }}
+          >
+            rossinilucia@gmail.com
+          </Typography>
+
+          <Box
+            sx={{
+              position: 'absolute',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              top: isDesktop ? '2245px' : '2390px',
+              left: 0,
+              width: '100vw',
+              border: '1px solid #8B8B8B',
+            }}
+          ></Box>
+        </Box>
       </Box>
     </>
   );

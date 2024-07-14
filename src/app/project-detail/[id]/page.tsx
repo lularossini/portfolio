@@ -17,6 +17,7 @@ import { Box, Typography, useMediaQuery } from '@mui/material';
 import TheResults from '@/app/_noPages/components/projectDetails/TheResults';
 import Bullets from '@/app/_noPages/components/projectDetails/Bullets';
 import Table from '@/app/_noPages/components/projectDetails/Table';
+import Enum from '@/app/_noPages/components/projectDetails/Enum';
 
 const ProjectDetail = () => {
   const isDesktop = useMediaQuery('(min-width:1200px)');
@@ -86,9 +87,9 @@ const ProjectDetail = () => {
         <Typography
           className='darkerGrotesk'
           sx={{
-            fontSize: '23px',
+            fontSize: '27px',
             fontWeight: '700',
-            lineHeight: '25px',
+            lineHeight: '34px',
             letterSpacing: '2px',
           }}
         >
@@ -140,9 +141,9 @@ const ProjectDetail = () => {
       <Typography
         className='darkerGrotesk'
         sx={{
-          fontSize: '23px',
+          fontSize: '27px',
           fontWeight: '700',
-          lineHeight: '25px',
+          lineHeight: '34px',
           letterSpacing: '2px',
           width: '360px',
         }}
@@ -203,9 +204,9 @@ const ProjectDetail = () => {
       <Typography
         className='darkerGrotesk'
         sx={{
-          fontSize: '23px',
+          fontSize: '27px',
           fontWeight: '700',
-          lineHeight: '25px',
+          lineHeight: '34px',
           letterSpacing: '2px',
           width: '360px',
           marginLeft: '70px',
@@ -257,9 +258,9 @@ const ProjectDetail = () => {
       <Typography
         className='darkerGrotesk'
         sx={{
-          fontSize: '23px',
+          fontSize: '27px',
           fontWeight: '700',
-          lineHeight: '25px',
+          lineHeight: '34px',
           letterSpacing: '2px',
           width: '360px',
         }}
@@ -365,7 +366,7 @@ const ProjectDetail = () => {
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          paddingTop: isDesktop ? '452px' : '362px',
+          paddingTop: isDesktop ? '452px' : '362px', // CONDICIONAL AL ALTO DE LOS DIFERENTES CASES DE MOBILE
         }}
       >
         {/* Details*/}
@@ -459,6 +460,17 @@ const ProjectDetail = () => {
                 />
               );
             }
+
+            if (detail.type === 'enum') {
+              return (
+                <Enum
+                  key={index}
+                  texts={detail.texts}
+                  marginBottom={detail.marginBottom}
+                  marginTop={detail.marginTop}
+                />
+              );
+            }
             if (detail.type === 'table') {
               return (
                 <Table
@@ -515,6 +527,7 @@ const ProjectDetail = () => {
                 fontSize: isDesktop ? '19px' : '16px',
                 lineHeight: '25px',
                 fontWeight: '600',
+                cursor: 'pointer',
               }}
             >
               Previous project
@@ -530,6 +543,7 @@ const ProjectDetail = () => {
                 fontSize: isDesktop ? '19px' : '16px',
                 lineHeight: '25px',
                 fontWeight: '600',
+                cursor: 'pointer',
               }}
             >
               Next project

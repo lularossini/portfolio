@@ -17,7 +17,7 @@ const formatText = (detail: string) => {
   });
 };
 
-const Bullets: React.FC<IBulletsPropsTypes> = ({
+const Enum: React.FC<IBulletsPropsTypes> = ({
   texts,
   marginBottom,
   marginTop,
@@ -50,12 +50,12 @@ const Bullets: React.FC<IBulletsPropsTypes> = ({
           <span
             style={{
               position: 'relative',
-              top: '2px',
-              fontSize: '30px',
+              fontSize: isDesktop ? '24px' : '20px',
+              lineHeight: isDesktop ? '30px' : '27px',
               fontWeight: '500',
             }}
           >
-            •&nbsp;
+            {`${index + 1} - `}
           </span>
           {formatText(texts[index]).map((part, index) => (
             <React.Fragment key={index}>{part}</React.Fragment>
@@ -66,4 +66,4 @@ const Bullets: React.FC<IBulletsPropsTypes> = ({
   );
 };
 
-export default Bullets;
+export default Enum;

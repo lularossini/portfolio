@@ -37,6 +37,12 @@ export interface IProjects {
         marginTop: number;
       }
     | {
+        type: 'enum';
+        texts: string[];
+        marginBottom: number;
+        marginTop: number;
+      }
+    | {
         type: 'table';
         widths: string[];
         titles: string[];
@@ -62,7 +68,7 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'About',
         marginBottom: 0,
-        marginTop: 0,
+        marginTop: 60,
       },
       'TYR is a company that specializes in <b>commodity trading</b>. This means they focus on <b>buying and selling raw materials</b>, like oil, metals, and agricultural products. Also <b>connects producers and buyers</b> of raw materials and <b>handles the logistics</b> of getting these materials where they need to go.',
 
@@ -70,10 +76,10 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'The problem',
         marginBottom: 0,
-        marginTop: 40,
+        marginTop: 50,
       },
       'TYR faced major issues with their system, including slow response times due to high data volume, a steep learning curve for new employees, and information duplication. Forms were too long and redundant, workflows were confusing, and sequential use by traders and administrators led to frequent errors, requiring the owners intervention.',
-     
+
       {
         type: 'table',
         widths: ['20%', '20%', '60%'],
@@ -88,7 +94,7 @@ export const projects: IProjects[] = [
           ],
         ],
         marginBottom: 20,
-        marginTop: 60,
+        marginTop: 50,
       },
 
       'As the UX designer for the project, I was in charge from the beginning. I had the initial conversations with the client to understand their business vision and identify the issues they had noticed and wanted to improve, as well as what aspects they wanted to keep because they were working well. I also requested access to the system we were going to redesign. With this access, I conducted a brief research to understand the current system, map out the workflows, and identify obvious usability improvements we could apply. With this, we began the wireframing stage.',
@@ -101,7 +107,7 @@ export const projects: IProjects[] = [
         desktopMode: 'full width',
         mobileSrc: '/tyr/mobile/image-research.png',
         mobileMode: '100%',
-        marginBottom: 50,
+        marginBottom: 0,
         marginTop: 50,
       },
 
@@ -109,7 +115,7 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'The results',
         marginBottom: 0,
-        marginTop: 40,
+        marginTop: 50,
       },
       {
         type: 'theResults',
@@ -120,14 +126,14 @@ export const projects: IProjects[] = [
           'was the <b>reduction in employee training time</b> after redesigning the system with a focus on improving usability. This allowed experienced employees to focus on their tasks, enhancing the overall efficiency of the company.',
           'was the <b>reduction in load time</b> as we reduced the number of fields in each form and eliminated duplicate fields that caused double entries and, consequently, double the time.',
         ],
-        marginTop: 30,
-        marginBottom: 60,
+        marginTop: 20,
+        marginBottom: 0,
       },
       {
         type: 'title',
         text: 'HI-FI Screens',
         marginBottom: 0,
-        marginTop: 20,
+        marginTop: 50,
       },
 
       'When we developed the high-definition designs, we made sure to preserve those elements that were familiar from the previous system to ease the transition between the old and the new. In this particular aspect, the stakeholder was very helpful, guiding us in the direction we needed to go while ensuring that we maintained a more modern and visually cleaner aesthetic.',
@@ -140,15 +146,15 @@ export const projects: IProjects[] = [
         desktopMode: 'full width',
         mobileSrc: '/tyr/mobile/hi-fi-mobile-tyr.png',
         mobileMode: 'full width',
-        marginBottom: 50,
-        marginTop: 30,
+        marginBottom: 0,
+        marginTop: 40,
       },
 
       {
         type: 'title',
         text: 'Reflections',
         marginBottom: 0,
-        marginTop: 20,
+        marginTop: 50,
       },
 
       'The project was large and very complex, primarily because we had to base our work on a system with so many usability issues while needing to maintain certain structures. Additionally, the raw materials business model includes multiple actors and processes that had to be considered when thinking about new ways to present the workflows.',
@@ -169,8 +175,8 @@ export const projects: IProjects[] = [
       {
         type: 'title',
         text: 'About',
-        marginBottom: 8,
-        marginTop: 50,
+        marginBottom: 0,
+        marginTop: 60,
       },
       'Abitab is a Uruguayan company offering services like bill payments, money transfers, and mobile top-ups. One of its products, <b>Abitab Mobile Identity, enables users to access public websites</b> and perform tasks like paying taxes and scheduling appointments. To become the leading digital identity service in Uruguay, Abitab needed to significantly enhance its user experience and technology.',
 
@@ -178,12 +184,11 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'The problem',
         marginBottom: 0,
-        marginTop: 60,
+        marginTop: 50,
       },
 
       //Comment andy: La imagen the body-problem-abitab.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
-      'To achieve digital identity registration, we evaluated the existing web and app channels for usability issues.',
-      'Our analysis revealed several key problems:',
+      'To achieve digital identity registration, we evaluated the existing web and app channels for usability issues. Our analysis revealed several key problems:',
 
       {
         type: 'bullets',
@@ -193,7 +198,7 @@ export const projects: IProjects[] = [
           '<b>App upgrade needed</b>: the native app, initially a token, was disconnected from the website, missing opportunities for enhanced functionality and user engagement.',
         ],
         marginTop: 30,
-        marginBottom: 60,
+        marginBottom: 0,
       },
 
       {
@@ -210,13 +215,13 @@ export const projects: IProjects[] = [
           ],
         ],
         marginBottom: 0,
-        marginTop: 60,
+        marginTop: 50,
       },
       {
         type: 'title',
         text: 'The Design System',
-        marginBottom: 10,
-        marginTop: 60,
+        marginBottom: 0,
+        marginTop: 50,
       },
 
       'Since we had a developed product, many elements of the Design System came predefined beforehand: colours, icons, typography, among others.',
@@ -237,8 +242,8 @@ export const projects: IProjects[] = [
       {
         type: 'title',
         text: 'Hi-Fi Screens',
-        marginBottom: 10,
-        marginTop: 60,
+        marginBottom: 0,
+        marginTop: 50,
       },
       'Due to the limited design hours allocated for the project, a prioritization was conducted, and it was decided not to create wireframes and proceed directly to high-fidelity designs.',
       'The central idea of the application was to carry out the process in well-defined steps to reduce possible user anxieties about where they were in the process and to decrease registration times, making it much more efficient.',
@@ -250,15 +255,15 @@ export const projects: IProjects[] = [
         desktopMode: 'full width',
         mobileSrc: '/abitab/mobile/telefonos-mobile.svg',
         mobileMode: 'full width',
-        marginBottom: 30,
+        marginBottom: 0,
         marginTop: 60,
       },
 
       {
         type: 'title',
         text: 'Testing with real users',
-        marginBottom: 20,
-        marginTop: 60,
+        marginBottom: 0,
+        marginTop: 50,
       },
       'Usability testing is crucial for gathering insights into user experience and design effectiveness. To gather this information, we conducted 10 usability tests of Abitabs product.',
       'After completing the initial designs, I proposed moderated usability testing to validate our decisions.',
@@ -275,7 +280,7 @@ export const projects: IProjects[] = [
         mobileSrc: '/abitab/mobile/usability-image-mobile.svg',
         mobileMode: 'customWidth',
         customWidthMobile: '350px',
-        marginBottom: 10,
+        marginBottom: 0,
         marginTop: 40,
       },
 
@@ -283,16 +288,16 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'The results',
         marginBottom: 0,
-        marginTop: 60,
+        marginTop: 50,
       },
       {
         type: 'theResults',
         percentages: ['90%', '95%', '85%'],
         colors: ['#E27DEF', '#DD9CE3', '#FDD3F9'],
         texts: [
-         "of users expressed <b>high satisfaction</b> with the overall <b>user experience</b>, highlighting the app's ease of use and intuitive design.",
-         "of users found the <b>app's design clear and easy to understand</b>, which <b>facilitated navigation and task completion.</b>",
-         "of users found the <b>registration process quick and straightforward</b>, rating it as 'super short' or 'short'",
+          "of users expressed <b>high satisfaction</b> with the overall <b>user experience</b>, highlighting the app's ease of use and intuitive design.",
+          "of users found the <b>app's design clear and easy to understand</b>, which <b>facilitated navigation and task completion.</b>",
+          "of users found the <b>registration process quick and straightforward</b>, rating it as 'super short' or 'short'",
         ],
         marginTop: 30,
         marginBottom: 0,
@@ -301,7 +306,7 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'Reflections',
         marginBottom: 0,
-        marginTop: 60,
+        marginTop: 50,
       },
       'This redesign was quite a challenge given that our team was large, so we had to be very organized and maintain constant communication to implement changes as quickly as possible. We also learned a lot about client communication, as at the beginning of the project, we had few meetings and were experiencing many changes from their side. As a result, we decided to have three weekly meetings to ensure everyone was on the same page.',
       'This significantly improved the speed of iteration, considering it was a project with many technical challenges and the need to communicate these effectively through the design to users.',
@@ -323,7 +328,7 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'About',
         marginBottom: 0,
-        marginTop: 0,
+        marginTop: 60,
       },
       'This project was developed for Properati, a company dedicated to online real estate.',
       'Properati has a transactional branch that connects users wanting to buy a house with real state experts that helps them find the property they dreamed about.',
@@ -332,7 +337,7 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'The problem',
         marginBottom: 0,
-        marginTop: 60,
+        marginTop: 50,
       },
 
       'Real estate experts work every day with multiple clients simultaneously and have to send various real state proposals to all of them, each of which always includes more than one property.',
@@ -346,20 +351,17 @@ export const projects: IProjects[] = [
         titles: ['My role', 'Tools', 'Timeline & Team'],
         data: [
           ['UX Design', 'UX Writing'],
-          ['Figma', 'Miro',],
-          [
-            '1 month to design',
-            '1 UX Designer, 1 Project Manager, 3 devs',
-          ],
+          ['Figma', 'Miro'],
+          ['1 month to design', '1 UX Designer, 1 Project Manager, 3 devs'],
         ],
         marginBottom: 0,
-        marginTop: 60,
-      }, 
+        marginTop: 50,
+      },
       {
         type: 'title',
         text: 'User interviews & user journey',
         marginBottom: 0,
-        marginTop: 60,
+        marginTop: 50,
       },
       {
         type: 'image',
@@ -369,7 +371,7 @@ export const projects: IProjects[] = [
         mobileMode: 'customWidth',
         customWidthMobile: '350px',
         marginBottom: 10,
-        marginTop: 20,
+        marginTop: 0,
       },
 
       "We started interviewing a selected group of real estate experts to map the expert's User Journey.",
@@ -382,7 +384,7 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'The design',
         marginBottom: 0,
-        marginTop: 60,
+        marginTop: 50,
       },
 
       "Since the commercial proposal was going to be part of Properati's ecosystem, we decided to maintain the brand style guide.",
@@ -403,7 +405,7 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'The results',
         marginBottom: 0,
-        marginTop: 60,
+        marginTop: 50,
       },
       {
         type: 'theResults',
@@ -414,14 +416,14 @@ export const projects: IProjects[] = [
           'increase in the client response rate, demonstrating the effectiveness of the redesign in making proposals more responsive and appealing to clients.',
           'reduction in proposal creation time, allowing real estate experts to focus more on client interactions and closing deals.',
         ],
-        marginTop: 0,
+        marginTop: 20,
         marginBottom: 0,
       },
       {
         type: 'title',
         text: 'Reflections',
         marginBottom: 0,
-        marginTop: 60,
+        marginTop: 50,
       },
       'The commercial proposal was created to solve a huge time and speed issue with customers that are in the search of a new home.',
       'We construct a design for a new product based on a research investigation focused on the experts and also on the clients.',
@@ -442,7 +444,7 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'About',
         marginBottom: 0,
-        marginTop: 0,
+        marginTop: 60,
       },
       'This research was carried out for Proppit, an online marketing platform to manage and publish estate mainly oriented to real estate professionals. Nowadays the web is online in Chile, Argentina, Perú, Colombia, Ecuador, Panamá, Philippines & Thailand.',
 
@@ -450,7 +452,7 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'The problem',
         marginBottom: 0,
-        marginTop: 60,
+        marginTop: 50,
       },
       "Our UXR team of two was tasked with understanding why customers weren't renewing their subscriptions on Proppit and finding solutions to reduce churn from 9% to 5%.",
       'The target audience for this research was customers from Colombia who had churned within 90 days of activation.',
@@ -462,8 +464,8 @@ export const projects: IProjects[] = [
         widths: ['20%', '20%', '60%'],
         titles: ['My role', 'Tools', 'Timeline & Team'],
         data: [
-          ['UX Design', 'UX Research',],
-          ['Figma', 'Excel',],
+          ['UX Design', 'UX Research'],
+          ['Figma', 'Excel'],
           [
             '3 weeks to do research',
             '1 UX Designer, 1 Product Designer',
@@ -474,7 +476,6 @@ export const projects: IProjects[] = [
         marginTop: 60,
       },
 
-      
       '<b>Steps with deadlines for each stage of the research discussed with stakeholders</b>',
 
       "We started interviewing a selected group of real estate experts to map the expert's User Journey.",
@@ -565,12 +566,12 @@ export const projects: IProjects[] = [
 
       'For detailed tools and scripts, you can view the documents by clicking here.',
 
-        {
+      {
         type: 'title',
         text: 'Findings form the research',
         marginBottom: 0,
         marginTop: 50,
-      },      
+      },
 
       'After completing stages 1 and 2, we prepared the final report, including: a General Report, the detailed interview report vith visual cards (5 cards form 14 interviews), qualitative feedback analysis report, excel sheet vith interviewed customers',
 
@@ -588,17 +589,23 @@ export const projects: IProjects[] = [
 
       'We noted that users often provided multiple reasons for churn, considering the first mentioned as the most significant. We created two graphs: one for main reasons and another combining main and secondary reasons.',
 
-  
       {
         type: 'title',
         text: 'Key findings',
         marginBottom: 0,
-        marginTop: 60,
-      },      
+        marginTop: 50,
+      },
       {
         type: 'theResults',
-        percentages: ['50%', '15.3%', '11.5%', '11.5%',  '7.6%', '7.6%' ],
-        colors: ['#9868FF', '#C1A3FF', '#DDCCFF', '#DDCCFF', '#F1EBFF', '#F1EBFF'],
+        percentages: ['50%', '15.3%', '11.5%', '11.5%', '7.6%', '7.6%'],
+        colors: [
+          '#9868FF',
+          '#C1A3FF',
+          '#DDCCFF',
+          '#DDCCFF',
+          '#F1EBFF',
+          '#F1EBFF',
+        ],
         texts: [
           'increase in the number of scheduled appointments, highlighting the effectiveness of the redesign in facilitating easier and more frequent scheduling of property visits by clients',
           'of the users went to or used stronger competitors (Finca Raíz)',
@@ -616,8 +623,8 @@ export const projects: IProjects[] = [
         type: 'title',
         text: 'Summary & conclusion',
         marginBottom: 0,
-        marginTop: 60,
-      },     
+        marginTop: 50,
+      },
       'The research identified clear user pain points, leading to concrete improvement solutions that could solve the churn problem:',
 
       {
@@ -632,12 +639,7 @@ export const projects: IProjects[] = [
         marginBottom: 30,
       },
 
-       'Our research team provided these insights to the product team for implementation.',
-
-       'The presented data serves as a baseline to measure the impact of future improvements.',
-
-       'A few months after completing this research, the research team and other employees in Argentina were laid off, leaving no information on the implemented improvements.',
-     
+      'Our research team provided these insights to the product team for implementation. The presented data serves as a baseline to measure the impact of future improvements. A few months after completing this research, the research team and other employees in Argentina were laid off, leaving no information on the implemented improvements.',
     ],
   },
 ];
