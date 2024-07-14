@@ -409,7 +409,7 @@ const ProjectDetail = () => {
                 <Typography
                   key={index}
                   sx={{
-                    fontSize: isDesktop ? '34px' : '25px',
+                    fontSize: isDesktop ? '34px' : '27px',
                     fontWeight: '600',
                     marginTop: `${detail.marginTop}px`,
                     marginBottom: `${detail.marginBottom}px`,
