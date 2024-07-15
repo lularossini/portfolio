@@ -5,11 +5,17 @@ import Abitab from './_noPages/views/home/Abitab';
 import Properati from './_noPages/views/home/Properati';
 import TyrCase from './_noPages/views/home/TyrCase';
 import Proppit from './_noPages/views/home/proppit';
+import { useEffect } from 'react';
+import { hotjar } from 'react-hotjar';
 
 const Home = () => {
   const greaterThan1280 = useMediaQuery('(min-width:1280px)');
   const isDesktop = useMediaQuery('(min-width:1200px)');
   const isLittleMobile = useMediaQuery('(max-width:380px)');
+
+  useEffect(() => {
+    hotjar.initialize({ id: 5059946, sv: 6 });
+  }, []);
 
   return (
     <>
