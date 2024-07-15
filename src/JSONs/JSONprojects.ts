@@ -145,6 +145,25 @@ export const projects: IProjects[] = [
         marginTop: 20,
         marginBottom: 0,
       },
+
+      {
+        type: 'title',
+        text: 'Wireframes',
+        marginBottom: 0,
+        marginTop: 50,
+      },
+
+      'The wireframes were great allies in generating conversation with our stakeholder and evaluating if we were heading in the right direction. They also helped facilitate discussions with the development team about elements we could implement or those we needed to change due to conflicts with the backend and how the data tables were structured.',
+      {
+        type: 'image',
+        desktopSrc: '/tyr/desktop/wireframes-image.png',
+        desktopMode: 'full width',
+        mobileSrc: '/tyr/mobile/image-research.png',
+        mobileMode: '100%',
+        marginBottom: 0,
+        marginTop: 50,
+      },
+     
       {
         type: 'title',
         text: 'HI-FI Screens',
