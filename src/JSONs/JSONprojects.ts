@@ -138,9 +138,9 @@ export const projects: IProjects[] = [
         percentages: ['100%', '60%', '50%'],
         colors: ['#86AE9A', '#A5E0C4', '#D6F5E6'],
         texts: [
-          'was the <b>reduction in duplication errors</b> due to the redesign, which incorporated mandatory fields and blocked certain fields from being modified by specific user types.',
-          'was the <b>reduction in employee training time</b> after redesigning the system with a focus on improving usability. This allowed experienced employees to focus on their tasks, enhancing the overall efficiency of the company.',
-          'was the <b>reduction in load time</b> as we reduced the number of fields in each form and eliminated duplicate fields that caused double entries and, consequently, double the time.',
+          '<b>reduction in duplication errors:</b> the redesign introduced mandatory fields and restricted certain fields from being modified by specific user types.',
+          '<b>reduction in employee training time:</b> by focusing on usability, the redesign allowed experienced employees to concentrate on their tasks, improving overall company efficiency.',
+          '<b>reduction in load time:</b> we streamlined forms by reducing the number of fields and eliminating duplicates, which previously caused double entries and extended processing time.',
         ],
         marginTop: 20,
         marginBottom: 0,
