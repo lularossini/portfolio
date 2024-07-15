@@ -8,7 +8,7 @@ import Proppit from './_noPages/views/home/proppit';
 import { useEffect } from 'react';
 import { hotjar } from 'react-hotjar';
 
-const Home = () => {
+const Home: React.FC = () => {
   const greaterThan1280 = useMediaQuery('(min-width:1280px)');
   const isDesktop = useMediaQuery('(min-width:1200px)');
   const isLittleMobile = useMediaQuery('(max-width:380px)');
