@@ -483,7 +483,7 @@ export const projects: IProjects[] = [
         percentages: ['150%', '100%', '67%'],
         colors: ['#EF6774', '#ED979F', '#F5C7CB'],
         texts: [
-          'increase in the number of scheduled appointments, highlighting the effectiveness of the redesign in facilitating easier and more frequent scheduling of property visits by clients.',
+          'growth in scheduled appointments, highlighting the effectiveness of the redesign in facilitating easier and more frequent scheduling of property visits by clients.',
           'increase in the client response rate, demonstrating the effectiveness of the redesign in making proposals more responsive and appealing to clients.',
           'reduction in proposal creation time, allowing real estate experts to focus more on client interactions and closing deals.',
         ],
