@@ -138,7 +138,7 @@ export const projects: IProjects[] = [
         percentages: ['100%', '60%', '50%'],
         colors: ['#86AE9A', '#A5E0C4', '#D6F5E6'],
         texts: [
-          'was the <b>reduction in duplication errors</b> due to the redesign, which incorporated mandatory fields and blocked certain fields from being modified by specific user types. was the <b>reduction in duplication errors</b> due to the redesign, which incorporated mandatory fields and blocked certain fields from being modified by specific user types.',
+          'was the <b>reduction in duplication errors</b> due to the redesign, which incorporated mandatory fields and blocked certain fields from being modified by specific user types.',
           'was the <b>reduction in employee training time</b> after redesigning the system with a focus on improving usability. This allowed experienced employees to focus on their tasks, enhancing the overall efficiency of the company.',
           'was the <b>reduction in load time</b> as we reduced the number of fields in each form and eliminated duplicate fields that caused double entries and, consequently, double the time.',
         ],
@@ -153,7 +153,7 @@ export const projects: IProjects[] = [
         marginTop: 50,
       },
 
-      'The wireframes were great allies in generating conversation with our stakeholder and evaluating if we were heading in the right direction. They also helped facilitate discussions with the development team about elements we could implement or those we needed to change due to conflicts with the backend and how the data tables were structured.',
+      'Wireframes were invaluable for generating conversations with our stakeholders and ensuring we were on the right track. They also facilitated discussions with the development team about which elements could be implemented and which needed changes due to backend conflicts and data table structures.',
       {
         type: 'image',
         desktopSrc: '/tyr/desktop/wireframes-image.png',
