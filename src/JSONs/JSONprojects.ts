@@ -300,6 +300,10 @@ export const projects: IProjects[] = [
       'The central idea of the application was to carry out the process in well-defined steps to reduce possible user anxieties about where they were in the process and to decrease registration times, making it much more efficient.',
       'In terms of visuals, the previously defined definitions extracted from the design system that Abitab had were applied, and it was proposed to the client to modify some colors within the color palette to make them accessible following the current web accessibility regulations.',
 
+
+      
+
+
       {
         type: 'image',
         desktopSrc: '/abitab/desktop/telefonos-desktop.svg',
@@ -381,8 +385,8 @@ export const projects: IProjects[] = [
         marginBottom: 0,
         marginTop: 60,
       },
-      'This project was developed for Properati, a company dedicated to online real estate.',
-      'Properati has a transactional branch that connects users wanting to buy a house with real state experts that helps them find the property they dreamed about.',
+      'This project was developed for <b>Properati</b>, a company dedicated to <b>online real estate</b>.',
+      'Properati has a <b>transactional branch</b> that connects users wanting to buy a house with <b>real state experts</b> that helps them find the property they dreamed about.',
 
       {
         type: 'title',
