@@ -50,6 +50,17 @@ export interface IProjects {
         marginBottom: number;
         marginTop: number;
       }
+    | {
+        type: 'carousel';
+        desktopSrcImages: string[];
+        mobileSrcImages: string[];
+        greaterThan600Mode: '100%' | 'full width' | 'customWidth';
+        mobileMode: '100%' | 'full width' | 'customWidth';
+        customWidthgreaterThan600Mode?: string;
+        customWidthMobile?: string;
+        marginBottom: number;
+        marginTop: number;
+      }
   )[];
 }
 
@@ -163,7 +174,7 @@ export const projects: IProjects[] = [
         marginBottom: 0,
         marginTop: 50,
       },
-     
+
       {
         type: 'title',
         text: 'HI-FI Screens',
@@ -299,10 +310,6 @@ export const projects: IProjects[] = [
       'Due to the limited design hours allocated for the project, a prioritization was conducted, and it was decided not to create wireframes and proceed directly to high-fidelity designs.',
       'The central idea of the application was to carry out the process in well-defined steps to reduce possible user anxieties about where they were in the process and to decrease registration times, making it much more efficient.',
       'In terms of visuals, the previously defined definitions extracted from the design system that Abitab had were applied, and it was proposed to the client to modify some colors within the color palette to make them accessible following the current web accessibility regulations.',
-
-
-      
-
 
       {
         type: 'image',
@@ -651,12 +658,12 @@ export const projects: IProjects[] = [
         texts: [
           'User recruitment spreadsheet',
           'Recruitment email',
-          'Calendly setup for schedulin',  
+          'Calendly setup for schedulin',
           'Reminder messages via Whatsapp',
         ],
         marginBottom: 0,
         marginTop: 0,
-      },     
+      },
 
       'For detailed tools and scripts, you can view the documents by clicking here.',
       {
@@ -672,7 +679,7 @@ export const projects: IProjects[] = [
         texts: [
           'General report',
           'Detailed interview report with visual cards (5 cards from 14 interviews)',
-          'Qualitative feedback analysis report', 
+          'Qualitative feedback analysis report',
           'Excel sheet with interviewed customers',
         ],
         marginBottom: 0,
@@ -730,7 +737,7 @@ export const projects: IProjects[] = [
         marginBottom: 0,
         marginTop: 0,
       },
-     'Our research team provided these insights to the product team for implementation. The presented data serves as a baseline to measure the impact of future improvements. A few months after completing this research, the research team and other employees in Argentina were laid off, leaving no information on the implemented improvements.',
+      'Our research team provided these insights to the product team for implementation. The presented data serves as a baseline to measure the impact of future improvements. A few months after completing this research, the research team and other employees in Argentina were laid off, leaving no information on the implemented improvements.',
     ],
   },
 ];

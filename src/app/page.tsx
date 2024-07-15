@@ -1,11 +1,13 @@
 'use client';
 
+import React, { useEffect } from 'react';
 import { Box, Typography, useMediaQuery } from '@mui/material';
 import Abitab from './_noPages/views/home/Abitab';
 import Properati from './_noPages/views/home/Properati';
 import TyrCase from './_noPages/views/home/TyrCase';
 import Proppit from './_noPages/views/home/proppit';
-import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { hotjar } from 'react-hotjar';
 
 const Home: React.FC = () => {
@@ -14,6 +16,11 @@ const Home: React.FC = () => {
   const isLittleMobile = useMediaQuery('(max-width:380px)');
 
   useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+
     hotjar.initialize({ id: 5059946, sv: 6 });
   }, []);
 
@@ -172,14 +179,18 @@ const Home: React.FC = () => {
           display: 'flex',
           flexDirection: 'column',
           gap: '23px',
+
           marginTop: isDesktop ? '60px' : '37px',
           marginBottom: '50px',
+          alignItems: 'center',
+          width: '100%',
         }}
       >
-        <TyrCase />
-        <Abitab />
-        <Properati />
-        <Proppit />
+        {[TyrCase, Abitab, Properati, Proppit].map((Component, index) => (
+          <Box key={index} data-aos='fade-up' data-aos-delay={index * 100}>
+            <Component />
+          </Box>
+        ))}
 
         {/* Footer home */}
         <Box
@@ -188,6 +199,7 @@ const Home: React.FC = () => {
             flexDirection: 'column',
             justifyContent: 'center',
             marginTop: '50px',
+            width: '100%',
           }}
         >
           <Typography
@@ -230,12 +242,5 @@ const Home: React.FC = () => {
 
 export default Home;
 
-// Reemplazar por la ruta del cv de lu en google drive
 // padding del menu mobile izquierdo aparenta ser mayor por el padding del boton
-// Chequear si esta alineado en mobile el mambo superior con las cards
-
-//Header portada
-//full width
-//100%
 //footer de cases
-//Carrousel

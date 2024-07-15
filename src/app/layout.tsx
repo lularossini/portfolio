@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Darker_Grotesque, Space_Grotesk } from 'next/font/google';
 import Header from './_noPages/views/header/Header';
-import Footer from './_noPages/views/footer/Footer';
 import './global.css';
 
 // If loading a variable font, you don't need to specify the font weight
@@ -37,14 +36,13 @@ export default function RootLayout({
         <link rel='icon' type='image/svg' href='../favicon.svg' />
       </head>
       <body>
-        <header style={{ position: 'fixed', zIndex: 100 }}>
+        <header
+          style={{ position: 'fixed', zIndex: 100, width: '100% !important' }}
+        >
           <Header />
         </header>
 
         <main>{children}</main>
-        {/* <footer>
-          <Footer />
-        </footer> */}
       </body>
     </html>
   );
