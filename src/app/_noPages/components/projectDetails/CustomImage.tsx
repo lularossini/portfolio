@@ -12,7 +12,7 @@ interface IProjectDetailImageProps {
   marginTop: number;
 }
 
-const ProjectDetailImage: React.FC<IProjectDetailImageProps> = ({
+const CustomImage: React.FC<IProjectDetailImageProps> = ({
   desktopSrc,
   desktopMode,
   mobileSrc,
@@ -64,7 +64,7 @@ const ProjectDetailImage: React.FC<IProjectDetailImageProps> = ({
   return (
     <Box
       sx={{
-        width: width === '100vw' ? '100vw' : 'auto',
+        width: width,
         margin: width === '100vw' ? '0 calc(50% - 50vw)' : '0 auto',
         marginTop: `${marginTop}px`,
         marginBottom: `${marginBottom}px`,
@@ -82,4 +82,4 @@ const ProjectDetailImage: React.FC<IProjectDetailImageProps> = ({
   );
 };
 
-export default ProjectDetailImage;
+export default CustomImage;

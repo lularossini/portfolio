@@ -10,14 +10,15 @@ import { useParams, useRouter } from 'next/navigation';
 import { projects } from '@/JSONs/JSONprojects';
 
 // ** Components import
-import ProjectDetailImage from '@/app/_noPages/components/projectDetails/ProjectDetailImage';
+import CustomImage from '@/app/_noPages/components/projectDetails/CustomImage';
+import TheResults from '@/app/_noPages/components/projectDetails/TheResults';
+import Table from '@/app/_noPages/components/projectDetails/Table';
+import Enum from '@/app/_noPages/components/projectDetails/Enum';
+import Carousel from '@/app/_noPages/components/projectDetails/Carousel';
+import Bullets from '@/app/_noPages/components/projectDetails/Bullets';
 
 // ** Material UI import
 import { Box, Typography, useMediaQuery } from '@mui/material';
-import TheResults from '@/app/_noPages/components/projectDetails/TheResults';
-import Bullets from '@/app/_noPages/components/projectDetails/Bullets';
-import Table from '@/app/_noPages/components/projectDetails/Table';
-import Enum from '@/app/_noPages/components/projectDetails/Enum';
 
 const ProjectDetail = () => {
   const isDesktop = useMediaQuery('(min-width:1200px)');
@@ -427,7 +428,7 @@ const ProjectDetail = () => {
             // Image
             if (detail.type === 'image') {
               return (
-                <ProjectDetailImage
+                <CustomImage
                   key={index}
                   desktopSrc={detail.desktopSrc}
                   mobileSrc={detail.mobileSrc}
@@ -482,6 +483,23 @@ const ProjectDetail = () => {
                   titles={detail.titles}
                   widths={detail.widths}
                   data={detail.data}
+                  marginBottom={detail.marginBottom}
+                  marginTop={detail.marginTop}
+                />
+              );
+            }
+            if (detail.type === 'carousel') {
+              return (
+                <Carousel
+                  key={index}
+                  desktopSrcImages={detail.desktopSrcImages}
+                  mobileSrcImages={detail.mobileSrcImages}
+                  greaterThan600Mode={detail.greaterThan600Mode}
+                  mobileMode={detail.mobileMode}
+                  customWidthgreaterThan600Mode={
+                    detail.customWidthgreaterThan600Mode
+                  }
+                  customWidthMobile={detail.customWidthMobile}
                   marginBottom={detail.marginBottom}
                   marginTop={detail.marginTop}
                 />
