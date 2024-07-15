@@ -138,13 +138,32 @@ export const projects: IProjects[] = [
         percentages: ['100%', '60%', '50%'],
         colors: ['#86AE9A', '#A5E0C4', '#D6F5E6'],
         texts: [
-          'was the <b>reduction in duplication errors</b> due to the redesign, which incorporated mandatory fields and blocked certain fields from being modified by specific user types. was the <b>reduction in duplication errors</b> due to the redesign, which incorporated mandatory fields and blocked certain fields from being modified by specific user types.',
-          'was the <b>reduction in employee training time</b> after redesigning the system with a focus on improving usability. This allowed experienced employees to focus on their tasks, enhancing the overall efficiency of the company.',
-          'was the <b>reduction in load time</b> as we reduced the number of fields in each form and eliminated duplicate fields that caused double entries and, consequently, double the time.',
+          '<b>reduction in duplication errors:</b> the redesign introduced mandatory fields and restricted certain fields from being modified by specific user types.',
+          '<b>reduction in employee training time:</b> by focusing on usability, the redesign allowed experienced employees to concentrate on their tasks, improving overall company efficiency.',
+          '<b>reduction in load time:</b> we streamlined forms by reducing the number of fields and eliminating duplicates, which previously caused double entries and extended processing time.',
         ],
         marginTop: 20,
         marginBottom: 0,
       },
+
+      {
+        type: 'title',
+        text: 'Wireframes',
+        marginBottom: 0,
+        marginTop: 50,
+      },
+
+      'Wireframes were invaluable for generating conversations with our stakeholders and ensuring we were on the right track. They also facilitated discussions with the development team about which elements could be implemented and which needed changes due to backend conflicts and data table structures.',
+      {
+        type: 'image',
+        desktopSrc: '/tyr/desktop/wireframes-image.png',
+        desktopMode: 'full width',
+        mobileSrc: '/tyr/mobile/image-research.png',
+        mobileMode: '100%',
+        marginBottom: 0,
+        marginTop: 50,
+      },
+     
       {
         type: 'title',
         text: 'HI-FI Screens',
@@ -623,13 +642,19 @@ export const projects: IProjects[] = [
       'Interviews were conducted by phone, as per stakeholder request, but we recommended video calls for richer interaction. We called users first to set up video calls, defaulting to phone interviews if video calls were not feasible increase in the client response rate, demonstrating the effectiveness of the redesign in making proposals more responsive and appealing to clients.',
 
       '<b>To ensure effective follow-up, we prepared several tools</b>:',
-      '1. User recruitment spreadsheet',
-      '2. Recruitment email',
-      '3. Calendly setup for scheduling',
-      '4. Reminder messages via Whatsapp',
+      {
+        type: 'enum',
+        texts: [
+          'User recruitment spreadsheet',
+          'Recruitment email',
+          'Calendly setup for schedulin',  
+          'Reminder messages via Whatsapp',
+        ],
+        marginBottom: 0,
+        marginTop: 0,
+      },     
 
       'For detailed tools and scripts, you can view the documents by clicking here.',
-
       {
         type: 'title',
         text: 'Findings form the research',
@@ -638,17 +663,16 @@ export const projects: IProjects[] = [
       },
 
       'After completing stages 1 and 2, we prepared the final report, including: a General Report, the detailed interview report vith visual cards (5 cards form 14 interviews), qualitative feedback analysis report, excel sheet vith interviewed customers',
-
       {
-        type: 'bullets',
+        type: 'enum',
         texts: [
           'General report',
           'Detailed interview report with visual cards (5 cards from 14 interviews)',
-          'Qualitative feedback analysis report',
+          'Qualitative feedback analysis report', 
           'Excel sheet with interviewed customers',
         ],
-        marginTop: 30,
-        marginBottom: 30,
+        marginBottom: 0,
+        marginTop: 0,
       },
 
       'We noted that users often provided multiple reasons for churn, considering the first mentioned as the most significant. We created two graphs: one for main reasons and another combining main and secondary reasons.',
@@ -692,18 +716,17 @@ export const projects: IProjects[] = [
       'The research identified clear user pain points, leading to concrete improvement solutions that could solve the churn problem:',
 
       {
-        type: 'bullets',
+        type: 'enum',
         texts: [
-          'Offer smaller plans for small clients',
-          'Improve the payment/renewal process by adding features for users to self-manage invoices and report payments',
-          'Enhance initial account activation with an automatic system for new customers',
-          'Provide training through webinars or a YouTube channel to help customers better utilize the platform',
+          '<b>Offer smaller plans</b> for small clients',
+          '<b>Improve the payment/renewal process</b> by adding features for users to self-manage invoices and report payments',
+          '<b>Enhance initial account activation</b> with an automatic system for new customers',
+          '<b>Provide training</b> through webinars or a YouTube channel to help customers better utilize the platform',
         ],
-        marginTop: 30,
-        marginBottom: 30,
+        marginBottom: 0,
+        marginTop: 0,
       },
-
-      'Our research team provided these insights to the product team for implementation. The presented data serves as a baseline to measure the impact of future improvements. A few months after completing this research, the research team and other employees in Argentina were laid off, leaving no information on the implemented improvements.',
+     'Our research team provided these insights to the product team for implementation. The presented data serves as a baseline to measure the impact of future improvements. A few months after completing this research, the research team and other employees in Argentina were laid off, leaving no information on the implemented improvements.',
     ],
   },
 ];
