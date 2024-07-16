@@ -169,7 +169,7 @@ export const projects: IProjects[] = [
         type: 'image',
         desktopSrc: '/tyr/desktop/wireframes-image.png',
         desktopMode: 'full width',
-        mobileSrc: '/tyr/mobile/image-research.png',
+        mobileSrc: '/tyr/mobile/wireframes-mobile.png',
         mobileMode: '100%',
         marginBottom: 0,
         marginTop: 50,
