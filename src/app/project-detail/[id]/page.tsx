@@ -19,6 +19,7 @@ import Bullets from '@/app/_noPages/components/projectDetails/Bullets';
 
 // ** Material UI import
 import { Box, Typography, useMediaQuery } from '@mui/material';
+import ScrollToTop from '@/app/_noPages/components/projectDetails/ScrollToTop';
 
 const ProjectDetail = () => {
   const isDesktop = useMediaQuery('(min-width:1200px)');
@@ -328,262 +329,265 @@ const ProjectDetail = () => {
   };
 
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        width: '100%',
-        maxWidth: '936px',
-        height: '100%',
-        justifyContent: 'center',
-      }}
-    >
-      {/* Cover case study */}
-      <Box
-        sx={{
-          position: 'absolute',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          top: isDesktop ? '100px' : '105px',
-          left: 0,
-          width: '100vw',
-          height: isDesktop
-            ? '452px'
-            : id !== 'abitab-case'
-            ? '322px'
-            : '384px',
-          backgroundColor:
-            id === 'properati-case' || id === 'tyr-case'
-              ? '#F1E5F8'
-              : '#EDE9EF',
-        }}
-      >
-        {renderCaseContent()}
-      </Box>
-
-      {/*Details*/}
+    <>
+      <ScrollToTop />
       <Box
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          paddingTop: isDesktop
-            ? '452px'
-            : id !== 'abitab-case'
-            ? '322px'
-            : '384px',
-        }}
-      >
-        {/* Details*/}
-        {details &&
-          details.map((detail, index) => {
-            // Regular text
-            if (typeof detail === 'string') {
-              const formatText = (detail: string) => {
-                const parts = detail.split(/(<b>.*?<\/b>)/g);
-                return parts.map((part, index) => {
-                  if (part.startsWith('<b>') && part.endsWith('</b>')) {
-                    return <b key={index}>{part.slice(3, -4)}</b>;
-                  }
-                  return part;
-                });
-              };
-
-              return (
-                <Typography
-                  key={index}
-                  variant='body1'
-                  sx={{
-                    fontSize: isDesktop ? '24px' : '22px',
-                    lineHeight: isDesktop ? '30px' : '29px',
-                    fontWeight: '400',
-                    color: 'black',
-                    marginTop: '10px',
-                  }}
-                >
-                  {formatText(detail).map((part, index) => (
-                    <React.Fragment key={index}>{part}</React.Fragment>
-                  ))}
-                </Typography>
-              );
-            }
-
-            // Title
-            if (detail.type === 'title') {
-              return (
-                <Typography
-                  key={index}
-                  sx={{
-                    fontSize: isDesktop ? '34px' : '27px',
-                    fontWeight: '600',
-                    marginTop: `${detail.marginTop}px`,
-                    marginBottom: `${detail.marginBottom}px`,
-                  }}
-                >
-                  {detail.text}
-                </Typography>
-              );
-            }
-
-            // Image
-            if (detail.type === 'image') {
-              return (
-                <CustomImage
-                  key={index}
-                  desktopSrc={detail.desktopSrc}
-                  mobileSrc={detail.mobileSrc}
-                  desktopMode={detail.desktopMode}
-                  mobileMode={detail.mobileMode}
-                  customWidthMobile={detail.customWidthMobile}
-                  customWidthDesktop={detail.customWidthDesktop}
-                  marginBottom={detail.marginBottom}
-                  marginTop={detail.marginTop}
-                />
-              );
-            }
-
-            // The Results
-            if (detail.type === 'theResults') {
-              return (
-                <TheResults
-                  key={index}
-                  percentages={detail.percentages}
-                  colors={detail.colors}
-                  texts={detail.texts}
-                  marginBottom={detail.marginBottom}
-                  marginTop={detail.marginTop}
-                />
-              );
-            }
-            if (detail.type === 'bullets') {
-              return (
-                <Bullets
-                  key={index}
-                  texts={detail.texts}
-                  marginBottom={detail.marginBottom}
-                  marginTop={detail.marginTop}
-                />
-              );
-            }
-
-            if (detail.type === 'enum') {
-              return (
-                <Enum
-                  key={index}
-                  texts={detail.texts}
-                  marginBottom={detail.marginBottom}
-                  marginTop={detail.marginTop}
-                />
-              );
-            }
-            if (detail.type === 'table') {
-              return (
-                <Table
-                  key={index}
-                  titles={detail.titles}
-                  widths={detail.widths}
-                  data={detail.data}
-                  marginBottom={detail.marginBottom}
-                  marginTop={detail.marginTop}
-                />
-              );
-            }
-            if (detail.type === 'carousel') {
-              return (
-                <Carousel
-                  key={index}
-                  desktopSrcImages={detail.desktopSrcImages}
-                  mobileSrcImages={detail.mobileSrcImages}
-                  greaterThan600Mode={detail.greaterThan600Mode}
-                  mobileMode={detail.mobileMode}
-                  customWidthgreaterThan600Mode={
-                    detail.customWidthgreaterThan600Mode
-                  }
-                  customWidthMobile={detail.customWidthMobile}
-                  marginBottom={detail.marginBottom}
-                  marginTop={detail.marginTop}
-                />
-              );
-            }
-          })}
-      </Box>
-
-      {/*Project nav bar*/}
-      <Box
-        sx={{
-          display: 'flex',
+          width: '100%',
+          maxWidth: '936px',
+          height: '100%',
           justifyContent: 'center',
-          padding: '16px',
-          width: '100vw',
-          height: '65px',
-          margin: '60px calc(50% - 50vw) 0 calc(50% - 50vw)',
-          backgroundColor: '#EFEBF0',
         }}
       >
+        {/* Cover case study */}
+        <Box
+          sx={{
+            position: 'absolute',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            top: isDesktop ? '100px' : '105px',
+            left: 0,
+            width: '100vw',
+            height: isDesktop
+              ? '452px'
+              : id !== 'abitab-case'
+              ? '322px'
+              : '384px',
+            backgroundColor:
+              id === 'properati-case' || id === 'tyr-case'
+                ? '#F1E5F8'
+                : '#EDE9EF',
+          }}
+        >
+          {renderCaseContent()}
+        </Box>
+
+        {/*Details*/}
         <Box
           sx={{
             display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            width: '100%',
-            maxWidth: '936px',
-            height: '100%',
+            flexDirection: 'column',
+            paddingTop: isDesktop
+              ? '452px'
+              : id !== 'abitab-case'
+              ? '322px'
+              : '384px',
+          }}
+        >
+          {/* Details*/}
+          {details &&
+            details.map((detail, index) => {
+              // Regular text
+              if (typeof detail === 'string') {
+                const formatText = (detail: string) => {
+                  const parts = detail.split(/(<b>.*?<\/b>)/g);
+                  return parts.map((part, index) => {
+                    if (part.startsWith('<b>') && part.endsWith('</b>')) {
+                      return <b key={index}>{part.slice(3, -4)}</b>;
+                    }
+                    return part;
+                  });
+                };
+
+                return (
+                  <Typography
+                    key={index}
+                    variant='body1'
+                    sx={{
+                      fontSize: isDesktop ? '24px' : '22px',
+                      lineHeight: isDesktop ? '30px' : '29px',
+                      fontWeight: '400',
+                      color: 'black',
+                      marginTop: '10px',
+                    }}
+                  >
+                    {formatText(detail).map((part, index) => (
+                      <React.Fragment key={index}>{part}</React.Fragment>
+                    ))}
+                  </Typography>
+                );
+              }
+
+              // Title
+              if (detail.type === 'title') {
+                return (
+                  <Typography
+                    key={index}
+                    sx={{
+                      fontSize: isDesktop ? '34px' : '27px',
+                      fontWeight: '600',
+                      marginTop: `${detail.marginTop}px`,
+                      marginBottom: `${detail.marginBottom}px`,
+                    }}
+                  >
+                    {detail.text}
+                  </Typography>
+                );
+              }
+
+              // Image
+              if (detail.type === 'image') {
+                return (
+                  <CustomImage
+                    key={index}
+                    desktopSrc={detail.desktopSrc}
+                    mobileSrc={detail.mobileSrc}
+                    desktopMode={detail.desktopMode}
+                    mobileMode={detail.mobileMode}
+                    customWidthMobile={detail.customWidthMobile}
+                    customWidthDesktop={detail.customWidthDesktop}
+                    marginBottom={detail.marginBottom}
+                    marginTop={detail.marginTop}
+                  />
+                );
+              }
+
+              // The Results
+              if (detail.type === 'theResults') {
+                return (
+                  <TheResults
+                    key={index}
+                    percentages={detail.percentages}
+                    colors={detail.colors}
+                    texts={detail.texts}
+                    marginBottom={detail.marginBottom}
+                    marginTop={detail.marginTop}
+                  />
+                );
+              }
+              if (detail.type === 'bullets') {
+                return (
+                  <Bullets
+                    key={index}
+                    texts={detail.texts}
+                    marginBottom={detail.marginBottom}
+                    marginTop={detail.marginTop}
+                  />
+                );
+              }
+
+              if (detail.type === 'enum') {
+                return (
+                  <Enum
+                    key={index}
+                    texts={detail.texts}
+                    marginBottom={detail.marginBottom}
+                    marginTop={detail.marginTop}
+                  />
+                );
+              }
+              if (detail.type === 'table') {
+                return (
+                  <Table
+                    key={index}
+                    titles={detail.titles}
+                    widths={detail.widths}
+                    data={detail.data}
+                    marginBottom={detail.marginBottom}
+                    marginTop={detail.marginTop}
+                  />
+                );
+              }
+              if (detail.type === 'carousel') {
+                return (
+                  <Carousel
+                    key={index}
+                    desktopSrcImages={detail.desktopSrcImages}
+                    mobileSrcImages={detail.mobileSrcImages}
+                    greaterThan600Mode={detail.greaterThan600Mode}
+                    mobileMode={detail.mobileMode}
+                    customWidthgreaterThan600Mode={
+                      detail.customWidthgreaterThan600Mode
+                    }
+                    customWidthMobile={detail.customWidthMobile}
+                    marginBottom={detail.marginBottom}
+                    marginTop={detail.marginTop}
+                  />
+                );
+              }
+            })}
+        </Box>
+
+        {/*Project nav bar*/}
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            padding: '16px',
+            width: '100vw',
+            height: '65px',
+            margin: '60px calc(50% - 50vw) 0 calc(50% - 50vw)',
+            backgroundColor: '#EFEBF0',
           }}
         >
           <Box
-            sx={{ display: 'flex', gap: '4px', alignItems: 'center' }}
-            onClick={previousProjectClickHandler}
+            sx={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              width: '100%',
+              maxWidth: '936px',
+              height: '100%',
+            }}
           >
-            <img
-              src='/previousArrow.svg'
-              alt=''
-              style={{
-                position: 'relative',
-                width: '18px',
-                height: '18px',
-                top: '1px',
-              }}
-            />
-            <Typography
-              sx={{
-                fontSize: isDesktop ? '19px' : '16px',
-                lineHeight: '25px',
-                fontWeight: '600',
-                cursor: 'pointer',
-              }}
+            <Box
+              sx={{ display: 'flex', gap: '4px', alignItems: 'center' }}
+              onClick={previousProjectClickHandler}
             >
-              Previous project
-            </Typography>
-          </Box>
+              <img
+                src='/previousArrow.svg'
+                alt=''
+                style={{
+                  position: 'relative',
+                  width: '18px',
+                  height: '18px',
+                  top: '1px',
+                }}
+              />
+              <Typography
+                sx={{
+                  fontSize: isDesktop ? '19px' : '16px',
+                  lineHeight: '25px',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                }}
+              >
+                Previous project
+              </Typography>
+            </Box>
 
-          <Box
-            sx={{ display: 'flex', gap: '4px', alignItems: 'center' }}
-            onClick={nextProjectClickHandler}
-          >
-            <Typography
-              sx={{
-                fontSize: isDesktop ? '19px' : '16px',
-                lineHeight: '25px',
-                fontWeight: '600',
-                cursor: 'pointer',
-              }}
+            <Box
+              sx={{ display: 'flex', gap: '4px', alignItems: 'center' }}
+              onClick={nextProjectClickHandler}
             >
-              Next project
-            </Typography>
-            <img
-              src='/nextArrow.svg'
-              alt=''
-              style={{
-                position: 'relative',
-                width: '18px',
-                height: '18px',
-                top: '1px',
-              }}
-            />
+              <Typography
+                sx={{
+                  fontSize: isDesktop ? '19px' : '16px',
+                  lineHeight: '25px',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                }}
+              >
+                Next project
+              </Typography>
+              <img
+                src='/nextArrow.svg'
+                alt=''
+                style={{
+                  position: 'relative',
+                  width: '18px',
+                  height: '18px',
+                  top: '1px',
+                }}
+              />
+            </Box>
           </Box>
         </Box>
       </Box>
-    </Box>
+    </>
   );
 };
 

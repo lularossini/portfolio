@@ -70,7 +70,23 @@ const ProppitCase: React.FC = () => {
               understand the reasons for the massive unsubscribes
             </Typography>
             <Box
-              sx={{ display: 'flex', marginTop: '15px', position: 'relative' }}
+              sx={{
+                display: 'flex',
+                marginTop: '15px',
+                position: 'relative',
+                alignItems: 'center',
+                '&:hover img': {
+                  animation: 'moveSide 0.5s ease-in-out infinite alternate',
+                },
+                '@keyframes moveSide': {
+                  '0%': {
+                    transform: 'translateX(0)',
+                  },
+                  '100%': {
+                    transform: 'translateX(5px)', // Ajusta este valor según la distancia que deseas que se mueva
+                  },
+                },
+              }}
             >
               <Typography
                 className='spaceGrotesk'
@@ -85,7 +101,7 @@ const ProppitCase: React.FC = () => {
               </Typography>
               <img
                 src='/icons/learnMoreIcon.svg'
-                alt=''
+                alt='Learn more icon'
                 style={{
                   position: 'absolute',
                   top: '8px',

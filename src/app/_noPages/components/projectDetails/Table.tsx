@@ -28,76 +28,124 @@ const Table: React.FC<ITablePropsTypes> = ({
 }) => {
   const isDesktop = useMediaQuery('(min-width:1200px)');
 
-  return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        width: '100%',
-        marginBottom: `${marginBottom}px`,
-        marginTop: `${marginTop}px`,
-        gap: '3px', // Espaciado entre filas
-      }}
-    >
-      {/* Header */}
+  if (isDesktop) {
+    return (
       <Box
         sx={{
           display: 'flex',
+          flexDirection: 'column',
           width: '100%',
-          justifyContent: 'space-between',
-          gap: '10px',
+          marginBottom: `${marginBottom}px`,
+          marginTop: `${marginTop}px`,
+          gap: '3px', // Espaciado entre filas
         }}
       >
-        {titles.map((title, index) => (
-          <Typography
-            key={index}
-            sx={{
-              fontWeight: '600',
-              fontSize: isDesktop ? '34px' : '27px',
-              lineHeight: isDesktop ? '38px' : '34px',
-              color: 'black',
-              width: widths[index],
-            }}
-          >
-            {title}
-          </Typography>
-        ))}
-      </Box>
+        {/* Header */}
+        <Box
+          sx={{
+            display: 'flex',
+            width: '100%',
+            justifyContent: 'space-between',
+            gap: '10px',
+          }}
+        >
+          {titles.map((title, index) => (
+            <Typography
+              key={index}
+              sx={{
+                fontWeight: '600',
+                fontSize: '34px',
+                lineHeight: '38px',
+                color: 'black',
+                width: widths[index],
+              }}
+            >
+              {title}
+            </Typography>
+          ))}
+        </Box>
 
-      {/* Data */}
-      {data[0] &&
-        data[0].map((_, rowIndex) => (
-          <Box
-            key={rowIndex}
-            sx={{
-              display: 'flex',
-              width: '100%',
-              justifyContent: 'space-between',
-              gap: '10px',
-            }}
-          >
-            {data.map((colData, colIndex) => (
+        {/* Data */}
+        {data[0] &&
+          data[0].map((_, rowIndex) => (
+            <Box
+              key={rowIndex}
+              sx={{
+                display: 'flex',
+                width: '100%',
+                justifyContent: 'space-between',
+                gap: '10px',
+              }}
+            >
+              {data.map((colData, colIndex) => (
+                <Typography
+                  key={colIndex}
+                  variant='body1'
+                  sx={{
+                    fontSize: '24px',
+                    lineHeight: '30px',
+                    fontWeight: '400',
+                    color: 'black',
+                    width: widths[colIndex],
+                    marginTop: rowIndex === 0 ? '10px' : '0', // Aplicar margen solo a filas no primeras
+                  }}
+                >
+                  {formatText(colData[rowIndex]).map((part, index) => (
+                    <React.Fragment key={index}>{part}</React.Fragment>
+                  ))}
+                </Typography>
+              ))}
+            </Box>
+          ))}
+      </Box>
+    );
+  } else {
+    return (
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          width: '100%',
+          marginBottom: `${marginBottom}px`,
+          marginTop: `${marginTop}px`,
+          gap: '15px', // Espaciado entre bloques de títulos y datos
+        }}
+      >
+        {titles.map((title, titleIndex) => (
+          <Box key={titleIndex} sx={{ width: '100%' }}>
+            <Typography
+              sx={{
+                fontWeight: '600',
+                fontSize: '27px',
+                lineHeight: '34px',
+                color: 'black',
+                marginBottom: '5px',
+              }}
+            >
+              {title}
+            </Typography>
+            {data[titleIndex].map((detail, detailIndex) => (
               <Typography
-                key={colIndex}
+                key={detailIndex}
                 variant='body1'
                 sx={{
-                  fontSize: isDesktop ? '24px' : '22px',
-                  lineHeight: isDesktop ? '30px' : '29px',
+                  fontSize: '22px',
+                  lineHeight: '29px',
                   fontWeight: '400',
                   color: 'black',
-                  width: widths[colIndex],
-                  marginTop: rowIndex === 0 ? '10px' : '0', // Aplicar margen solo a filas no primeras
+                  marginTop: '10px',
                 }}
               >
-                {formatText(colData[rowIndex]).map((part, index) => (
+                {formatText(detail).map((part, index) => (
                   <React.Fragment key={index}>{part}</React.Fragment>
                 ))}
               </Typography>
             ))}
           </Box>
         ))}
-    </Box>
-  );
+      </Box>
+    );
+  }
 };
 
 export default Table;
