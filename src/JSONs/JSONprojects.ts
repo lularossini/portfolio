@@ -93,36 +93,24 @@ export const projects: IProjects[] = [
 
       {
         type: 'table',
-        widths: ['100%'],
-        titles: ['My role'],
-        data: [['UX Research', 'UX Design', 'UX Writing']],
-        marginBottom: 0,
+        widths: ['20%','20%', '60%'],
+        titles: ['My role', 'Tools', 'Timeline & Team'],
+        data: [
+          ['UX Research', 'UX Design', 'UX Writing'],
+          ['Figma', 'Figjam', 'Zoom'],
+          [
+            '1 month to design',
+            '1 UX Designer, 1 UI designer ',
+            '2 devs, 1 Project Manager',
+          ],
+      
+      
+      ],
+        marginBottom: 20,
         marginTop: 50,
       },
 
-      {
-        type: 'table',
-        widths: ['100%'],
-        titles: ['Tools'],
-        data: [['Figma', 'Figjam', 'Zoom']],
-        marginBottom: 0,
-        marginTop: 20,
-      },
-
-      {
-        type: 'table',
-        widths: ['100%'],
-        titles: ['Timeline & Team'],
-        data: [
-          [
-            '1 month to design',
-            '1 UX Designer, 1 UI designer, 2 devs, 1 Project Manager ',
-            '10 Devs, 1 ProjectManager',
-          ],
-        ],
-        marginBottom: 20,
-        marginTop: 20,
-      },
+    
 
       'As the UX designer for the project, I was in charge from the beginning. I had the initial conversations with the client to understand their business vision and identify the issues they had noticed and wanted to improve, as well as what aspects they wanted to keep because they were working well. I also requested access to the system we were going to redesign. With this access, I conducted a brief research to understand the current system, map out the workflows, and identify obvious usability improvements we could apply. With this, we began the wireframing stage.',
       'We had tight one-week sprints and two weekly meetings with the client to make inquiries and review the progress.',
@@ -249,36 +237,21 @@ export const projects: IProjects[] = [
 
       {
         type: 'table',
-        widths: ['100%'],
-        titles: ['My role'],
-        data: [['UX Research', 'UX Design', 'UX Writing']],
+        widths: ['20%', '20%', '60%'],
+        titles: ['My role', 'Tools', 'Timeline & Team'],
+        data: [
+          ['UX Research', 'UX Design', 'UX Writing'],
+          ['Figma', 'Figjam', 'Zoom'],
+          [
+            '3 month to design',
+            '1 UX Designer, 1 Product Designer',
+            '10 Devs, 1 Project Manager',
+          ],
+        ],
         marginBottom: 0,
         marginTop: 50,
       },
 
-      {
-        type: 'table',
-        widths: ['100%'],
-        titles: ['Tools'],
-        data: [['Figma', 'Figjam', 'Zoom']],
-        marginBottom: 0,
-        marginTop: 20,
-      },
-
-      {
-        type: 'table',
-        widths: ['100%'],
-        titles: ['Timeline & Team'],
-        data: [
-          [
-            '3 month to design',
-            '1 UX Designer, 1 Product Designer',
-            '10 Devs, 1 ProjectManager',
-          ],
-        ],
-        marginBottom: 0,
-        marginTop: 20,
-      },
       {
         type: 'title',
         text: 'The Design System',
@@ -409,35 +382,20 @@ export const projects: IProjects[] = [
 
       {
         type: 'table',
-        widths: ['100%'],
-        titles: ['My role'],
-        data: [['UX Design', 'UX Writing']],
+        widths: ['20%', '20%', '60%'],
+        titles: ['My role', 'Tools', 'Timeline & Team'],
+        data: [
+          ['UX Design', 'UX Writing'],
+          ['Figma', 'Miro'],
+          ['1 month to design', '1 UX Designer, 1 Project Manager, 3 devs'],        
+        ],
         marginBottom: 0,
         marginTop: 50,
       },
 
       {
-        type: 'table',
-        widths: ['100%'],
-        titles: ['Tools'],
-        data: [['Figma', 'Miro']],
-        marginBottom: 0,
-        marginTop: 20,
-      },
-
-      {
-        type: 'table',
-        widths: ['100%'],
-        titles: ['Timeline & Team'],
-        data: [
-          ['1 month to design', '1 UX Designer, 1 Project Manager, 3 devs'],
-        ],
-        marginBottom: 0,
-        marginTop: 20,
-      },
-      {
         type: 'title',
-        text: 'User interviews & user journey',
+        text: 'User interviews & User journey',
         marginBottom: 0,
         marginTop: 50,
       },
@@ -539,27 +497,11 @@ export const projects: IProjects[] = [
 
       {
         type: 'table',
-        widths: ['100%'],
-        titles: ['My role'],
-        data: [['UX Design', 'UX Research']],
-        marginBottom: 0,
-        marginTop: 50,
-      },
-
-      {
-        type: 'table',
-        widths: ['100%'],
-        titles: ['Tools'],
-        data: [['Figma', 'Excel']],
-        marginBottom: 0,
-        marginTop: 20,
-      },
-
-      {
-        type: 'table',
-        widths: ['100%'],
-        titles: ['Timeline & Team'],
+        widths: ['20%', '20%', '60%'],
+        titles: ['My role', 'Tools', 'Timeline & Team'],
         data: [
+          ['UX Design', 'UX Research'],
+          ['Figma', 'Excel'],
           [
             '3 weeks to do research',
             '1 UX Designer, 1 Product Designer',
@@ -567,8 +509,9 @@ export const projects: IProjects[] = [
           ],
         ],
         marginBottom: 20,
-        marginTop: 20,
+        marginTop: 50,
       },
+
 
       '<b>Steps with deadlines for each stage of the research discussed with stakeholders</b>',
 
