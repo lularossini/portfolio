@@ -153,15 +153,18 @@ export const projects: IProjects[] = [
       },
 
       'Wireframes were invaluable for generating conversations with our stakeholders and ensuring we were on the right track. They also facilitated discussions with the development team about which elements could be implemented and which needed changes due to backend conflicts and data table structures.',
-      {
-        type: 'image',
-        desktopSrc: '/tyr/desktop/wireframes-image.png',
-        desktopMode: 'full width',
-        mobileSrc: '/tyr/mobile/wireframes-mobile.png',
-        mobileMode: '100%',
-        marginBottom: 0,
-        marginTop: 50,
-      },
+     
+      //Carrousel Wireframes TYR
+     {
+      type: 'carousel',
+      desktopSrcImages: ['/tyr/desktop/wireframe-device1.png', '/tyr/desktop/wireframe-device2.png', '/tyr/desktop/wireframe-device3.png', '/tyr/desktop/wireframe-device4.png'],
+      mobileSrcImages: ['/tyr/desktop/wireframe-device1-png', '/tyr/desktop/wireframe-device2.png', '/tyr/desktop/wireframe-device3.png', '/tyr/desktop/wireframe-device4.png'],
+      greaterThan600Mode: '100%',
+      mobileMode: 'full width',
+      marginBottom: 30,
+      marginTop: 30,
+    },
+
 
       {
         type: 'title',
