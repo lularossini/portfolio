@@ -63,17 +63,20 @@ const SimpleAliceCarousel: React.FC<ICarouselPropsTypes> = ({
     customWidthMobile,
   ]);
 
-  const mobileItems = mobileSrcImages.map((src, index) => (
-    <div key={index}>
-      <img src={src} alt={`Slide ${index + 1}`} style={{ width: '100%' }} />
-    </div>
-  ));
-
-  const desktopItems = desktopSrcImages.map((src, index) => (
-    <div key={index}>
-      <img src={src} alt={`Slide ${index + 1}`} style={{ width: '100%' }} />
-    </div>
-  ));
+  const items = (isGreaterThan600 ? desktopSrcImages : mobileSrcImages).map(
+    (src, index) => (
+      <div
+        key={index}
+        style={{
+          padding: '0 20px', // Reduce el padding para que el margen total entre las slides sea 80px
+          boxSizing: 'border-box',
+          width: `calc(${width} / 2)`, // Divide el ancho entre 3 para mostrar tres elementos
+        }}
+      >
+        <img src={src} alt={`Slide ${index + 1}`} style={{ width: '100%' }} />
+      </div>
+    )
+  );
 
   const buttonStyle: React.CSSProperties = {
     backgroundColor: 'rgba(255, 255, 255, 0.7)',
@@ -91,6 +94,11 @@ const SimpleAliceCarousel: React.FC<ICarouselPropsTypes> = ({
     justifyContent: 'center',
   };
 
+  const responsive = {
+    0: { items: 1 },
+    1000: { items: 2 }, // 3 slides visibles para pantallas mayores de 600px
+  };
+
   return (
     <Box
       sx={{
@@ -102,20 +110,11 @@ const SimpleAliceCarousel: React.FC<ICarouselPropsTypes> = ({
       }}
     >
       <AliceCarousel
-        items={isGreaterThan600 ? desktopItems : mobileItems}
+        items={items}
         infinite
-        renderDotsItem={({ isActive }) => (
-          <div
-            style={{
-              width: '10px',
-              height: '10px',
-              borderRadius: '50%',
-              backgroundColor: isActive ? 'black' : 'grey',
-              margin: '0 5px',
-              cursor: 'pointer',
-            }}
-          />
-        )}
+        responsive={responsive}
+        disableDotsControls
+        autoWidth
         renderPrevButton={() => (
           <button style={{ ...buttonStyle, left: '10px' }}>
             <svg
