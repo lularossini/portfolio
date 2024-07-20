@@ -172,16 +172,15 @@ export const projects: IProjects[] = [
 
       'When we developed the high-definition designs, we made sure to preserve those elements that were familiar from the previous system to ease the transition between the old and the new. In this particular aspect, the stakeholder was very helpful, guiding us in the direction we needed to go while ensuring that we maintained a more modern and visually cleaner aesthetic.',
 
-      //Comment andy: La imagen slider-hi-fi-tyr-desktop.svg, que está abajo de este comment, tiene que tomar el 100% en dekstop.
-      //Tambien la imagen hi-fi-mobile-tyr.svg, tiene que tomar el 100% en mobile
+      //Carrousel Hi-Fi
       {
-        type: 'image',
-        desktopSrc: '/tyr/desktop/slider-hi-fi-tyr-desktop.svg',
-        desktopMode: 'full width',
-        mobileSrc: '/tyr/mobile/hi-fi-mobile-tyr.png',
+        type: 'carousel',
+        desktopSrcImages: ['/tyr/desktop/DEVICE.png', '/tyr/desktop/DEVICE2.png', '/tyr/desktop/DEVICE3.png', '/tyr/desktop/DEVICE4.png'],
+        mobileSrcImages: ['/tyr/desktop/DEVICE.png', '/tyr/desktop/DEVICE2.png', '/tyr/desktop/DEVICE3.png', '/tyr/desktop/DEVICE4.png'],
+        greaterThan600Mode: '100%',
         mobileMode: 'full width',
-        marginBottom: 0,
-        marginTop: 40,
+        marginBottom: 30,
+        marginTop: 30,
       },
 
       {
