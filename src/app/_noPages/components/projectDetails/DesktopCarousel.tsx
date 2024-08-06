@@ -7,7 +7,8 @@ interface ICarouselPropsTypes {
   id: string;
   desktopSrcImages: string[];
   desktopModeWidth: '100%' | 'full width';
-  desktopModeQuantitySlidesLevel?: 0.5 | 1 | 1.5 | 2 | 2.5;
+  desktopModeQuantitySlidesLevel?: number;
+  gap?: number;
   desktopMarginBottom: number;
   desktopMarginTop: number;
 }
@@ -17,6 +18,7 @@ const DesktopCarousel: React.FC<ICarouselPropsTypes> = ({
   desktopSrcImages,
   desktopModeWidth,
   desktopModeQuantitySlidesLevel,
+  gap,
   desktopMarginBottom,
   desktopMarginTop,
 }) => {
@@ -28,9 +30,9 @@ const DesktopCarousel: React.FC<ICarouselPropsTypes> = ({
       const glide = new Glide(carouselRef.current, {
         type: 'carousel',
         focusAt: 'center',
-        perView: desktopModeQuantitySlidesLevel || 1.5,
+        perView: desktopModeQuantitySlidesLevel || 1,
         startAt: 1,
-        gap: 30,
+        gap: gap || 40,
         peek: {
           before: desktopModeWidth === 'full width' ? 200 : 200,
           after: desktopModeWidth === 'full width' ? 200 : 200,

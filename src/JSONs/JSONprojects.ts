@@ -55,7 +55,8 @@ export interface IProjects {
       desktopSrcImages: string[];
       mobileSrcImages: string[];
       desktopModeWidth: '100%' | 'full width';
-      desktopModeQuantitySlidesLevel?: 0.5 | 1 | 1.5 | 2 | 2.5;
+      desktopModeQuantitySlidesLevel?: number;
+      gap?: number;
       mobileModeWidth: '100%' | 'full width' | 'customWidth';
       customWidthMobile?: string;
       desktopMarginBottom: number;
@@ -163,6 +164,7 @@ export const projects: IProjects[] = [
       mobileSrcImages: ['/tyr/desktop/wireframe-device1-png', '/tyr/desktop/wireframe-device2.png', '/tyr/desktop/wireframe-device3.png', '/tyr/desktop/wireframe-device4.png'],
       desktopModeWidth: 'full width',
       mobileModeWidth: 'full width',
+      desktopModeQuantitySlidesLevel: 1.5,
       desktopMarginBottom: 30,
       desktopMarginTop: 30,
       mobileMarginBottom: 30,
@@ -228,6 +230,20 @@ export const projects: IProjects[] = [
         text: 'The problem',
         marginBottom: 0,
         marginTop: 50,
+      },
+
+      {
+        type: 'carousel',
+        desktopSrcImages: ['/abitab/desktop/abitab-telefono-1.png', '/abitab/desktop/abitab-telefono-2.png', '/abitab/desktop/abitab-telefono-3.png', '/abitab/desktop/abitab-telefono-4.png', '/abitab/desktop/abitab-telefono-5.png', '/abitab/desktop/abitab-telefono-6.png', '/abitab/desktop/abitab-telefono-7.png'],
+        mobileSrcImages: ['/tyr/desktop/DEVICE.png', '/tyr/desktop/DEVICE2.png', '/tyr/desktop/DEVICE3.png', '/tyr/desktop/DEVICE4.png'],
+        desktopModeWidth: 'full width',
+        mobileModeWidth: 'full width',
+        desktopModeQuantitySlidesLevel: 4,
+        gap:120,
+        desktopMarginBottom: 30,
+        desktopMarginTop: 60,
+        mobileMarginBottom: 30,
+        mobileMarginTop: 30,
       },
 
       //Comment andy: La imagen the body-problem-abitab.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
@@ -693,3 +709,40 @@ export const projects: IProjects[] = [
     ],
   },
 ];
+
+{/*
+
+  TIPOS
+  desktopSrcImages: string[];
+  mobileSrcImages: string[];
+  desktopModeWidth: '100%' | 'full width';
+  desktopModeQuantitySlidesLevel?: number;
+  gap?: number;
+  mobileModeWidth: '100%' | 'full width' | 'customWidth';
+  customWidthMobile?: string;
+  desktopMarginBottom: number;
+  desktopMarginTop: number;
+  mobileMarginBottom: number;
+  mobileMarginTop: number;
+
+  EJEMPLO
+  type: 'carousel',
+  desktopSrcImages: ['/abitab/desktop/abitab-telefono-1.png', '/abitab/desktop/abitab-telefono-2.png', '/abitab/desktop/abitab-telefono-3.png', '/abitab/desktop/abitab-telefono-4.png', '/abitab/desktop/abitab-telefono-5.png', '/abitab/desktop/abitab-telefono-6.png', '/abitab/desktop/abitab-telefono-7.png'],
+  mobileSrcImages: ['/tyr/desktop/DEVICE.png', '/tyr/desktop/DEVICE2.png', '/tyr/desktop/DEVICE3.png', '/tyr/desktop/DEVICE4.png'],
+  desktopModeWidth: 'full width',
+  mobileModeWidth: 'full width',
+  desktopModeQuantitySlidesLevel: 4,
+  gap:120,
+  desktopMarginBottom: 30,
+  desktopMarginTop: 60,
+  mobileMarginBottom: 30,
+  mobileMarginTop: 30,
+  
+  
+  
+  
+  
+  
+  */}
+
+

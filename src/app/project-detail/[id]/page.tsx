@@ -502,6 +502,7 @@ const ProjectDetail = () => {
                     desktopSrcImages={detail.desktopSrcImages}
                     desktopModeWidth={detail.desktopModeWidth}
                     desktopModeQuantitySlidesLevel={detail.desktopModeQuantitySlidesLevel}
+                    gap={detail.gap}
                     desktopMarginBottom={detail.desktopMarginBottom}
                     desktopMarginTop={detail.desktopMarginTop}
                   />
