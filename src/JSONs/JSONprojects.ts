@@ -54,12 +54,14 @@ export interface IProjects {
         type: 'carousel';
         desktopSrcImages: string[];
         mobileSrcImages: string[];
-        greaterThan600Mode: '100%' | 'full width' | 'customWidth';
-        mobileMode: '100%' | 'full width' | 'customWidth';
-        customWidthgreaterThan600Mode?: string;
+        desktopModeWidth: '100%' | 'full width';
+        desktopModeQuantitySlidesLevel?: 0.5 | 1 | 1.5 | 2 | 2.5;
+        mobileModeWidth: '100%' | 'full width' | 'customWidth';
         customWidthMobile?: string;
-        marginBottom: number;
-        marginTop: number;
+        desktopMarginBottom: number;
+        desktopMarginTop: number;
+        mobileMarginBottom: number;
+        mobileMarginTop: number;
       }
   )[];
 }
@@ -75,124 +77,30 @@ export const projects: IProjects[] = [
   {
     id: 'tyr-case',
     details: [
-      {
-        type: 'title',
-        text: 'About',
-        marginBottom: 0,
-        marginTop: 60,
-      },
-      'TYR is a company that specializes in <b>commodity trading</b>. This means they focus on <b>buying and selling raw materials</b>, like oil, metals, and agricultural products. Also <b>connects producers and buyers</b> of raw materials and <b>handles the logistics</b> of getting these materials where they need to go.',
-
-      {
-        type: 'title',
-        text: 'The problem',
-        marginBottom: 0,
-        marginTop: 50,
-      },
-      'TYR faced major issues with their system, including slow response times due to high data volume, a steep learning curve for new employees, and information duplication. Forms were too long and redundant, workflows were confusing, and sequential use by traders and administrators led to frequent errors, requiring the owners intervention.',
-
-      {
-        type: 'table',
-        widths: ['20%','20%', '60%'],
-        titles: ['My role', 'Tools', 'Timeline & Team'],
-        data: [
-          ['UX Research', 'UX Design', 'UX Writing'],
-          ['Figma', 'Figjam', 'Zoom'],
-          [
-            '1 month to design',
-            '1 UX Designer, 1 UI designer ',
-            '2 devs, 1 Project Manager',
-          ],
-      
-      
-      ],
-        marginBottom: 20,
-        marginTop: 50,
-      },
-
-    
-
-      'As the UX designer for the project, I was in charge from the beginning. I had the initial conversations with the client to understand their business vision and identify the issues they had noticed and wanted to improve, as well as what aspects they wanted to keep because they were working well. I also requested access to the system we were going to redesign. With this access, I conducted a brief research to understand the current system, map out the workflows, and identify obvious usability improvements we could apply. With this, we began the wireframing stage.',
-      'We had tight one-week sprints and two weekly meetings with the client to make inquiries and review the progress.',
-
-      //Imagen research - mejorarla
-      {
-        type: 'image',
-        desktopSrc: '/tyr/desktop/image-research-desktop.svg',
-        desktopMode: 'full width',
-        mobileSrc: '/tyr/mobile/image-research.png',
-        mobileMode: '100%',
-        marginBottom: 0,
-        marginTop: 50,
-      },
-
-      {
-        type: 'title',
-        text: 'The results',
-        marginBottom: 0,
-        marginTop: 50,
-      },
-      {
-        type: 'theResults',
-        percentages: ['100%', '60%', '50%'],
-        colors: ['#86AE9A', '#A5E0C4', '#D6F5E6'],
-        texts: [
-          '<b>reduction in duplication errors:</b> the redesign introduced mandatory fields and restricted certain fields from being modified by specific user types.',
-          '<b>reduction in employee training time:</b> by focusing on usability, the redesign allowed experienced employees to concentrate on their tasks, improving overall company efficiency.',
-          '<b>reduction in load time:</b> we streamlined forms by reducing the number of fields and eliminating duplicates, which previously caused double entries and extended processing time.',
-        ],
-        marginTop: 20,
-        marginBottom: 0,
-      },
-
-      {
-        type: 'title',
-        text: 'Wireframes',
-        marginBottom: 0,
-        marginTop: 50,
-      },
-
-      'Wireframes were invaluable for generating conversations with our stakeholders and ensuring we were on the right track. They also facilitated discussions with the development team about which elements could be implemented and which needed changes due to backend conflicts and data table structures.',
-      {
-        type: 'image',
-        desktopSrc: '/tyr/desktop/wireframes-image.png',
-        desktopMode: 'full width',
-        mobileSrc: '/tyr/mobile/wireframes-mobile.png',
-        mobileMode: '100%',
-        marginBottom: 0,
-        marginTop: 50,
-      },
-
-      {
-        type: 'title',
-        text: 'HI-FI Screens',
-        marginBottom: 0,
-        marginTop: 50,
-      },
-
-      'When we developed the high-definition designs, we made sure to preserve those elements that were familiar from the previous system to ease the transition between the old and the new. In this particular aspect, the stakeholder was very helpful, guiding us in the direction we needed to go while ensuring that we maintained a more modern and visually cleaner aesthetic.',
-
       //Carrousel Hi-Fi
       {
         type: 'carousel',
-        desktopSrcImages: ['/tyr/desktop/DEVICE.png', '/tyr/desktop/DEVICE2.png', '/tyr/desktop/DEVICE3.png', '/tyr/desktop/DEVICE4.png'],
-        mobileSrcImages: ['/tyr/desktop/DEVICE.png', '/tyr/desktop/DEVICE2.png', '/tyr/desktop/DEVICE3.png', '/tyr/desktop/DEVICE4.png'],
-        greaterThan600Mode: '100%',
-        mobileMode: 'full width',
-        marginBottom: 30,
-        marginTop: 30,
+        desktopSrcImages: [
+          '/tyr/desktop/DEVICE.png',
+          '/tyr/desktop/DEVICE2.png',
+          '/tyr/desktop/DEVICE3.png',
+          '/tyr/desktop/DEVICE4.png',
+        ],
+        mobileSrcImages: [
+          '/tyr/desktop/DEVICE.png',
+          '/tyr/desktop/DEVICE2.png',
+          '/tyr/desktop/DEVICE3.png',
+          '/tyr/desktop/DEVICE4.png',
+        ],
+        desktopModeWidth: 'full width',
+        desktopModeQuantitySlidesLevel: 0.5,
+        mobileModeWidth: '100%',
+        customWidthMobile: '100%',
+        mobileMarginBottom: 30,
+        mobileMarginTop: 100,
+        desktopMarginBottom: 30,
+        desktopMarginTop: 30,
       },
-
-      {
-        type: 'title',
-        text: 'Reflections',
-        marginBottom: 0,
-        marginTop: 50,
-      },
-
-      'The project was large and very complex, primarily because we had to base our work on a system with so many usability issues while needing to maintain certain structures. Additionally, the raw materials business model includes multiple actors and processes that had to be considered when thinking about new ways to present the workflows.',
-      'The greatest difficulty was that we had very little design time, yet it needed to work. Therefore, it was decided to conduct research but to do so quickly, in order to have information to focus on what users needed while still meeting the deadlines for delivering the final UI.',
-      'The key learning from this process was that we need to embrace the unknown and ask many questions along the way. For this, it is crucial to have the business on our side and always keep them informed of our progress. This allowed us to iterate and improve quickly and effectively.',
     ],
   },
   ///TERMINA TYR CASE
@@ -386,7 +294,7 @@ export const projects: IProjects[] = [
         data: [
           ['UX Design', 'UX Writing'],
           ['Figma', 'Miro'],
-          ['1 month to design', '1 UX Designer, 1 Project Manager, 3 devs'],        
+          ['1 month to design', '1 UX Designer, 1 Project Manager, 3 devs'],
         ],
         marginBottom: 0,
         marginTop: 50,
@@ -510,7 +418,6 @@ export const projects: IProjects[] = [
         marginBottom: 20,
         marginTop: 50,
       },
-
 
       '<b>Steps with deadlines for each stage of the research discussed with stakeholders</b>',
 

@@ -14,12 +14,13 @@ import CustomImage from '@/app/_noPages/components/projectDetails/CustomImage';
 import TheResults from '@/app/_noPages/components/projectDetails/TheResults';
 import Table from '@/app/_noPages/components/projectDetails/Table';
 import Enum from '@/app/_noPages/components/projectDetails/Enum';
-import Carousel from '@/app/_noPages/components/projectDetails/Carousel';
 import Bullets from '@/app/_noPages/components/projectDetails/Bullets';
 
 // ** Material UI import
 import { Box, Typography, useMediaQuery } from '@mui/material';
 import ScrollToTop from '@/app/_noPages/components/projectDetails/ScrollToTop';
+import DesktopCarousel from '@/app/_noPages/components/projectDetails/DesktopCarousel';
+import MobileCarousel from '@/app/_noPages/components/projectDetails/MobileCarousel';
 
 const ProjectDetail = () => {
   const isDesktop = useMediaQuery('(min-width:1200px)');
@@ -75,8 +76,8 @@ const ProjectDetail = () => {
   const tyrCaseDesktop = (
     <Box sx={{ display: 'flex', alignItems: 'center' }}>
       <img
-        src='/home/TYRHomeDesktop.png'
-        alt=''
+        src="/home/TYRHomeDesktop.png"
+        alt=""
         style={{ width: '527px', height: '325px' }}
       />
       <Box
@@ -87,7 +88,7 @@ const ProjectDetail = () => {
         }}
       >
         <Typography
-          className='darkerGrotesk'
+          className="darkerGrotesk"
           sx={{
             fontSize: '27px',
             fontWeight: '700',
@@ -112,7 +113,7 @@ const ProjectDetail = () => {
       }}
     >
       <Typography
-        className='darkerGrotesk'
+        className="darkerGrotesk"
         sx={{
           fontSize: '20px',
           fontWeight: '700',
@@ -128,8 +129,8 @@ const ProjectDetail = () => {
       </Typography>
 
       <img
-        src='/home/TYRHomeDesktop.png'
-        alt=''
+        src="/home/TYRHomeDesktop.png"
+        alt=""
         style={{
           marginTop: '40px',
           width: '325px',
@@ -141,7 +142,7 @@ const ProjectDetail = () => {
   const abitabCaseDesktop = (
     <Box sx={{ display: 'flex', alignItems: 'center' }}>
       <Typography
-        className='darkerGrotesk'
+        className="darkerGrotesk"
         sx={{
           fontSize: '27px',
           fontWeight: '700',
@@ -153,8 +154,8 @@ const ProjectDetail = () => {
         GIVING URUGUAYANS A DIGITAL IDENTITY
       </Typography>
       <img
-        src='/home/ABITABHomeDesktop.svg'
-        alt=''
+        src="/home/ABITABHomeDesktop.svg"
+        alt=""
         style={{ width: '365px', height: '403px' }}
       />
     </Box>
@@ -171,7 +172,7 @@ const ProjectDetail = () => {
       }}
     >
       <Typography
-        className='darkerGrotesk'
+        className="darkerGrotesk"
         sx={{
           fontSize: '20px',
           fontWeight: '700',
@@ -186,8 +187,8 @@ const ProjectDetail = () => {
       </Typography>
 
       <img
-        src='/home/ABITABHomeDesktop.svg'
-        alt=''
+        src="/home/ABITABHomeDesktop.svg"
+        alt=""
         style={{
           marginTop: '25px',
           width: '241px',
@@ -199,12 +200,12 @@ const ProjectDetail = () => {
   const properatiCaseDesktop = (
     <Box sx={{ display: 'flex', alignItems: 'center' }}>
       <img
-        src='/home/PROPERATIHomeDesktop.png'
-        alt=''
+        src="/home/PROPERATIHomeDesktop.png"
+        alt=""
         style={{ width: '527px', height: '305 px' }}
       />
       <Typography
-        className='darkerGrotesk'
+        className="darkerGrotesk"
         sx={{
           fontSize: '27px',
           fontWeight: '700',
@@ -230,7 +231,7 @@ const ProjectDetail = () => {
       }}
     >
       <Typography
-        className='darkerGrotesk'
+        className="darkerGrotesk"
         sx={{
           fontSize: '20px',
           fontWeight: '700',
@@ -245,8 +246,8 @@ const ProjectDetail = () => {
       </Typography>
 
       <img
-        src='/home/PROPERATIHomeDesktop.png'
-        alt=''
+        src="/home/PROPERATIHomeDesktop.png"
+        alt=""
         style={{
           marginTop: '26px',
           width: '325px',
@@ -258,7 +259,7 @@ const ProjectDetail = () => {
   const proppitCaseDesktop = (
     <Box sx={{ display: 'flex', alignItems: 'center' }}>
       <Typography
-        className='darkerGrotesk'
+        className="darkerGrotesk"
         sx={{
           fontSize: '27px',
           fontWeight: '700',
@@ -270,8 +271,8 @@ const ProjectDetail = () => {
         REDUCING CHURN BY UNDERSTANDING USERS
       </Typography>
       <img
-        src='/home/PROPPITHomeDesktop.png'
-        alt=''
+        src="/home/PROPPITHomeDesktop.png"
+        alt=""
         style={{ width: '527px', height: '305px' }}
       />
     </Box>
@@ -288,7 +289,7 @@ const ProjectDetail = () => {
       }}
     >
       <Typography
-        className='darkerGrotesk'
+        className="darkerGrotesk"
         sx={{
           fontSize: '20px',
           fontWeight: '700',
@@ -303,8 +304,8 @@ const ProjectDetail = () => {
       </Typography>
 
       <img
-        src='/home/PROPPITHomeDesktop.png'
-        alt=''
+        src="/home/PROPPITHomeDesktop.png"
+        alt=""
         style={{
           marginTop: '37px',
           width: '325px',
@@ -395,7 +396,7 @@ const ProjectDetail = () => {
                 return (
                   <Typography
                     key={index}
-                    variant='body1'
+                    variant="body1"
                     sx={{
                       fontSize: isDesktop ? '24px' : '22px',
                       lineHeight: isDesktop ? '30px' : '29px',
@@ -492,19 +493,25 @@ const ProjectDetail = () => {
                 );
               }
               if (detail.type === 'carousel') {
-                return (
-                  <Carousel
+                return isDesktop ? (
+                  <DesktopCarousel
                     key={index}
                     desktopSrcImages={detail.desktopSrcImages}
-                    mobileSrcImages={detail.mobileSrcImages}
-                    greaterThan600Mode={detail.greaterThan600Mode}
-                    mobileMode={detail.mobileMode}
-                    customWidthgreaterThan600Mode={
-                      detail.customWidthgreaterThan600Mode
+                    desktopModeWidth={detail.desktopModeWidth}
+                    desktopModeQuantitySlidesLevel={
+                      detail.desktopModeQuantitySlidesLevel
                     }
+                    desktopMarginBottom={detail.desktopMarginBottom}
+                    desktopMarginTop={detail.desktopMarginTop}
+                  />
+                ) : (
+                  <MobileCarousel
+                    key={index}
+                    mobileSrcImages={detail.mobileSrcImages}
+                    mobileModeWidth={detail.mobileModeWidth}
                     customWidthMobile={detail.customWidthMobile}
-                    marginBottom={detail.marginBottom}
-                    marginTop={detail.marginTop}
+                    mobileMarginBottom={detail.mobileMarginBottom}
+                    mobileMarginTop={detail.mobileMarginTop}
                   />
                 );
               }
@@ -538,8 +545,8 @@ const ProjectDetail = () => {
               onClick={previousProjectClickHandler}
             >
               <img
-                src='/previousArrow.svg'
-                alt=''
+                src="/previousArrow.svg"
+                alt=""
                 style={{
                   position: 'relative',
                   width: '18px',
@@ -574,8 +581,8 @@ const ProjectDetail = () => {
                 Next project
               </Typography>
               <img
-                src='/nextArrow.svg'
-                alt=''
+                src="/nextArrow.svg"
+                alt=""
                 style={{
                   position: 'relative',
                   width: '18px',
