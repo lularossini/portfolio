@@ -14,12 +14,15 @@ import CustomImage from '@/app/_noPages/components/projectDetails/CustomImage';
 import TheResults from '@/app/_noPages/components/projectDetails/TheResults';
 import Table from '@/app/_noPages/components/projectDetails/Table';
 import Enum from '@/app/_noPages/components/projectDetails/Enum';
-import Carousel from '@/app/_noPages/components/projectDetails/Carousel';
 import Bullets from '@/app/_noPages/components/projectDetails/Bullets';
 
 // ** Material UI import
 import { Box, Typography, useMediaQuery } from '@mui/material';
 import ScrollToTop from '@/app/_noPages/components/projectDetails/ScrollToTop';
+import DesktopCarousel from '@/app/_noPages/components/projectDetails/DesktopCarousel';
+import MobileCarousel from '@/app/_noPages/components/projectDetails/MobileCarousel';
+  import { v4 as uuidv4 } from 'uuid';
+
 
 const ProjectDetail = () => {
   const isDesktop = useMediaQuery('(min-width:1200px)');
@@ -491,23 +494,34 @@ const ProjectDetail = () => {
                   />
                 );
               }
-              if (detail.type === 'carousel') {
+              if (detail.type === 'carousel' && isDesktop) {
                 return (
-                  <Carousel
-                    key={index}
+                  <DesktopCarousel
+                  key={uuidv4()}
+                  id={uuidv4()}
                     desktopSrcImages={detail.desktopSrcImages}
-                    mobileSrcImages={detail.mobileSrcImages}
-                    greaterThan600Mode={detail.greaterThan600Mode}
-                    mobileMode={detail.mobileMode}
-                    customWidthgreaterThan600Mode={
-                      detail.customWidthgreaterThan600Mode
-                    }
-                    customWidthMobile={detail.customWidthMobile}
-                    marginBottom={detail.marginBottom}
-                    marginTop={detail.marginTop}
+                    desktopModeWidth={detail.desktopModeWidth}
+                    desktopModeQuantitySlidesLevel={detail.desktopModeQuantitySlidesLevel}
+                    desktopMarginBottom={detail.desktopMarginBottom}
+                    desktopMarginTop={detail.desktopMarginTop}
                   />
                 );
               }
+            
+              if (detail.type === 'carousel' && !isDesktop) {
+                return (
+                  <MobileCarousel
+                    key={uuidv4()}
+                    mobileSrcImages={detail.mobileSrcImages}
+                    mobileModeWidth={detail.mobileModeWidth}
+                    customWidthMobile={detail.customWidthMobile}
+                    mobileMarginBottom={detail.mobileMarginBottom}
+                    mobileMarginTop={detail.mobileMarginTop}
+                  />
+                );
+              }
+              
+              
             })}
         </Box>
 

@@ -51,15 +51,17 @@ export interface IProjects {
         marginTop: number;
       }
     | {
-        type: 'carousel';
-        desktopSrcImages: string[];
-        mobileSrcImages: string[];
-        greaterThan600Mode: '100%' | 'full width' | 'customWidth';
-        mobileMode: '100%' | 'full width' | 'customWidth';
-        customWidthgreaterThan600Mode?: string;
-        customWidthMobile?: string;
-        marginBottom: number;
-        marginTop: number;
+      type: 'carousel';
+      desktopSrcImages: string[];
+      mobileSrcImages: string[];
+      desktopModeWidth: '100%' | 'full width';
+      desktopModeQuantitySlidesLevel?: 0.5 | 1 | 1.5 | 2 | 2.5;
+      mobileModeWidth: '100%' | 'full width' | 'customWidth';
+      customWidthMobile?: string;
+      desktopMarginBottom: number;
+      desktopMarginTop: number;
+      mobileMarginBottom: number;
+      mobileMarginTop: number;
       }
   )[];
 }
@@ -159,11 +161,14 @@ export const projects: IProjects[] = [
       type: 'carousel',
       desktopSrcImages: ['/tyr/desktop/wireframe-device1.png', '/tyr/desktop/wireframe-device2.png', '/tyr/desktop/wireframe-device3.png', '/tyr/desktop/wireframe-device4.png'],
       mobileSrcImages: ['/tyr/desktop/wireframe-device1-png', '/tyr/desktop/wireframe-device2.png', '/tyr/desktop/wireframe-device3.png', '/tyr/desktop/wireframe-device4.png'],
-      greaterThan600Mode: '100%',
-      mobileMode: 'full width',
-      marginBottom: 30,
-      marginTop: 30,
-    },
+      desktopModeWidth: 'full width',
+      mobileModeWidth: 'full width',
+      desktopMarginBottom: 30,
+      desktopMarginTop: 30,
+      mobileMarginBottom: 30,
+      mobileMarginTop: 30,
+    }, 
+    
 
 
       {
@@ -180,10 +185,12 @@ export const projects: IProjects[] = [
         type: 'carousel',
         desktopSrcImages: ['/tyr/desktop/DEVICE.png', '/tyr/desktop/DEVICE2.png', '/tyr/desktop/DEVICE3.png', '/tyr/desktop/DEVICE4.png'],
         mobileSrcImages: ['/tyr/desktop/DEVICE.png', '/tyr/desktop/DEVICE2.png', '/tyr/desktop/DEVICE3.png', '/tyr/desktop/DEVICE4.png'],
-        greaterThan600Mode: '100%',
-        mobileMode: 'full width',
-        marginBottom: 30,
-        marginTop: 30,
+        desktopModeWidth: 'full width',
+        mobileModeWidth: 'full width',
+        desktopMarginBottom: 30,
+        desktopMarginTop: 30,
+        mobileMarginBottom: 30,
+        mobileMarginTop: 30,
       },
 
       {
