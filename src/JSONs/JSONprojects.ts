@@ -160,8 +160,8 @@ export const projects: IProjects[] = [
       //Carrousel Wireframes TYR
      {
       type: 'carousel',
-      desktopSrcImages: ['/tyr/desktop/wireframe-device1.png', '/tyr/desktop/wireframe-device2.png', '/tyr/desktop/wireframe-device3.png', '/tyr/desktop/wireframe-device4.png'],
-      mobileSrcImages: ['/tyr/desktop/wireframe-device1-png', '/tyr/desktop/wireframe-device2.png', '/tyr/desktop/wireframe-device3.png', '/tyr/desktop/wireframe-device4.png'],
+      desktopSrcImages: ['/tyr/desktop/wireframe-device1.png', '/tyr/desktop/wireframe-device2.png', '/tyr/desktop/wireframe-device3.png', '/tyr/desktop/wireframe-device4.png','/tyr/desktop/wireframe-device5.png','/tyr/desktop/wireframe-device6.png','/tyr/desktop/wireframe-device7.png'],
+      mobileSrcImages: ['/tyr/desktop/wireframe-device1-png', '/tyr/desktop/wireframe-device2.png', '/tyr/desktop/wireframe-device3.png', '/tyr/desktop/wireframe-device4.png','/tyr/desktop/wireframe-device5.png','/tyr/desktop/wireframe-device6.png','/tyr/desktop/wireframe-device7.png'],
       desktopModeWidth: 'full width',
       mobileModeWidth: 'full width',
       desktopModeQuantitySlidesLevel: 1.5,
