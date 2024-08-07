@@ -169,8 +169,7 @@ export const projects: IProjects[] = [
       desktopMarginTop: 30,
       mobileMarginBottom: 30,
       mobileMarginTop: 30,
-    }, 
-    
+    },     
 
 
       {
@@ -185,10 +184,11 @@ export const projects: IProjects[] = [
       //Carrousel Hi-Fi
       {
         type: 'carousel',
-        desktopSrcImages: ['/tyr/desktop/DEVICE.png', '/tyr/desktop/DEVICE2.png', '/tyr/desktop/DEVICE3.png', '/tyr/desktop/DEVICE4.png'],
-        mobileSrcImages: ['/tyr/desktop/DEVICE.png', '/tyr/desktop/DEVICE2.png', '/tyr/desktop/DEVICE3.png', '/tyr/desktop/DEVICE4.png'],
+        desktopSrcImages: ['/tyr/desktop/DEVICE1.png', '/tyr/desktop/DEVICE2.png', '/tyr/desktop/DEVICE3.png', '/tyr/desktop/DEVICE4.png', '/tyr/desktop/DEVICE5.png', '/tyr/desktop/DEVICE6.png', '/tyr/desktop/DEVICE7.png', '/tyr/desktop/DEVICE8.png', '/tyr/desktop/DEVICE9.png', '/tyr/desktop/DEVICE10.png'],
+        mobileSrcImages: ['/tyr/desktop/DEVICE1.png', '/tyr/desktop/DEVICE2.png', '/tyr/desktop/DEVICE3.png', '/tyr/desktop/DEVICE4.png', '/tyr/desktop/DEVICE5.png', '/tyr/desktop/DEVICE6.png', '/tyr/desktop/DEVICE7.png', '/tyr/desktop/DEVICE8.png', '/tyr/desktop/DEVICE9.png', '/tyr/desktop/DEVICE10.png'],
         desktopModeWidth: 'full width',
         mobileModeWidth: 'full width',
+        desktopModeQuantitySlidesLevel: 1.5,
         desktopMarginBottom: 30,
         desktopMarginTop: 30,
         mobileMarginBottom: 30,
