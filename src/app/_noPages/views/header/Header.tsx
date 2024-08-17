@@ -36,9 +36,9 @@ const Header = () => {
     );
   };
 
-  const downloadCvClickHandler = () => {
+  const openCvClickHandler = () => {
     window.open(
-      'https://drive.google.com/uc?export=download&id=1Mkhyhu2k3nldxi0AT0u9sl7LHM-L6g3a',
+      'https://drive.google.com/file/d/1Mkhyhu2k3nldxi0AT0u9sl7LHM-L6g3a/view',
       '_blank'
     );
   };
@@ -66,7 +66,7 @@ const Header = () => {
         onClick={handleDrawerToggle}
         sx={{
           position: 'absolute',
-          top: 34, // Bajada de 25px desde el top original de 16px
+          top: 18, // Bajada de 25px desde el top original de 16px
           right: 16,
           color: 'black',
         }}
@@ -101,7 +101,7 @@ const Header = () => {
         </ListItem>
         <ListItem
           button
-          onClick={downloadCvClickHandler}
+          onClick={openCvClickHandler}
           sx={{ justifyContent: 'center' }}
         >
           <Typography
@@ -142,7 +142,7 @@ const Header = () => {
       sx={{
         display: 'flex',
         width: '100%',
-        height: isDesktop ? '100px' : '105px',
+        height: isDesktop ? '70px' : '70px',
         alignItems: 'center',
         justifyContent: 'center',
         bgcolor: 'white',
@@ -151,14 +151,14 @@ const Header = () => {
       }}
     >
       <AppBar position='static' sx={{ bgcolor: 'white', boxShadow: 'none' }}>
-        <Toolbar sx={{ justifyContent: 'space-between', width: '100%' }}>
+        <Toolbar sx={{  width: '100%' }}>
           {isDesktop ? (
             <>
-              <Box sx={{ display: 'flex', gap: 2 }}>
                 <Typography
                   onClick={handleGoToHomeHandler}
                   className='spaceGrotesk'
                   sx={{
+                    padding:'0 15px',
                     color: 'black',
                     textDecoration: 'none',
                     fontSize: 18,
@@ -168,10 +168,13 @@ const Header = () => {
                 >
                   HOME
                 </Typography>
-                <Typography
-                  onClick={downloadCvClickHandler}
+              <Box sx={{display:'flex', flexGrow:'1'}}></Box>
+              <Typography
+                  onClick={openCvClickHandler}
                   className='spaceGrotesk'
                   sx={{
+                    padding:'0 15px',
+
                     color: 'black',
                     textDecoration: 'none',
                     fontSize: 18,
@@ -181,11 +184,12 @@ const Header = () => {
                 >
                   RESUME
                 </Typography>
-              </Box>
               <Typography
                 onClick={handleGoToLinkedInHandler}
                 className='spaceGrotesk'
                 sx={{
+                  padding:'0 15px',
+
                   color: 'black',
                   textDecoration: 'none',
                   fontSize: 18,
@@ -205,6 +209,7 @@ const Header = () => {
               >
                 Lula Rossini
               </Typography>
+              <Box sx={{display:'flex', flexGrow:'1'}}></Box>
               <IconButton
                 edge='start'
                 color='inherit'

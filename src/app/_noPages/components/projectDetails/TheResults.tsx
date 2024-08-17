@@ -13,7 +13,7 @@ const formatText = (detail: string) => {
   const parts = detail.split(/(<b>.*?<\/b>)/g);
   return parts.map((part, index) => {
     if (part.startsWith('<b>') && part.endsWith('</b>')) {
-      return <b key={index}>{part.slice(3, -4)}</b>;
+      return <b key={index} style={{userSelect:'text'}}>{part.slice(3, -4)}</b>;
     }
     return part;
   });
@@ -83,6 +83,8 @@ const TheResults: React.FC<IResultsPropsTypes> = ({
                 color: 'black',
                 paddingLeft: isDesktop ? '35px' : '20px',
                 paddingTop: isDesktop ? '0px' : '3px',
+                userSelect:'text',
+
               }}
             >
               {formatText(texts[index]).map((part, index) => (

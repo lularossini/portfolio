@@ -164,13 +164,8 @@ const Home: React.FC = () => {
               fontWeight: '400',
             }}
           >
-            5 years of experience
-          </Typography>
-          <img
-            src='/icons/circleIconHome.svg'
-            alt=''
-            style={{ width: '35px', height: '35px' }}
-          />
+Product Design          </Typography>
+         
         </Box>
       </Box>
 

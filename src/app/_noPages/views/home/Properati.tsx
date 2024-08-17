@@ -51,26 +51,20 @@ const Properati: React.FC = () => {
             >
               A RESPONSIVE WEB TO HELP SELLERS WORK QUICKLY AND EFFICIENTLY
             </Typography>
+            <Typography  className='spaceGrotesk' sx={{fontSize: '18px',
+                  fontWeight: '600',
+                  lineHeight: '25px',
+                  marginTop: '15px',}}> UX Design</Typography>
             <Typography
               className='spaceGrotesk'
               sx={{
                 fontSize: '18px',
                 fontWeight: '400',
                 lineHeight: '25px',
-                marginTop: '20px',
+                marginTop: '5  px',
               }}
             >
-              <span
-                className='spaceGrotesk'
-                style={{
-                  fontSize: '18px',
-                  fontWeight: '600',
-                  lineHeight: '25px',
-                  marginTop: '15px',
-                }}
-              >
-                UX Design •
-              </span>{' '}
+             
               The process of designing a site to help property vendors sell
               better and faster
             </Typography>
@@ -94,27 +88,31 @@ const Properati: React.FC = () => {
                 },
               }}
             >
-              <Typography
-                className='spaceGrotesk'
-                sx={{
-                  fontSize: '17px',
-                  fontWeight: '500',
-                  lineHeight: '24px',
-                  marginRight: '18px',
-                }}
-              >
-                Learn more
-              </Typography>
-              <img
-                src='/icons/learnMoreIcon.svg'
-                alt='Learn more icon'
-                style={{
-                  position: 'absolute',
-                  top: '8px',
-                  left: '100px',
-                  width: '11px',
-                }}
-              />
+              <Box sx={{position:'relative', padding:'10px 16px', borderRadius:'40px', border:'1px solid #6F597C', background:'white' }}>
+
+<Typography
+  className='spaceGrotesk'
+  sx={{
+    fontSize: '17px',
+    fontWeight: '500',
+    lineHeight: '24px',
+    marginRight: '18px',
+  }}
+>
+  Learn more
+</Typography>
+<img
+  src='/icons/learnMoreIcon.svg'
+  alt='Learn more icon'
+  style={{
+    position: 'absolute',
+    top:'18px',
+    right: '18px',
+    width: '11px',
+  }}
+/>
+
+</Box>
             </Box>
           </Box>
         </Box>

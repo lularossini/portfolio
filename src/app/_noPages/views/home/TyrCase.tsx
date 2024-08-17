@@ -36,7 +36,7 @@ const TyrCase: React.FC = () => {
             sx={{
               display: 'flex',
               flexDirection: 'column',
-              width: '350px',
+              width: '405px',
               marginLeft: '5px',
             }}
           >
@@ -51,26 +51,19 @@ const TyrCase: React.FC = () => {
             >
               A NEW INTERNAL SYSTEM TO ENHACE EXPERIENCE
             </Typography>
+            <Typography  className='spaceGrotesk' sx={{fontSize: '18px',
+                  fontWeight: '600',
+                  lineHeight: '25px',
+                  marginTop: '15px',}}> UX Design •  UX Research</Typography>
             <Typography
               className='spaceGrotesk'
               sx={{
                 fontSize: '18px',
                 fontWeight: '400',
                 lineHeight: '25px',
-                marginTop: '20px',
+                marginTop: '5px',
               }}
-            >
-              <span
-                className='spaceGrotesk'
-                style={{
-                  fontSize: '18px',
-                  fontWeight: '600',
-                  lineHeight: '25px',
-                  marginTop: '15px',
-                }}
-              >
-                UX Design •  UX Research •
-              </span>{' '}
+            >           
               Complete redesign focused on the usability of the internal tool
               for a commodity trading company in Portland
             </Typography>
@@ -89,11 +82,13 @@ const TyrCase: React.FC = () => {
                     transform: 'translateX(0)',
                   },
                   '100%': {
-                    transform: 'translateX(5px)', // Ajusta este valor según la distancia que deseas que se mueva
+                    transform: 'translateX(5px)',
                   },
                 },
               }}
             >
+              <Box sx={{position:'relative', padding:'10px 16px', borderRadius:'40px', border:'1px solid #6F597C', background:'white' }}>
+
               <Typography
                 className='spaceGrotesk'
                 sx={{
@@ -110,11 +105,15 @@ const TyrCase: React.FC = () => {
                 alt='Learn more icon'
                 style={{
                   position: 'absolute',
-                  top: '8px',
-                  left: '100px',
+                  top:'18px',
+                  right: '18px',
                   width: '11px',
                 }}
               />
+
+              </Box>
+              
+              
             </Box>
           </Box>
         </Box>

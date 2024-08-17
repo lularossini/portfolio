@@ -389,7 +389,7 @@ const ProjectDetail = () => {
                   const parts = detail.split(/(<b>.*?<\/b>)/g);
                   return parts.map((part, index) => {
                     if (part.startsWith('<b>') && part.endsWith('</b>')) {
-                      return <b key={index}>{part.slice(3, -4)}</b>;
+                      return <b key={index} style={{userSelect:'text'}}>{part.slice(3, -4)}</b>;
                     }
                     return part;
                   });
@@ -405,6 +405,7 @@ const ProjectDetail = () => {
                       fontWeight: '400',
                       color: 'black',
                       marginTop: '10px',
+                      userSelect:'text',
                     }}
                   >
                     {formatText(detail).map((part, index) => (
@@ -424,6 +425,8 @@ const ProjectDetail = () => {
                       fontWeight: '600',
                       marginTop: `${detail.marginTop}px`,
                       marginBottom: `${detail.marginBottom}px`,
+                      userSelect:'text',
+
                     }}
                   >
                     {detail.text}

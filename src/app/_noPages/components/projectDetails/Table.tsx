@@ -58,6 +58,8 @@ const Table: React.FC<ITablePropsTypes> = ({
                 lineHeight: '38px',
                 color: 'black',
                 width: widths[index],
+                userSelect:'text',
+
               }}
             >
               {title}
@@ -88,6 +90,8 @@ const Table: React.FC<ITablePropsTypes> = ({
                     color: 'black',
                     width: widths[colIndex],
                     marginTop: rowIndex === 0 ? '10px' : '0', // Aplicar margen solo a filas no primeras
+                    userSelect:'text',
+
                   }}
                 >
                   {formatText(colData[rowIndex]).map((part, index) => (
@@ -120,6 +124,8 @@ const Table: React.FC<ITablePropsTypes> = ({
                 lineHeight: '34px',
                 color: 'black',
                 marginBottom: '5px',
+                userSelect:'text',
+
               }}
             >
               {title}
@@ -134,6 +140,8 @@ const Table: React.FC<ITablePropsTypes> = ({
                   fontWeight: '400',
                   color: 'black',
                   marginTop: '10px',
+                  userSelect:'text',
+
                 }}
               >
                 {formatText(detail).map((part, index) => (

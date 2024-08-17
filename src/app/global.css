@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --main-padding-top-desktop: 100px;
+  --main-padding-top-desktop: 70px;
   --main-padding-bottom-desktop: 0px;
   --main-padding-left-right-desktop: 50px;
-  --main-padding-top-mobile: 105px;
+  --main-padding-top-mobile: 70px;
   --main-padding-bottom-mobile: 0px;
   --main-padding-left-right-mobile: 16px;
 }
