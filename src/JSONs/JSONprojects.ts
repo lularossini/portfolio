@@ -232,20 +232,7 @@ export const projects: IProjects[] = [
         marginTop: 50,
       },
 
-      {
-        type: 'carousel',
-        desktopSrcImages: ['/abitab/desktop/abitab-telefono-1.png', '/abitab/desktop/abitab-telefono-2.png', '/abitab/desktop/abitab-telefono-3.png', '/abitab/desktop/abitab-telefono-4.png', '/abitab/desktop/abitab-telefono-5.png', '/abitab/desktop/abitab-telefono-6.png', '/abitab/desktop/abitab-telefono-7.png'],
-        mobileSrcImages: ['/tyr/desktop/DEVICE.png', '/tyr/desktop/DEVICE2.png', '/tyr/desktop/DEVICE3.png', '/tyr/desktop/DEVICE4.png'],
-        desktopModeWidth: 'full width',
-        mobileModeWidth: 'full width',
-        desktopModeQuantitySlidesLevel: 4,
-        gap:120,
-        desktopMarginBottom: 30,
-        desktopMarginTop: 60,
-        mobileMarginBottom: 30,
-        mobileMarginTop: 30,
-      },
-
+     
       //Comment andy: La imagen the body-problem-abitab.svg, que está abajo de este comment, tiene que tomar el 100% en mobile
       'To achieve digital identity registration, we evaluated the existing web and app channels for usability issues. Our analysis revealed several key problems:',
 
@@ -310,14 +297,19 @@ export const projects: IProjects[] = [
       'In terms of visuals, the previously defined definitions extracted from the design system that Abitab had were applied, and it was proposed to the client to modify some colors within the color palette to make them accessible following the current web accessibility regulations.',
 
       {
-        type: 'image',
-        desktopSrc: '/abitab/desktop/telefonos-desktop.svg',
-        desktopMode: 'full width',
-        mobileSrc: '/abitab/mobile/telefonos-mobile.svg',
-        mobileMode: 'full width',
-        marginBottom: 0,
-        marginTop: 60,
+        type: 'carousel',
+        desktopSrcImages: ['/abitab/desktop/abitab-telefono-1.png', '/abitab/desktop/abitab-telefono-2.png', '/abitab/desktop/abitab-telefono-3.png', '/abitab/desktop/abitab-telefono-4.png', '/abitab/desktop/abitab-telefono-5.png', '/abitab/desktop/abitab-telefono-6.png', '/abitab/desktop/abitab-telefono-7.png'],
+        mobileSrcImages: ['/tyr/desktop/DEVICE.png', '/tyr/desktop/DEVICE2.png', '/tyr/desktop/DEVICE3.png', '/tyr/desktop/DEVICE4.png'],
+        desktopModeWidth: 'full width',
+        mobileModeWidth: 'full width',
+        desktopModeQuantitySlidesLevel: 4,
+        gap:120,
+        desktopMarginBottom: 30,
+        desktopMarginTop: 60,
+        mobileMarginBottom: 30,
+        mobileMarginTop: 30,
       },
+
 
       {
         type: 'title',
