@@ -137,7 +137,7 @@ export const projects: IProjects[] = [
       },
       {
         type: 'theResults',
-        percentages: ['80%', '60%', '50%'],
+        percentages: [' 70%', '30%', '25%'],
         colors: ['#86AE9A', '#A5E0C4', '#D6F5E6'],
         texts: [
           '<b>reduction in duplication errors:</b> the redesign introduced mandatory fields and restricted certain fields from being modified by specific user types.',
